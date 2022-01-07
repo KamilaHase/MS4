@@ -111,7 +111,7 @@
          "sku":"pp5002440521",
          "name":"Flaxseed Oil",
          "description":"Edible vegetable oil single species. Cold pressed. High in Omega-3 and Omega-6 fatty acids and vitamin F. Thanks to it's exceptional composition, it supports normal blood cholesterol levels. It has a delicate nutty taste. Suitable for spreads, sweet cereals, vegetable and fruit salads. In addition, it is used as a body and massage oil or as a serum or hair mask. Softens dry skin and regenerates it.",
-         "price":69,
+         "price":270,
          "amount":250,
          "category":3,
          "brand":3,
@@ -156,7 +156,7 @@
          "sku":"pp5002440521",
          "name":"Sunflower Oil",
          "description":"Biateca sunflower oil is made from cold-pressed sunflower seeds, so it retains all the important nutrients. Contains vitamins A, B, D, E and K. Usage: Sunflower oil is excellent in salads, fruit and vegetables, but also in pastries.",
-         "price":49,
+         "price":149,
          "amount":250,
          "category":3,
          "brand":3,
@@ -169,7 +169,7 @@
       "model":"products.product",
       "fields":{
          "sku":"pp5002440521",
-         "name":"Hemp Seeds Oil ",
+         "name":"Hemp Seeds Oil",
          "description":"Hemp oil is made from hemp seeds, cold-pressed, has a delicate nutty taste and aroma. It is considered the most suitable vegetable oil, surpassing even olive oil. It is suitable for pregnant and lactating women, vegans and people on a gluten-free diet. Hemp oil has a balanced ratio of omega 3 and 6 unsaturated fatty acids, contains phytosterols and chlorophyll. Gamma-linolenic acid - GLA (1 to 4%), is fully bioavailable and interacts with EPA and DHA in fish oil. Hemp oil is the most suitable supplemental source of omega-3 plant origin. The valuable substances contained in the oil help maintain healthy skin, cholesterol and blood glucose levels, harmonize bodily processes, and thus support the natural defenses. Usage: Use in cold cuisine - in salads and toppings, spreads, on pasta or just on bread. Oil is not suitable for frying. If you have skin problems or motor problems, apply directly to the affected areas and massage gently.",
          "price":360,
          "amount":250,
@@ -231,7 +231,7 @@
          "sku":"pp5002440521",
          "name":"Extra Virgin Olive Oil 250ml",
          "description":"From a special selection of the highest quality olives grown under the Mediterranean sun. With original taste and aroma. It is used for quick marinating of red meats or fish, and for flavoring pasta dishes.",
-         "price":360,
+         "price":160,
          "amount":250,
          "category":1,
          "brand":5,
@@ -246,11 +246,11 @@
          "sku":"pp5002440521",
          "name":"Extra Virgin Olive Oil 500ml",
          "description":"From a special selection of the highest quality olives grown under the Mediterranean sun. With original taste and aroma. It is used for quick marinating of red meats or fish, and for flavoring pasta dishes.",
-         "price":360,
+         "price":290,
          "amount":500,
          "category":1,
          "brand":5,
-         "rating":3.9,
+         "rating":4.4,
          "image":"olive-oil1.png"
       }
    },
@@ -261,7 +261,7 @@
          "sku":"pp5002440521",
          "name":"Extra Virgin Olive Oil 1000ml",
          "description":"From a special selection of the highest quality olives grown under the Mediterranean sun. With original taste and aroma. It is used for quick marinating of red meats or fish, and for flavoring pasta dishes.",
-         "price":360,
+         "price":520,
          "amount":1000,
          "category":1,
          "brand":5,
@@ -319,14 +319,14 @@
       "model":"products.product",
       "fields":{
          "sku":"pp5002440521",
-         "name":"Cocoa Oil",
-         "description":"Cocoa oil is extracted from cocoa beans and is naturally solid at temperatures below 35 ° C. It is one of the most stable solid fats known with a smooth texture and tempting aroma. It contains a large amount of saturated fats and natural antioxidants, because cocoa beans are rich in polyphenols and flavonoids. Cocoa oil is fully compatible with human skin, so it is very easily acceptable for all skin types of all ages. It is used in the simplest way: a piece of butter is rubbed directly into the skin, where it melts and is absorbed without oiling. Cocoa butter is great for protecting exposed parts of the body in winter, it is useful against any aggressive environmental influences - from strong winds to polluted city air. The more sensitive your skin, the better you will appreciate the wonderful properties of this oil or the products that contain it. This oil helps to get a healthy and even tan in the sun. It increases the skin's resistance to sunburn and is compatible with all products against sunlight. Cocoa oil is especially suitable for dry and sensitive skin - it moisturizes deeply and makes the skin smooth and soft and restores its natural shine. Production: The oil is cold pressed.",
+         "name":"Cacao Oil",
+         "description":"Cacao oil is extracted from cocoa beans and is naturally solid at temperatures below 35 ° C. It is one of the most stable solid fats known with a smooth texture and tempting aroma. It contains a large amount of saturated fats and natural antioxidants, because cocoa beans are rich in polyphenols and flavonoids. Cacao oil is fully compatible with human skin, so it is very easily acceptable for all skin types of all ages. It is used in the simplest way: a drop of the oil is rubbed directly into the skin, where it is absorbed without leaving fat stains. Cacao oil is great for protecting exposed parts of the body in winter, it is useful against any aggressive environmental influences - from strong winds to polluted city air. The more sensitive your skin, the better you will appreciate the wonderful properties of this oil or the products that contain it. This oil helps to get a healthy and even tan in the sun. It increases the skin's resistance to sunburn and is compatible with all products against sunlight. Cacao oil is especially suitable for dry and sensitive skin - it moisturizes deeply and makes the skin smooth and soft and restores its natural shine. Production: The oil is cold pressed.",
          "price":299,
          "amount":50,
          "category":4,
          "brand":1,
          "rating":4.6,
-         "image":"coca-oil.png"
+         "image":"cacao-oil.png"
       }
    },
    {
@@ -410,7 +410,7 @@
       "model":"products.product",
       "fields":{
          "sku":"pp5002440521",
-         "name":"Cofee Oil",
+         "name":"Coffee Oil",
          "description":"Cellulite, problem areas (tummy, arms, etc.) - we recommend with massage flasks. Also suitable for the skin - rather acne. Cold pressed oil, from green coffee seeds. The oil is used as a base in anti-cellulite and slimming compounds. It contains enzymes, vitamins and a high content of caffeine. This oil is one of the top anti-aging products and is sought after by celebrities around the world! You can apply coffee oil undiluted on your face or massage problem areas. It soothes the skin, cleanses it beautifully and maintains its adequate moisture. It is perfectly absorbed, leaves a delicate velvety feeling on the skin and smells imperceptibly. Suitable for all skin types, at any age. Application: The ideal result is achieved with night application after skin make-up removal. Get the required amount of oil from the vial into the palm of your hand, heat in the palm of your hand and then apply to the skin. Rub into damp skin. You can treat the neck, décolleté and skin of the whole body. Gently massage into skin and allow to absorb.",
          "price":402,
          "amount":100,
@@ -456,7 +456,7 @@
       "fields":{
          "sku":"pp5002440521",
          "name":"Cherry Oil",
-         "description":" Our cherry oil by cold pressing the cherry kernels. It has similar properties to almond oil, but is better absorbed without feeling greasy. Regenerates the skin, improves skin elasticity. It does not clog pores. Suitable for dry, eczematous and psoriasis skin. In hair care, it adds shine to hair. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin.",
+         "description":"Our cherry oil by cold pressing the cherry kernels. It has similar properties to almond oil, but is better absorbed without feeling greasy. Regenerates the skin, improves skin elasticity. It does not clog pores. Suitable for dry, eczematous and psoriasis skin. In hair care, it adds shine to hair. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin.",
          "price":359,
          "amount":100,
          "category":4,
@@ -471,7 +471,7 @@
       "fields":{
          "sku":"pp5002440521",
          "name":"Lavender Oil",
-         "description":" The scent of lavender calms our senses, it is excellent during the stressful period in the aroma lamp, bathtub, spray ... great and as a hair wrap, it can also be used by children. It is excellent for a soothing massage before bed, which relieves tension after a busy day, reduces muscle tone and promotes restful sleep. The scent of lavender affects our senses and washes away stress. Historically, lavender is also considered an herb that helps regenerate tired and problematic skin. The oil gives the skin softness and velvety softness. The oil can also be added to the water bath. Usage: Each skin type, before use on sensitive skin must be tested, contains allergenic substances! Application:  Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin. ",
+         "description":"The scent of lavender calms our senses, it is excellent during the stressful period in the aroma lamp, bathtub, spray ... great and as a hair wrap, it can also be used by children. It is excellent for a soothing massage before bed, which relieves tension after a busy day, reduces muscle tone and promotes restful sleep. The scent of lavender affects our senses and washes away stress. Historically, lavender is also considered an herb that helps regenerate tired and problematic skin. The oil gives the skin softness and velvety softness. The oil can also be added to the water bath. Usage: Each skin type, before use on sensitive skin must be tested, contains allergenic substances! Application:  Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin. ",
          "price":290,
          "amount":100,
          "category":4,
@@ -606,7 +606,7 @@
       "fields":{
          "sku":"pp5002440521",
          "name":"Litsea Cubeba",
-         "description":" 100% natural organic essential oil from Vietnam with a popular fresh scent has an antidepressant effect, promotes concentration, cleanses and disinfects the air. Good prevention against colds, also suitable for massage products for tired feet. Do not use undiluted on the skin, protect the eyes and keep out of reach of children.",
+         "description":"100% natural organic essential oil from Vietnam with a popular fresh scent has an antidepressant effect, promotes concentration, cleanses and disinfects the air. Good prevention against colds, also suitable for massage products for tired feet. Do not use undiluted on the skin, protect the eyes and keep out of reach of children.",
          "price":98,
          "amount":15,
          "category":5,
@@ -771,7 +771,7 @@
       "fields":{
          "sku":"pp5002440521",
          "name":"Cocoa",
-         "description":" The cocoa to vanilla-chocolate scent saturates the air with its pleasant aroma. It adds a touch of chocolate to massage and bath products. It is mainly used to calm nerves and relax. For use on the skin, it is necessary to dilute the cocoa essential oil with a carrier oil (vegetable oil or a mixture of oils) in a ratio of 3-12 drops of essence per 90 ml of oil.",
+         "description":"The cocoa to vanilla-chocolate scent saturates the air with its pleasant aroma. It adds a touch of chocolate to massage and bath products. It is mainly used to calm nerves and relax. For use on the skin, it is necessary to dilute the cocoa essential oil with a carrier oil (vegetable oil or a mixture of oils) in a ratio of 3-12 drops of essence per 90 ml of oil.",
          "price":790,
          "amount":90,
          "category":5,
@@ -817,12 +817,12 @@
          "sku":"pp5002440521",
          "name":"Coconut Oil Neutral",
          "description":"Neutral Coconut oil has no taste and is therefore suitable for wide variety of cooking. It is considered a healthy vegetable fat that can be used for cooking, baking or can be applied directly to the skin and hair. The oil is rich in medium-term fatty acids, which is a type of saturated fat. The body easily converts them into energy and does not store them in fats. Lauric acid dominates the fatty acids in coconut. Our coconut oil is RAW, BIO, 100% natural and cold pressed. Use: For cooking: The pour point for virgin coconut oil is 177 °. By tolerating high temperatures, the oil becomes a versatile helper in the kitchen. You can cook, bake and even fry with it. Replace butter and other oils with coconut oil in a ratio of 1: 1. For hair nutrition: Create your own coconut hair mask by dissolving a teaspoon of oil in your palms. Gently massage the oil with your fingers along the entire length of the hair, especially to the ends. Wrap your hair in a shower cap and leave on for 30 minutes. Then wash your hair thoroughly with shampoo. For skin hydration: Coconut oil is also an excellent moisturizer. It is easy to use, just rub it between your fingers and rub a small amount into the skin of the body or face. It can also be used as a 100% natural make-up remover - it can also remove waterproof mascara.",
-         "price":250,
+         "price":260,
          "amount":250,
          "category":2,
          "brand":3,
-         "rating":5.1,
-         "image":"coconut-oil-oils-factory.png"
+         "rating":5.3,
+         "image":"coconut-oil-neutral-oils-factory.png"
       }
    }
 ]
