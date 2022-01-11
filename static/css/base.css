@@ -3,6 +3,7 @@ html {
     height: 100%;
 }
 
+/*
 body {
     background: url('/media/oils-main.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -10,6 +11,7 @@ body {
     color: #555;
     font-family: 'Saira Condensed', sans-serif;
 }
+*/
 
 /* from Bulma */
 .icon {
@@ -35,6 +37,12 @@ body {
        object-fit: contain;
     z-index: -1;
     border-radius: 0;
+}
+
+.carousel {
+    height: 60vh !important;
+    -o-object-fit: contain;
+    object-fit: contain;
 }
 
 .shop-now-button {
