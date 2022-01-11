@@ -184,12 +184,13 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* --------- Product Details */
 
 .product-detail-img {
     height: 400px;
     width: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .info-img-cont {
