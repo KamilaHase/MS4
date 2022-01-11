@@ -28,6 +28,15 @@ body {
     width: fit-content;
 }
 
+.card-img {
+    height: 300px;
+    width: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    z-index: -1;
+    border-radius: 0;
+}
+
 .shop-now-button {
     background: black;
     color: white;
@@ -175,6 +184,17 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+
+.product-detail-img {
+    height: 400px;
+    width: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.info-img-cont {
+    margin-right: 6px !important;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
