@@ -39,10 +39,21 @@ body {
     border-radius: 0;
 }
 
-.carousel {
-    height: 60vh !important;
+.carousel-inner {
+    height: 70vh;
+}
+
+.carousel-inner img {
     -o-object-fit: contain;
-    object-fit: contain;
+       object-fit: contain;
+    min-width: 100vw;
+}
+
+.text-carousel {
+    z-index: 10;
+    margin-top: -450px;
+    margin-left: 150px;
+    position: absolute;
 }
 
 .shop-now-button {
