@@ -9,7 +9,7 @@
          "price":250,
          "amount":250,
          "category":2,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.6,
          "image":"wallnut-oil.png"
       }
@@ -24,7 +24,7 @@
          "price":230,
          "amount":250,
          "category":2,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.6,
          "image":"peanut-oil.png"
       }
@@ -39,7 +39,7 @@
          "price":520,
          "amount":250,
          "category":2,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.7,
          "image":"macadam-oil.png"
       }
@@ -54,7 +54,7 @@
          "price":170,
          "amount":250,
          "category":2,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":3.0,
          "image":"almond-oil.png"
       }
@@ -69,7 +69,7 @@
          "price":460,
          "amount":250,
          "category":2,
-         "brand": 3,
+         "brand":"Oils Factory",
          "rating":5.0,
          "image":"hazelnut-oil.png"
       }
@@ -84,7 +84,7 @@
          "price":890,
          "amount":250,
          "category":2,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.7,
          "image":"cedar-oil.png"
       }
@@ -99,7 +99,7 @@
          "price":360,
          "amount":250,
          "category":2,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.9,
          "image":"pistachio-oil.png"
       }
@@ -114,7 +114,7 @@
          "price":270,
          "amount":250,
          "category":3,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.7,
          "image":"flaxseed-oil.png"
       }
@@ -129,7 +129,7 @@
          "price":127,
          "amount":250,
          "category":3,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.6,
          "image":"sesame-oil.png"
       }
@@ -144,7 +144,7 @@
          "price":229,
          "amount":250,
          "category":3,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.4,
          "image":"poppy-oil.png"
       }
@@ -159,7 +159,7 @@
          "price":149,
          "amount":250,
          "category":3,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":5.2,
          "image":"sunflower-oil.png"
       }
@@ -174,7 +174,7 @@
          "price":360,
          "amount":250,
          "category":3,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.4,
          "image":"hemp-seeds-oil.png"
       }
@@ -189,7 +189,7 @@
          "price":249,
          "amount":250,
          "category":3,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.8,
          "image":"amaranth-oil.png"
       }
@@ -204,7 +204,7 @@
          "price":209,
          "amount":250,
          "category":3,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":4.4,
          "image":"grape-seed-oil.png"
       }
@@ -219,7 +219,7 @@
          "price":250,
          "amount":250,
          "category":1,
-         "brand":4,
+         "brand":"Organic Farming",
          "rating":5.1,
          "image":"olive-oil2.png"
       }
@@ -234,7 +234,7 @@
          "price":160,
          "amount":250,
          "category":1,
-         "brand":5,
+         "brand":"Olivius",
          "rating":4.5,
          "image":"olive-oil1.png"
       }
@@ -249,7 +249,7 @@
          "price":290,
          "amount":500,
          "category":1,
-         "brand":5,
+         "brand":"Olivius",
          "rating":4.4,
          "image":"olive-oil1.png"
       }
@@ -264,7 +264,7 @@
          "price":520,
          "amount":1000,
          "category":1,
-         "brand":5,
+         "brand":"Olivius",
          "rating":4.9,
          "image":"olive-oil1.png"
       }
@@ -279,7 +279,7 @@
          "price":199,
          "amount":500,
          "category":1,
-         "brand":6,
+         "brand":"All Natural",
          "rating":5.8,
          "image":"olive-oil5.png"
       }
@@ -294,7 +294,7 @@
          "price":199,
          "amount":50,
          "category":4,
-         "brand":1,
+         "brand":"Oooily",
          "rating":4.4,
          "image":"argan-oil-oooily.png"
       }
@@ -309,7 +309,7 @@
          "price":99,
          "amount":50,
          "category":4,
-         "brand":1,
+         "brand":"Oooily",
          "rating":4.9,
          "image":"tea-tree-oil.png"
       }
@@ -324,7 +324,7 @@
          "price":299,
          "amount":50,
          "category":4,
-         "brand":1,
+         "brand":"Oooily",
          "rating":4.6,
          "image":"cacao-oil.png"
       }
@@ -339,7 +339,7 @@
          "price":199,
          "amount":50,
          "category":4,
-         "brand":1,
+         "brand":"Oooily",
          "rating":5.4,
          "image":"rose-oil-oooily.png"
       }
@@ -354,7 +354,7 @@
          "price":360,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":4.9,
          "image":"rose-oil-renovate.png"
       }
@@ -369,7 +369,7 @@
          "price":200,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":4.8,
          "image":"apricot-oil.png"
       }
@@ -384,7 +384,7 @@
          "price":359,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":5.2,
          "image":"argan-oil-renovate.png"
       }
@@ -400,7 +400,7 @@
          "price":178,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":4.7,
          "image":"castor-oil.png"
       }
@@ -415,7 +415,7 @@
          "price":402,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":5.2,
          "image":"coffee-oil.png"
       }
@@ -430,7 +430,7 @@
          "price":490,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":4.5,
          "image":"baobab-oil.png"
       }
@@ -445,7 +445,7 @@
          "price":570,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":4.9,
          "image":"plum-oil.png"
       }
@@ -460,7 +460,7 @@
          "price":359,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":4.1,
          "image":"cherry-oil.png"
       }
@@ -475,7 +475,7 @@
          "price":290,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":5.5,
          "image":"lavender-oil-renovate.png"
       }
@@ -490,7 +490,7 @@
          "price":1025,
          "amount":50,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":4.8,
          "image":"opuntia-oil.png"
       }
@@ -505,7 +505,7 @@
          "price":450,
          "amount":100,
          "category":4,
-         "brand":2,
+         "brand":"Renovate",
          "rating":4.7,
          "image":"cucumber-oil.png"
       }
@@ -520,7 +520,7 @@
          "price":170,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":5.4,
          "image":"tea-tree-oil.png"
       }
@@ -535,7 +535,7 @@
          "price":85,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":5.1,
          "image":"eucalyptus-oil.png"
       }
@@ -550,7 +550,7 @@
          "price":139,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":5.2,
          "image":"lavender-botanicas.png"
       }
@@ -565,7 +565,7 @@
          "price":105,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":4.3,
          "image":"lemon.png"
       }
@@ -580,7 +580,7 @@
          "price":95,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":4.9,
          "image":"cedar.png"
       }
@@ -595,7 +595,7 @@
          "price":98,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":5.2,
          "image":"rosemary.png"
       }
@@ -610,7 +610,7 @@
          "price":98,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":4.7,
          "image":"litsea-cubeba.png"
       }
@@ -625,7 +625,7 @@
          "price":91,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":4.8,
          "image":"eucalyptus-citriodora.png"
       }
@@ -640,7 +640,7 @@
          "price":94,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":4.6,
          "image":"lemongrass.png"
       }
@@ -655,7 +655,7 @@
          "price":102,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":5.1,
          "image":"mint.png"
       }
@@ -670,7 +670,7 @@
          "price":110,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":4.8,
          "image":"pine.png"
       }
@@ -685,7 +685,7 @@
          "price":87,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":5.0,
          "image":"orange.png"
       }
@@ -700,7 +700,7 @@
          "price":105,
          "amount":15,
          "category":5,
-         "brand":7,
+         "brand":"Botanicas",
          "rating":5.3,
          "image":"wild-rose.png"
       }
@@ -715,7 +715,7 @@
          "price":475,
          "amount":90,
          "category":5,
-         "brand":8,
+         "brand":"Natural Cosmetics",
          "rating":4.9,
          "image":"rose-natural-cosmetics.png"
       }
@@ -730,7 +730,7 @@
          "price":780,
          "amount":90,
          "category":5,
-         "brand":8,
+         "brand":"Natural Cosmetics",
          "rating":5.2,
          "image":"cinnamon.png"
       }
@@ -745,7 +745,7 @@
          "price":989,
          "amount":90,
          "category":5,
-         "brand":8,
+         "brand":"Natural Cosmetics",
          "rating":5.7,
          "image":"ylang-ylang.png"
       }
@@ -760,7 +760,7 @@
          "price":859,
          "amount":90,
          "category":5,
-         "brand":8,
+         "brand":"Natural Cosmetics",
          "rating":4.8,
          "image":"ginger.png"
       }
@@ -775,7 +775,7 @@
          "price":790,
          "amount":90,
          "category":5,
-         "brand":8,
+         "brand":"Natural Cosmetics",
          "rating":4.9,
          "image":"cocoa-natural-cosmetics.png"
       }
@@ -790,7 +790,7 @@
          "price":770,
          "amount":90,
          "category":5,
-         "brand":8,
+         "brand":"Natural Cosmetics",
          "rating":4.8,
          "image":"salge.png"
       }
@@ -805,7 +805,7 @@
          "price":250,
          "amount":250,
          "category":2,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":5.1,
          "image":"coconut-oil-oils-factory.png"
       }
@@ -820,7 +820,7 @@
          "price":260,
          "amount":250,
          "category":2,
-         "brand":3,
+         "brand":"Oils Factory",
          "rating":5.3,
          "image":"coconut-oil-neutral-oils-factory.png"
       }
