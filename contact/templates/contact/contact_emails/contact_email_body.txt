@@ -1,0 +1,7 @@
+Hello Good Oils,
+
+You received a new message.
+Please respond {{ contact.name }} at {{ contact.email }}.
+
+Best wishes, 
+your email robot.
