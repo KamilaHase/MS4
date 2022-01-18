@@ -3,10 +3,13 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.db.models import Avg
 
-from .models import Product, Category, ProductReview
-from .forms import ProductForm, ReviewForm
+from .models import Product, Category
+from reviews.models import ProductReview
+from reviews.forms import ReviewForm
 
+# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -62,45 +65,22 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    form = ReviewForm()
-
+    reviews = ProductReview.objects.filter(product=product)
+    review_form = ReviewForm()
+    avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
+    product.save()
+    template = 'products/product_detail.html'
     context = {
         'product': product,
-        'form': form,
+        'reviews': reviews,
+        'review_form': review_form,
+        'avg_rating': avg_rating
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, template, context)
 
 
 @login_required
-def add_review(request, product_id):
-    """
-    A view to allow the user to add a review to a product
-    """
-
-    product = get_object_or_404(Product, pk=product_id)
-    if request.method == 'POST':
-        form = ReviewForm(request.POST)
-        if form.is_valid():
-            review = form.save(commit=False)
-            review.product = product
-            review.user = request.user
-            review.save()
-            messages.success(request, 'Review successfully submittted!')
-            return redirect(reverse('product_detail', args=[product.id]))
-        else:
-            messages.error(
-                request, 'Failed to add your review, try again!')
-    else:
-        form = ReviewForm()
-
-    context = {
-        'form': form
-    }
-
-    return render(request, context)
-
-
 def add_product(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
