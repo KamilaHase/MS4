@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dr+Sugiyama&family=Hachi+Maru+Pop&family=Lily+Script+One&family=Sevillana&family=Spirax&family=Style+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Libre+Franklin:wght@300;400&family=Style+Script&family=Varela+Round&display=swap');
 /* 
-font-family: 'Hachi Maru Pop', cursive;
-font-family: 'Spirax', cursive;
+
+font-family: 'Jost', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
 font-family: 'Style Script', cursive;
+font-family: 'Varela Round', sans-serif;
 */
 
 html {
@@ -13,7 +14,7 @@ html {
 
 body {
     color: #555;
-    font-family: 'Saira Condensed', sans-serif!important;
+    font-family: 'Jost', sans-serif!important;
 }
 
 
@@ -28,7 +29,7 @@ body {
 }
 
 
-.logo-font {
+.uppercase-font {
     text-transform: uppercase;
 }
 
@@ -36,7 +37,7 @@ body {
 .logo-good-oils {
     font-family: 'Style Script', cursive;
     font-size: 80px;
-    margin: 0 0 -30px 0;
+    margin-top: 30px !important;
     padding: -10px;
     color: #7b621a!important;
 }
