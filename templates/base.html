@@ -37,35 +37,36 @@
     <title>Good Oils {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid fixed-top mt-4">
       <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
               <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                  <h1 class="logo-font text-black my-0">Good <strong>Oils</strong></h1>
+                  <h1 class="logo-good-oils my-0">Good Oils</h1>
               </a>
           </div>
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <!--Search form-->  
             <form method="GET" action="{% url 'products' %}">
-                  <div class="input-group w-100">
-                      <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search the site">
-                      <div class="input-group-append">
-                          <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                  <div class="input-group w-150">
+                      <input class="form-control border border-grey rounded-2" type="text" name="q" placeholder="Search the site">
+                      <div class="input-group-append text-lg-right">
+                          <button class="form-control btn bg-grey border-grey rounded-2" type="submit">
                               <span class="icon">
-                                  <i class="fas fa-search"></i>
+                                  <i class="fas fa-search text-white"></i>
                               </span>
                           </button>
                       </div>
                   </div>
               </form>
           </div>
+          
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
               <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                   <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <div class="text-center">
-                              <div><i class="fas fa-user fa-lg"></i></div>
-                              <p class="my-0">My Account</p>
+                              <div><i class="fas fa-user fa-lg text-brown"></i></div>
+                              <p class="my-0 text-black">My Account</p>
                           </div>
                       </a>
                       <!--dropdown menu-->
@@ -83,11 +84,11 @@
                       </div>
                   </li>
                   <li class="list-inline-item">
-                      <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                      <a class="{% if grand_total %}text-info font-weight-bold{% else %}{% endif %} nav-link" href="{% url 'view_bag' %}">
                           <div class="text-center">
                             <!--shopping bag-->
-                              <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                              <p class="my-0">
+                              <div><i class="fas fa-shopping-bag fa-lg text-brown"></i></div>
+                              <p class="my-0 text-black">
                                   {% if grand_total %}
                                       {{ grand_total|floatformat:2 }} €
                                   {% else %}
@@ -109,9 +110,9 @@
             {% include 'includes/main_nav.html' %}
         </nav>
     </div>
-    <div id="delivery-banner" class="row text-center">
-        <div class="col bg-black text-white">
-            <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
+    <div id="delivery-banner" class="row text-center fixed-top">
+        <div class="col bg-banner text-white">
+            <h4 class="logo-font my-1">Free delivery on orders over {{ free_delivery_threshold }} €!</h4>                
         </div>            
     </div>
   </header>

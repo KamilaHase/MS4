@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dr+Sugiyama&family=Hachi+Maru+Pop&family=Lily+Script+One&family=Sevillana&family=Spirax&family=Style+Script&display=swap');
+
+/* 
+font-family: 'Hachi Maru Pop', cursive;
+font-family: 'Spirax', cursive;
+font-family: 'Style Script', cursive;
+*/
 
 html {
     height: 100%;
@@ -6,7 +13,7 @@ html {
 
 body {
     color: #555;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Saira Condensed', sans-serif!important;
 }
 
 
@@ -17,10 +24,21 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+    color: #7b621a !important;    
 }
+
 
 .logo-font {
     text-transform: uppercase;
+}
+
+
+.logo-good-oils {
+    font-family: 'Style Script', cursive;
+    font-size: 80px;
+    margin: 0 0 -30px 0;
+    padding: -10px;
+    color: #7b621a!important;
 }
 
 .main-logo-link {
@@ -55,6 +73,10 @@ body {
     margin-top: -450px;
     margin-left: 150px;
     position: absolute;
+}
+
+.bg-banner{
+    background-color: #AB9C6E!important;
 }
 
 .shop-now-button {
@@ -95,8 +117,24 @@ body {
     color: #000 !important;
 }
 
+.text-brown {
+    color: #7b621a !important;
+}
+
+.text-grey {
+    color: #7b621a !important;
+}
+
 .border-black {
     border: 1px solid black !important;
+}
+
+.border-grey {
+    border: 1px solid #b3b1ac !important;
+}
+
+.bg-grey {
+    background-color: #b3b1ac !important;
 }
 
 .bg-black {
