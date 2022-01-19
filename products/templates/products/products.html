@@ -77,6 +77,13 @@
                                                 </a>
                                             </p>
                                             {% endif %}
+                                            {% if product.brand %}
+                                            <p class="small mt-1 mb-0">
+                                                <a class="text-muted" href="{% url 'products' %}?brand={{ product.brand.brand_name }}">
+                                                    <i class="fas fa-tag mr-1"></i>{{ product.brand.brand_frname }}
+                                                </a>
+                                            </p>
+                                            {% endif %}
 
                                             <small class="alert alert-warning m-0 p-1" role="alert">{{ product.amount }} ml</small>
 

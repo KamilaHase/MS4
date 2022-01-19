@@ -3,14 +3,15 @@
       "pk":1,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001340155",
+         "sku":"NO025002030001",
          "name":"Wallnut Oil",
-         "description":"BIO 100% cold pressed walnut kernel oil - single species. Highest quality oil. Dosage: internally - in the morning (on an empty stomach) and in the evening (before going to bed) one teaspoon cold cuisine-according to taste and amount of food, external use - as needed, Storage: Store in a dark place at room temperature up to 22 ° C. Once opened, use within 3 months at the latest. Content: 250 ml, glass container.",
-         "price":250,
+         "description_short":"BIO 100% cold pressed walnut kernel oil - single species. Highest quality oil.",
+         "price":25,
          "amount":250,
          "category":2,
-         "brand":"Oils Factory",
+         "brand":3,
          "rating":4.6,
+         "description_long":"Dosage: internally - in the morning (on an empty stomach) and in the evening (before going to bed) one teaspoon cold cuisine-according to taste and amount of food external use - as needed Storage: Store in a dark place at room temperature up to 22 ° C. Once opened, use within 3 months at the latest. Content: 250 ml, glass container.",
          "image":"wallnut-oil.png"
       }
    },
@@ -18,14 +19,15 @@
       "pk":2,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001600425",
+         "sku":"NO025002030002",
          "name":"Peanut Oil",
-         "description":"The wonderful sweet earthy taste and aroma of peanuts will delight you with magic in the kitchen and with a home massage. High proportion of healthy oleic acid. Peanut oil is indispensable in Asian cuisine, for roasting vegetables and poultry. It is famous in pesto and sweet dishes. Contains a high proportion of healthy oleic acid (76%), antioxidants (especially vitamin E) and in trace amounts almost all the main minerals necessary for a healthy body. It is rich in unsaturated fats, which help maintain healthy blood cholesterol levels. Absorbs well into the skin. Use it for a full body massage - perfumes the senses and nourishes skin cells in depth. In addition, it is a perfect carrier for other substances (such as volatile essential oils). In Indian Ayurveda, it is recommended for massages of sore joints - inflammatory and rheumatic. According to Ayurveda, it accelerates metabolism and, thanks to its antioxidant effects, 'cleans' clogged joints of harmful substances. For this reason, it is also valued as one of the best for oil mouthwashes. Excellent for maceration of herbs. Ingredients: Peanut oil. It is the oil of peanut seeds. / peanuts are not really nuts, but tubers on the roots of the plant. ",
-         "price":230,
+         "description_short":"The wonderful sweet earthy taste and aroma of peanuts will delight you with magic in the kitchen and with a home massage.",
+         "price":23,
          "amount":250,
          "category":2,
-         "brand":"Oils Factory",
+         "brand":3,
          "rating":4.6,
+         "description_long":"High proportion of healthy oleic acid. Peanut oil is indispensable in Asian cuisine, for roasting vegetables and poultry. It is famous in pesto and sweet dishes. Contains a high proportion of healthy oleic acid (76%), antioxidants (especially vitamin E) and in trace amounts almost all the main minerals necessary for a healthy body. It is rich in unsaturated fats, which help maintain healthy blood cholesterol levels. Absorbs well into the skin. Use it for a full body massage - perfumes the senses and nourishes skin cells in depth. In addition, it is a perfect carrier for other substances (such as volatile essential oils). In Indian Ayurveda, it is recommended for massages of sore joints - inflammatory and rheumatic. According to Ayurveda, it accelerates metabolism and, thanks to its antioxidant effects, 'cleans' clogged joints of harmful substances. For this reason, it is also valued as one of the best for oil mouthwashes. Excellent for maceration of herbs. Ingredients: Peanut oil Peanut oil. It is the oil of peanut seeds. Peanuts are not really nuts, but tubers on the roots of the plant.",
          "image":"peanut-oil.png"
       }
    },
@@ -33,14 +35,15 @@
       "pk":3,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001730010",
+         "sku":"NO025002030003",
          "name":"Macadam Oil",
-         "description":"Macadam extra virgin olive oil is of the highest quality nuts, with a buttery taste. Suitable for baking or frying in a pan. Ideal for vegan cuisine. Thanks to efficient extraction (cold pressing) and dark bottles, the oil is literally loaded with nutrients, vitamins, minerals and other beneficial substances. Macadam nuts are rich in essential fatty acids and oleic acid, a high proportion of monounsaturated fat, a rich source of fiber, a high content of natural antioxidants. Contains Omega 3, Omega 6. Ingredients: 100% macadam extra virgin olive oil. Country of manufacture: New Zealand Storage: Store in a dark, cool and dry place.",
-         "price":520,
+         "description_short":"Macadam extra virgin olive oil is of the highest quality nuts, with a buttery taste.",
+         "price":52,
          "amount":250,
          "category":2,
-         "brand":"Oils Factory",
+         "brand":3,
          "rating":4.7,
+         "description_long":"Suitable for baking or frying in a pan. Ideal for vegan cuisine. Thanks to efficient extraction (cold pressing) and dark bottles, the oil is literally loaded with nutrients, vitamins, minerals and other beneficial substances. Macadam nuts are rich in essential fatty acids and oleic acid, a high proportion of monounsaturated fat, a rich source of fiber, a high content of natural antioxidants. Contains Omega 3, Omega 6. Ingredients: 100% macadam extra virgin olive oil. Country of manufacture: New Zealand. Storage: Store in a dark, cool and dry place.",
          "image":"macadam-oil.png"
       }
    },
@@ -48,14 +51,15 @@
       "pk":4,
       "model":"products.product",
       "fields":{
-         "sku":"pp5001890157",
+         "sku":"NO025002030004",
          "name":"Almond Oil",
-         "description":"Cold pressed almond oil from sweet almonds. Almond oil is a versatile helper. Fine-tunes spreads or salads. Use on skin and the whole body for perfect skin nutrition. It is RAW, cold pressed. Ingredients: Almonds 100%",
-         "price":170,
+         "description_short":"Cold pressed almond oil from sweet almonds.",
+         "price":17,
          "amount":250,
          "category":2,
-         "brand":"Oils Factory",
+         "brand":3,
          "rating":3.0,
+         "description_long":"Almond oil is a versatile helper. Fine-tunes spreads or salads. Use on skin and the whole body for perfect skin nutrition. It is RAW, cold pressed. Ingredients: Almonds 100%",
          "image":"almond-oil.png"
       }
    },
@@ -63,14 +67,14 @@
       "pk":5,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002111605",
+         "sku":"NO025002030005",
          "name":"Hazelnut Oil",
-         "description":"Hazelnut oil has high thermal stability and is therefore suitable for cold and hot cuisine. It is cold pressed, unrefined and unfiltered and made from the highest quality raw materials. Hazelnut oil has a deep dark color and a medium-thick consistency. It has an excellent taste and a strong hazelnut aroma. It has high thermal stability and thanks to that it can also be used for heat treatment. Usage: Hazelnut oil will be appreciated by lovers of vegetable and fruit salads. It is also excellent in combination with various types of cheese. ",
-         "price":460,
+         "description_short":"Hazelnut oil has high thermal stability and is therefore suitable for cold and hot cuisine.",
+         "price":46,
          "amount":250,
          "category":2,
-         "brand":"Oils Factory",
          "rating":5.0,
+         "description_long":"It is cold pressed, unrefined and unfiltered and made from the highest quality raw materials. Hazelnut oil has a deep dark color and a medium-thick consistency. It has an excellent taste and a strong hazelnut aroma. It has high thermal stability and thanks to that it can also be used for heat treatment. Usage: Hazelnut oil will be appreciated by lovers of vegetable and fruit salads. It is also excellent in combination with various types of cheese.",
          "image":"hazelnut-oil.png"
       }
    },
@@ -78,14 +82,15 @@
       "pk":6,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002260206",
+         "sku":"NO25002030006",
          "name":"Cedar Oil",
-         "description":"Cedar oil BIO 100% cold pressed. Collection and production: The true strength of cedar oil will show if the oil is collected correctly: only ripe cones fallen by the wind are collected. The walnut obtained after peeling must be pressed within 3 months at the latest. The oil should not touch any metals at all. Usage: High efficiency is when using 1 tablespoon of cedar oil per day in the morning or during the day, not in the evening/before sleep. 1 teaspoon 30 - 60 minutes before meals, 2 to 3 times a day, use for 40 to 60 days. Do not rush to swallow, let the oil melt in your mouth. The oil has a pleasant nutty taste, can be added to salads as well. Make sure not to use metal spoon.",
-         "price":890,
+         "description_short":"Cedar oil BIO 100% cold pressed.",
+         "price":89,
          "amount":250,
          "category":2,
-         "brand":"Oils Factory",
+         "brand":3,
          "rating":4.7,
+         "description_long":"Collection and production: The true strength of cedar oil will show if the oil is collected correctly: only ripe cones fallen by the wind are collected. The walnut obtained after peeling must be pressed within 3 months at the latest. The oil should not touch any metals at all. Usage: High efficiency is when using 1 tablespoon of cedar oil per day in the morning or during the day, not in the evening/before sleep. 1 teaspoon 30 - 60 minutes before meals, 2 to 3 times a day, use for 40 to 60 days. Do not rush to swallow, let the oil melt in your mouth. The oil has a pleasant nutty taste, can be added to salads as well. Make sure not to use metal spoon.",
          "image":"cedar-oil.png"
       }
    },
@@ -93,14 +98,15 @@
       "pk":7,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"NO025002030007",
          "name":"Pistachio Oil",
-         "description":"100% cold pressed oil. Pistachio oil is dark green and highly aromatic, contains a large amount of protein and minerals, and is also rich in unsaturated fatty acids. Thanks to its taste, pistachio oil is suitable for cold cuisine, cream dishes, fruit salads, you can also use it for baking instead of butter. Pistachio oil can also be used as a cosmetic, has great moisturizing effects, increases skin elasticity and helps to reduce the signs of aging. Store in a cool place, out of direct light. Close carefully after opening.",
-         "price":360,
+         "description_short":"100% cold pressed oil.",
+         "price":36,
          "amount":250,
          "category":2,
-         "brand":"Oils Factory",
-         "rating":4.9,
+         "brand":3,
+         "rating":4.4,
+         "description_long":"Pistachio oil is dark green and highly aromatic, contains a large amount of protein and minerals, and is also rich in unsaturated fatty acids. Thanks to its taste, pistachio oil is suitable for cold cuisine, cream dishes, fruit salads, you can also use it for baking instead of butter. Pistachio oil can also be used as a cosmetic, has great moisturizing effects, increases skin elasticity and helps to reduce the signs of aging. Store in a cool place, out of direct light. Close carefully after opening.",
          "image":"pistachio-oil.png"
       }
    },
@@ -108,14 +114,15 @@
       "pk":8,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"SO25002030001",
          "name":"Flaxseed Oil",
-         "description":"Edible vegetable oil single species. Cold pressed. High in Omega-3 and Omega-6 fatty acids and vitamin F. Thanks to it's exceptional composition, it supports normal blood cholesterol levels. It has a delicate nutty taste. Suitable for spreads, sweet cereals, vegetable and fruit salads. In addition, it is used as a body and massage oil or as a serum or hair mask. Softens dry skin and regenerates it.",
-         "price":270,
+         "description_short":"Edible vegetable oil single species. Cold pressed.",
+         "price":6.9,
          "amount":250,
          "category":3,
-         "brand":"Oils Factory",
-         "rating":4.7,
+         "brand":3,
+         "rating":4.4,
+         "description_long":"High in Omega-3 and Omega-6 fatty acids and vitamin F. Thanks to it's exceptional composition, it supports normal blood cholesterol levels. It has a delicate nutty taste.Suitable for spreads, sweet cereals, vegetable and fruit salads. In addition, it is used as a body and massage oil or as a serum or hair mask. Softens dry skin and regenerates it.",
          "image":"flaxseed-oil.png"
       }
    },
@@ -123,14 +130,15 @@
       "pk":9,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"SO025002030002",
          "name":"Sesame Oil",
-         "description":"Sesame oil is commonly used in Indian and Asian cuisine. Can also be used in cosmetics, e.g. for massages. It has a light yellow color and its taste is slightly hazelnut. It is also possible to use it with hot meals at the end of cooking.",
-         "price":127,
+         "description_short":"Sesame oil is commonly used in Indian and Asian cuisine. Can also be used in cosmetics, e.g. for massages.",
+         "price":12.7,
          "amount":250,
          "category":3,
-         "brand":"Oils Factory",
-         "rating":4.6,
+         "brand":3,
+         "rating":4.4,
+         "description_long":"Sesame oil is commonly used in Indian and Asian cuisine. Can also be used in cosmetics, e.g. for massages. It has a light yellow color and its taste is slightly hazelnut. It is also possible to use it with hot meals at the end of cooking.",
          "image":"sesame-oil.png"
       }
    },
@@ -138,14 +146,15 @@
       "pk":10,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"SO025002030003",
          "name":"Poppy Oil",
-         "description":"Distinctive taste and aroma of poppies reminiscent of grandmother's poppy seed buns. It wonderfully captivates and complements sweet flavors - spread a pancake with it or drizzle freshly baked dessert. It perfectly captivates and complements sweet flavors - pour freshly baked gingerbread or sweet noodles over it, spread a pancake, add it to fruit salads. A few drops add a poppy flair to all dishes. In addition, it is exceptionally nourishing and regenerating in the care of sensitive skin and hair. It can also be used as a gentle eye make-up remover. Try hair wraps for a beautiful hair.",
-         "price":229,
+         "description_short":"Distinctive taste and aroma of poppies reminiscent of grandmother's poppy seed buns.",
+         "price":22.9,
          "amount":250,
          "category":3,
-         "brand":"Oils Factory",
+         "brand":3,
          "rating":4.4,
+         "description_long":"It wonderfully captivates and complements sweet flavors - spread a pancake with it or drizzle freshly baked dessert. It perfectly captivates and complements sweet flavors - pour freshly baked gingerbread or sweet noodles over it, spread a pancake, add it to fruit salads. A few drops add a poppy flair to all dishes. In addition, it is exceptionally nourishing and regenerating in the care of sensitive skin and hair. It can also be used as a gentle eye make-up remover. Try hair wraps for a beautiful hair.",
          "image":"poppy-oil.png"
       }
    },
@@ -153,14 +162,15 @@
       "pk":11,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"SO025002030004",
          "name":"Sunflower Oil",
-         "description":"Biateca sunflower oil is made from cold-pressed sunflower seeds, so it retains all the important nutrients. Contains vitamins A, B, D, E and K. Usage: Sunflower oil is excellent in salads, fruit and vegetables, but also in pastries.",
-         "price":149,
+         "description_short":"Sunflower oil is made from cold-pressed sunflower seeds, so it retains all the important nutrients. Contains vitamins A, B, D, E and K.",
+         "price":4.9,
          "amount":250,
          "category":3,
-         "brand":"Oils Factory",
-         "rating":5.2,
+         "brand":3,
+         "rating":4.4,
+         "description_long":"Sunflower oil is made from cold-pressed sunflower seeds, so it retains all the important nutrients. Contains vitamins A, B, D, E and K. Usage: Sunflower oil is excellent in salads, fruit and vegetables, but also in pastries.",
          "image":"sunflower-oil.png"
       }
    },
@@ -168,14 +178,15 @@
       "pk":12,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
-         "name":"Hemp Seeds Oil",
-         "description":"Hemp oil is made from hemp seeds, cold-pressed, has a delicate nutty taste and aroma. It is considered the most suitable vegetable oil, surpassing even olive oil. It is suitable for pregnant and lactating women, vegans and people on a gluten-free diet. Hemp oil has a balanced ratio of omega 3 and 6 unsaturated fatty acids, contains phytosterols and chlorophyll. Gamma-linolenic acid - GLA (1 to 4%), is fully bioavailable and interacts with EPA and DHA in fish oil. Hemp oil is the most suitable supplemental source of omega-3 plant origin. The valuable substances contained in the oil help maintain healthy skin, cholesterol and blood glucose levels, harmonize bodily processes, and thus support the natural defenses. Usage: Use in cold cuisine - in salads and toppings, spreads, on pasta or just on bread. Oil is not suitable for frying. If you have skin problems or motor problems, apply directly to the affected areas and massage gently.",
-         "price":360,
+         "sku":"SO025003030004",
+         "name":"Hemp Seeds Oil ",
+         "description_short":"Hemp oil is made from hemp seeds, cold-pressed, has a delicate nutty taste and aroma.",
+         "price":36,
          "amount":250,
          "category":3,
-         "brand":"Oils Factory",
+         "brand":3,
          "rating":4.4,
+         "description_long":"It is considered the most suitable vegetable oil, surpassing even olive oil. It is suitable for pregnant and lactating women, vegans and people on a gluten-free diet. Hemp oil has a balanced ratio of omega 3 and 6 unsaturated fatty acids, contains phytosterols and chlorophyll. Gamma-linolenic acid - GLA (1 to 4%), is fully bioavailable and interacts with EPA and DHA in fish oil. Hemp oil is the most suitable supplemental source of omega-3 plant origin. The valuable substances contained in the oil help maintain healthy skin, cholesterol and blood glucose levels, harmonize bodily processes, and thus support the natural defenses. Usage: Use in cold cuisine - in salads and toppings, spreads, on pasta or just on bread. Oil is not suitable for frying. If you have skin problems or motor problems, apply directly to the affected areas and massage gently.",
          "image":"hemp-seeds-oil.png"
       }
    },
@@ -183,14 +194,15 @@
       "pk":13,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"SO025003030005",
          "name":"Amaranth Oil",
-         "description":"BIO amaranth oil is a rich source of vitamins B2 (riboflavin), E, ​​B1 (thiamine), D, omega unsaturated fatty acids and many beneficial trace elements. Usage: Internally: 1-3 teaspoons a day, preferably 20-30 minutes before meals, can also be added to the diet. Ingestion: Apply skin, mucous membranes to affected or desired areas at least 1-2 times daily.",
-         "price":249,
+         "description_short":"BIO amaranth oil is a rich source of vitamins B2 (riboflavin), E, B1 (thiamine) D, omega unsaturated fatty acids and many beneficial trace elements. ",
+         "price":24,
          "amount":250,
          "category":3,
-         "brand":"Oils Factory",
-         "rating":4.8,
+         "brand":3,
+         "rating":4.4,
+         "description_long":"BIO amaranth oil is a rich source of vitamins B2 (riboflavin), E, B1 (thiamine), D, omega unsaturated fatty acids and many beneficial trace elements. Usage Internally: 1-3 teaspoons a day, preferably 20-30 minutes before meals, can also be added to the diet. Ingestion: Apply skin, mucous membranes to affected or desired areas at least 1-2 times daily.",
          "image":"amaranth-oil.png"
       }
    },
@@ -198,14 +210,15 @@
       "pk":14,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"SO025003030006",
          "name":"Grape Seeds Oil",
-         "description":"Cold-pressed grape seed oil contains a wide range of biologically active ingredients. All this makes the oil very tasty, but also very beneficial unlike the extracted oil. Usage: Grape oil can be used for seafood, fish, pasta and risotto.",
-         "price":209,
+         "description_short":"Cold-pressed grape seed oil contains a wide range of biologically active ingredients.",
+         "price":20,
          "amount":250,
          "category":3,
-         "brand":"Oils Factory",
+         "brand":3,
          "rating":4.4,
+         "description_long":"Cold-pressed grape seed oil contains a wide range of biologically active ingredients. All this makes the oil very tasty, but also very beneficial unlike the extracted oil. Usage: Grape oil can be used for seafood, fish, pasta and risotto.",
          "image":"grape-seed-oil.png"
       }
    },
@@ -213,14 +226,15 @@
       "pk":15,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"OO025001040001",
          "name":"Olive Oil from Organic Farming",
-         "description":"Extra virgin olive oil is cold produced in Crete in the most traditional mechanical way from Koroneiki olives. It is the most premium olive oil on the market. Olive oil is one of the main ingredients of the Mediterranean diet. It is rich in antioxidants and healthy monounsaturated fat. Because extra virgin olive oil undergoes the least processing, it has a pronounced slightly bitter taste, but retains the largest amount of nutrients. The 'extra virgin' label for olive oil guarantees the highest quality, the highest concentration of antioxidants, the most pronounced taste and the least free acids (<0.8% per 100 g). Oil of this quality accounts for only 10% of world olive oil production. Use: You can use olive oil in salads, dressings, dressings or to flavor cheeses. We can also use it for cooking, baking or baking (especially savory pastries). However, it is also used in cosmetics, it is a great base for massage oil or it can be used as a nourishing hair wrap.",
-         "price":250,
+         "description_short":"Extra virgin olive oil is cold produced in Crete in the most traditional mechanical way from Koroneiki olives.",
+         "price":25,
          "amount":250,
          "category":1,
-         "brand":"Organic Farming",
-         "rating":5.1,
+         "brand":4,
+         "rating":4.4,
+         "description_long":"It is the most premium olive oil on the market. Olive oil is one of the main ingredients of the Mediterranean diet. It is rich in antioxidants and healthy monounsaturated fat. Because extra virgin olive oil undergoes the least processing, it has a pronounced slightly bitter taste, but retains the largest amount of nutrients. The 'extra virgin' label for olive oil guarantees the highest quality, the highest concentration of antioxidants, the most pronounced taste and the least free acids (<0.8% per 100 g). Oil of this quality accounts for only 10% of world olive oil production. Use: You can use olive oil in salads, dressings, dressings or to flavor cheeses. We can also use it for cooking, baking or baking (especially savory pastries). However, it is also used in cosmetics, it is a great base for massage oil or it can be used as a nourishing hair wrap.",
          "image":"olive-oil2.png"
       }
    },
@@ -228,14 +242,15 @@
       "pk":16,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"OO025001050001",
          "name":"Extra Virgin Olive Oil 250ml",
-         "description":"From a special selection of the highest quality olives grown under the Mediterranean sun. With original taste and aroma. It is used for quick marinating of red meats or fish, and for flavoring pasta dishes.",
-         "price":160,
+         "description_short":"From a special selection of the highest quality olives grown under the Mediterranean sun.",
+         "price":36,
          "amount":250,
          "category":1,
-         "brand":"Olivius",
-         "rating":4.5,
+         "brand":5,
+         "rating":4.4,
+         "description_long":"From a special selection of the highest quality olives grown under the Mediterranean sun. With original taste and aroma. It is used for quick marinating of red meats or fish, and for flavoring pasta dishes.",
          "image":"olive-oil1.png"
       }
    },
@@ -243,14 +258,15 @@
       "pk":17,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"OO050001050002",
          "name":"Extra Virgin Olive Oil 500ml",
-         "description":"From a special selection of the highest quality olives grown under the Mediterranean sun. With original taste and aroma. It is used for quick marinating of red meats or fish, and for flavoring pasta dishes.",
-         "price":290,
+         "description_short":"From a special selection of the highest quality olives grown under the Mediterranean sun.",
+         "price":36,
          "amount":500,
          "category":1,
-         "brand":"Olivius",
+         "brand":5,
          "rating":4.4,
+         "description_long":"From a special selection of the highest quality olives grown under the Mediterranean sun. With original taste and aroma. It is used for quick marinating of red meats or fish, and for flavoring pasta dishes.",
          "image":"olive-oil1.png"
       }
    },
@@ -258,14 +274,15 @@
       "pk":18,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"OO100001050003",
          "name":"Extra Virgin Olive Oil 1000ml",
-         "description":"From a special selection of the highest quality olives grown under the Mediterranean sun. With original taste and aroma. It is used for quick marinating of red meats or fish, and for flavoring pasta dishes.",
-         "price":520,
+         "description_short":"From a special selection of the highest quality olives grown under the Mediterranean sun.",
+         "price":36,
          "amount":1000,
          "category":1,
-         "brand":"Olivius",
-         "rating":4.9,
+         "brand":5,
+         "rating":4.4,
+         "description_long":"From a special selection of the highest quality olives grown under the Mediterranean sun. With original taste and aroma. It is used for quick marinating of red meats or fish, and for flavoring pasta dishes.",
          "image":"olive-oil1.png"
       }
    },
@@ -273,14 +290,15 @@
       "pk":19,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"OO050001060001",
          "name":"Olive Oil All Natural",
-         "description":"Unfiltered virgin olive oil in organic quality. Great for salads, toppings or dressings. You can also use it for baking or baking. It can even be used to make an oil wrap for dried hair. Usage: cold cuisine - for salads, toppings, dressings or cheese flavors, baking - you can use this oil when preparing pastries, they are especially suitable for savory pastries, olive spread, baked food - don't be afraid to add oil when baking, cosmetics - the oil can serve well for an oil wrap on the hair. This olive oil is pressed in the Spanish region of Baena in a traditional press, which has been owned by an olive-growing family since 1795. The oil is made from 3 varieties of olives and thus recalls the authentic character of ancient olive oils. The olives are harvested by hand, picked and then pressed directly on the day of harvest. Up to 5.5 kg of olives are consumed per liter of oil.",
-         "price":199,
+         "description_short":"Unfiltered virgin olive oil in organic quality. Great for salads, toppings or dressings. You can also use it for baking. It can even be used to make an oil wrap for dried hair.",
+         "price":19,
          "amount":500,
          "category":1,
-         "brand":"All Natural",
-         "rating":5.8,
+         "brand":6,
+         "rating":4.4,
+         "description_long":"Usage: cold cuisine - for salads, toppings, dressings or cheese flavors, baking: you can use this oil when preparing pastries, they are especially suitable for savory pastries, olive spread, baked food: don't be afraid to add oil when baking, cosmetics: the oil can serve well for an oil wrap on the hair. This olive oil is pressed in the Spanish region of Baena in a traditional press, which has been owned by an olive-growing family since 1795. The oil is made from 3 varieties of olives and thus recalls the authentic character of ancient olive oils. The olives are harvested by hand, picked and then pressed directly on the day of harvest. Up to 5.5 kg of olives are consumed per liter of oil. Ingredients: Olive oil * 100%.",
          "image":"olive-oil5.png"
       }
    },
@@ -288,14 +306,15 @@
       "pk":20,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO005004010001",
          "name":"Argan Oil",
-         "description":"A very valuable oil with antioxidant effects. Contains an unusually high amount of natural vitamin E, which protects skin from free radicals. Its main benefits are slowing down skin aging, reducing wrinkles and supporting collagen production. It deeply hydrates and nourishes all skin types, including sensitive skin, and is ideal for delicate eye surroundings. You can also add a few drops of oil to your favorite cream to increase its effectiveness. It has exceptional caring and softening effects on the skin with acne and eczema and other dermatological problems. Also suitable for skin with a tendency to form stretch marks and after shaving. It is also suitable for hair care, which restores shine, softness, vitality and restores its strength. It also prevents and strengthens nails.",
-         "price":199,
+         "description_short":"A very valuable oil with antioxidant effects. Contains an unusually high amount of natural vitamin E, which protects skin from free radicals.",
+         "price":19,
          "amount":50,
          "category":4,
-         "brand":"Oooily",
+         "brand":1,
          "rating":4.4,
+         "description_long":"Its main benefits are slowing down skin aging, reducing wrinkles and supporting collagen production. It deeply hydrates and nourishes all skin types, including sensitive skin, and is ideal for delicate eye surroundings. You can also add a few drops of oil to your favorite cream to increase its effectiveness. It has exceptional caring and softening effects on the skin with acne and eczema and other dermatological problems. Also suitable for skin with a tendency to form stretch marks and after shaving. It is also suitable for hair care, which restores shine, softness, vitality and restores its strength. It also prevents and strengthens nails.",
          "image":"argan-oil-oooily.png"
       }
    },
@@ -303,14 +322,15 @@
       "pk":21,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO005004010002",
          "name":"Tea Tree Oil",
-         "description":"Foot and hand care oil with antiseptic effects gently disinfects the skin and at the same time cares for it. The spray is suitable for quick use on hands and feet after contact with surfaces to which bacteria and viruses adhere. Contains Pharmacopoeial Tea Tree oil, herbal extract and high alcohol content. At the same time, it contains a moisturizing component, glycerin, which reduces the drying of the skin. It is also used for problems with excessive sweating and foot odor due to its refreshing and regenerating effects. You can also use the product for foot fatigue and, thanks to its excellent antiseptic effect, also for the treatment of mold or for disinfecting shoes. You will also use it to treat small cracks in the skin. In products with Tea Tree Oil, we use the highest quality original Australian raw material, whose 100% pharmaceutical purity is guaranteed by Australian state institutions. The main ingredient is Australian tea tree oil. Tea Tree Oil is widely used especially in cosmetics and medicines. It has demonstrable results in the treatment of minor skin injuries and in the care of problematic skin. In addition to the aforementioned Australian tea tree oil, we used a unique combination of essential oils in the spray, which complement and support each other in their effects. Sage essential oil has antibacterial effects and helps with excessive sweating, thyme essential oil helps to increase the body's defenses. Yarrow has a disinfectant effect and promotes healing. Rapeseed is characterized by anti-inflammatory effects, marigold and arnica have a number of positive effects on the human body. Ingredients: Melaleuca Alternifolia, Thymus Vulgaris, Agrimonia Eupatoria, Salvia Officinalis, Arnica Montana, Achillea Millefolium, Calendula Officinalis, Isopropyl Myristate, Glycerin, Alcohol Denat.",
-         "price":99,
+         "description_short":"Foot and hand care oil with antiseptic effects gently disinfects the skin and at the same time cares for it.",
+         "price":9.9,
          "amount":50,
          "category":4,
-         "brand":"Oooily",
-         "rating":4.9,
+         "brand":1,
+         "rating":4.4,
+         "description_long":"It is suitable for quick use on hands and feet after contact with surfaces to which bacteria and viruses adhere. Contains Pharmacopoeial Tea Tree oil, herbal extract and high alcohol content. At the same time, it contains a moisturizing component, glycerin, which reduces the drying of the skin. It is also used for problems with excessive sweating and foot odor due to its refreshing and regenerating effects. You can also use the product for foot fatigue and, thanks to its excellent antiseptic effect, also for the treatment of mold or for disinfecting shoes. You will also use it to treat small cracks in the skin. In products with Tea Tree Oil, we use the highest quality original Australian raw material, whose 100% pharmaceutical purity is guaranteed by Australian state institutions. The main ingredient is Australian tea tree oil. Tea Tree Oil is widely used especially in cosmetics and medicines. It has demonstrable results in the treatment of minor skin injuries and in the care of problematic skin. In addition to the aforementioned Australian tea tree oil, we used a unique combination of essential oils in the spray, which complement and support each other in their effects. Sage essential oil has antibacterial effects and helps with excessive sweating, thyme essential oil helps to increase the body's defenses. Yarrow has a disinfectant effect and promotes healing. Rapeseed is characterized by anti-inflammatory effects, marigold and arnica have a number of positive effects on the human body. Ingredients: Melaleuca Alternifolia, Thymus Vulgaris, Agrimonia Eupatoria, Salvia Officinalis, Arnica Montana, Achillea Millefolium, Calendula Officinalis, Isopropyl Myristate, Glycerin, Alcohol Denat.",
          "image":"tea-tree-oil.png"
       }
    },
@@ -318,14 +338,15 @@
       "pk":22,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO005004010003",
          "name":"Cacao Oil",
-         "description":"Cacao oil is extracted from cocoa beans and is naturally solid at temperatures below 35 ° C. It is one of the most stable solid fats known with a smooth texture and tempting aroma. It contains a large amount of saturated fats and natural antioxidants, because cocoa beans are rich in polyphenols and flavonoids. Cacao oil is fully compatible with human skin, so it is very easily acceptable for all skin types of all ages. It is used in the simplest way: a drop of the oil is rubbed directly into the skin, where it is absorbed without leaving fat stains. Cacao oil is great for protecting exposed parts of the body in winter, it is useful against any aggressive environmental influences - from strong winds to polluted city air. The more sensitive your skin, the better you will appreciate the wonderful properties of this oil or the products that contain it. This oil helps to get a healthy and even tan in the sun. It increases the skin's resistance to sunburn and is compatible with all products against sunlight. Cacao oil is especially suitable for dry and sensitive skin - it moisturizes deeply and makes the skin smooth and soft and restores its natural shine. Production: The oil is cold pressed.",
-         "price":299,
+         "description_short":"Cacao oil is extracted from cocoa beans and is naturally solid at temperatures below 35 ° C.",
+         "price":29,
          "amount":50,
          "category":4,
-         "brand":"Oooily",
-         "rating":4.6,
+         "brand":1,
+         "rating":4.4,
+         "description_long":"It is one of the most stable solid fats known with a smooth texture and tempting aroma. It contains a large amount of saturated fats and natural antioxidants, because cocoa beans are rich in polyphenols and flavonoids. Cacao oil is fully compatible with human skin, so it is very easily acceptable for all skin types of all ages. It is used in the simplest way: a drop of the oil is rubbed directly into the skin, where it is absorbed without leaving fat stains. Cacao oil is great for protecting exposed parts of the body in winter, it is useful against any aggressive environmental influences - from strong winds to polluted city air. The more sensitive your skin, the better you will appreciate the wonderful properties of this oil or the products that contain it. This oil helps to get a healthy and even tan in the sun. It increases the skin's resistance to sunburn and is compatible with all products against sunlight. Cacao oil is especially suitable for dry and sensitive skin - it moisturizes deeply and makes the skin smooth and soft and restores its natural shine. The oil is cold pressed.",
          "image":"cacao-oil.png"
       }
    },
@@ -333,14 +354,15 @@
       "pk":23,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO005004010004",
          "name":"Rose Oil",
-         "description":"Rose oil will delight dry and mature skin. Regenerates and hydrates the skin of the whole body. Body oil intensively cares for the skin of the whole body. Thanks to its regenerative abilities, it is a perfect choice for mature and dry skin. It provides the necessary nutrients that protect it from drying out and premature aging. It has a wide range of uses, it can be used for make-up removal, aromatherapy, relaxation massage or fragrant bath. Rose oil is produced by the traditional method of gradual maceration, in which the buds of a rare damask rose (rosa damascena) are loaded into a mixture of cold-pressed oils for several weeks. This high-quality blend consists of organic sunflower, jojoba and argan oil. During this time, valuable properties and the intoxicating scent of roses, which is cultivated by the unspoiled nature of the Bulgarian and Moroccan mountains, pass into the macerate. Thanks to its 100% pure and natural origin, the pink macerate ensures a radiant and fresh appearance to the skin. Usage: Rose oil is best absorbed after the bath, when it is rubbed into the moist skin of the whole body with the help of circular movements. Also try the oil during a relaxing massage. Once absorbed, your skin will be pleasantly supple. If you suffer from dry hands or feet, use the oil as a nourishing and moisturizing cream.",
-         "price":199,
+         "description_short":"Rose oil will delight dry and mature skin. Regenerates and hydrates the skin of the whole body.",
+         "price":19,
          "amount":50,
          "category":4,
-         "brand":"Oooily",
+         "brand":1,
          "rating":5.4,
+         "description_long":"Body oil intensively cares for the skin of the whole body. Thanks to its regenerative abilities, it is a perfect choice for mature and dry skin. It provides the necessary nutrients that protect it from drying out and premature aging. It has a wide range of uses, it can be used for make-up removal, aromatherapy, relaxation massage or fragrant bath. Rose oil is produced by the traditional method of gradual maceration, in which the buds of a rare damask rose (rosa damascena) are loaded into a mixture of cold-pressed oils for several weeks. This high-quality blend consists of organic sunflower, jojoba and argan oil. During this time, valuable properties and the intoxicating scent of roses, which is cultivated by the unspoiled nature of the Bulgarian and Moroccan mountains, pass into the macerate. Thanks to its 100% pure and natural origin, the pink macerate ensures a radiant and fresh appearance to the skin. Usage: Rose oil is best absorbed after the bath, when it is rubbed into the moist skin of the whole body with the help of circular movements. Also try the oil during a relaxing massage. Once absorbed, your skin will be pleasantly supple. If you suffer from dry hands or feet, use the oil as a nourishing and moisturizing cream.",
          "image":"rose-oil-oooily.png"
       }
    },
@@ -348,14 +370,15 @@
       "pk":24,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO010004020001",
          "name":"Rose Oil",
-         "description":"Skin oil containing Bulgarian and Moroccan roses nourishes and regenerates the skin. It is an effective helper in the fight against wrinkles and is suitable for all skin types. Exclusive extra nourishing natural organic oil for luxury care of all skin types, including the most sensitive ones. Nourishes, softens, fists and regenerates the skin. It helps maintain its elasticity and vitality. It is suitable for wrinkles. Rose essential oil can have a positive effect on self-confidence and a pleasant mood. Use: Using a dropper, apply a few drops of oil to cleansed, slightly moistened skin of the face, neck and décolleté. Rub or massage the applied drops gently.Tip: You can use regenerating facial oil both in the morning - as a make-up base and in the evening - as a regenerating care.",
-         "price":360,
+         "description_short":"Skin oil containing Bulgarian and Moroccan roses nourishes and regenerates the skin.",
+         "price":36,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":4.9,
+         "description_long":"It is an effective helper in the fight against wrinkles and is suitable for all skin types. Exclusive extra nourishing natural organic oil for luxury care of all skin types, including the most sensitive ones. Nourishes, softens, fists and regenerates the skin. It helps maintain its elasticity and vitality. It is suitable for wrinkles. Rose essential oil can have a positive effect on self-confidence and a pleasant mood. Use: Using a dropper, apply a few drops of oil to cleansed, slightly moistened skin of the face, neck and décolleté. Rub or massage the applied drops gently. Tip: You can use regenerating facial oil both in the morning - as a make-up base and in the evening - as a regenerating care.",
          "image":"rose-oil-renovate.png"
       }
    },
@@ -363,14 +386,15 @@
       "pk":25,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO010004020002",
          "name":"Apricot Oil",
-         "description":"Regenerating effects on the skin. A favorite in the care of children's skin. Also suitable for hair wraps. Apricot oil 100% - Prunus Armeniaca Kernel Oil is obtained from apricot kernels. Apricot oil is one of the more luxurious cosmetic oils. It is suitable for every skin type. The skin is very soft and supple after the treatment. It has an emollient, cleansing, nourishing and regenerating effect. It has a high content of unsaturated essential acids, especially oleic and linoleic. Does not leave a greasy feeling. You will also achieve perfect results when used in the form of a hair wrap.",
-         "price":200,
+         "description_short":"Regenerating effects on the skin. A favorite in the care of children's skin. Also suitable for hair wraps.",
+         "price":20,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":4.8,
+         "description_long":" Apricot oil 100% - Prunus Armeniaca Kernel Oil is obtained from apricot kernels. Apricot oil is one of the more luxurious cosmetic oils. It is suitable for every skin type. The skin is very soft and supple after the treatment. It has an emollient, cleansing, nourishing and regenerating effect. It has a high content of unsaturated essential acids, especially oleic and linoleic. Does not leave a greasy feeling. You will also achieve perfect results when used in the form of a hair wrap.",
          "image":"apricot-oil.png"
       }
    },
@@ -378,30 +402,31 @@
       "pk":26,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO010004020003",
          "name":"Argan Oil",
-         "description":"Moisturizing oil for all skin types. Especially suitable for hair - dry, damaged by dyeing. Argan vegetable gold from Morocco. Cold pressed vegetable oil. Argan oil has exceptional properties in cosmetics. It belongs to luxury oils. It is a source of unsaturated fatty acids, antioxidants, vitamins and phytosterols. Argan oil has a beneficial effect on reddened, dry skin with a tendency to crack. Reduces wrinkles, moisturizes and helps keep skin fresh. Application: Use on damp skin. You will achieve the ideal result during night application after skin make-up removal / cleansing. Remove the required amount of oil from the bottle by hand, heat in the palms of your hands and then apply by massaging to the skin.",
-         "price":359,
+         "description_short":"Argan vegetable gold from Morocco. Cold pressed vegetable oil. Moisturizing oil for all skin types. Especially suitable for hair - dry, damaged by dyeing.",
+         "price":35,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":5.2,
+         "description_long":"Argan oil has exceptional properties in cosmetics. It belongs to luxury oils. It is a source of unsaturated fatty acids, antioxidants, vitamins and phytosterols. Argan oil has a beneficial effect on reddened, dry skin with a tendency to crack. Reduces wrinkles, moisturizes and helps keep skin fresh. Application: Use on damp skin. You will achieve the ideal result during night application after skin make-up removal / cleansing. Remove the required amount of oil from the bottle by hand, heat in the palms of your hands and then apply by massaging to the skin.",
          "image":"argan-oil-renovate.png"
       }
    },
-
    {
       "pk":27,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO010004020004",
          "name":"Castor Oil",
-         "description":"Has a positive effect on scars and stretch marks. Supports the growth of eyelashes and eyebrows. Also suitable for eczema and psoriasis. Helps regenerate and soften the skin. Supports the growth of eyelashes and eyebrows. It is also recommended for the treatment of healed scars. It is also suitable for warm compresses of strained parts of the body. Usage: dry skin, sore body parts, hair growth support. Application: Use on moist skin / skin. You will achieve the ideal result during night application after skin make-up removal / cleansing. Use a pump to remove the required amount of oil from the bottle into your hand, heat it in your palms and then apply it by massaging it on the skin.",
-         "price":178,
+         "description_short":"Has a positive effect on scars and stretch marks. Supports growth of eyelashes and eyebrows. Also suitable for eczema and psoriasis.",
+         "price":17,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":4.7,
+         "description_long":"Has a positive effect on scars and stretch marks. Supports growth of eyelashes and eyebrows. Also suitable for eczema and psoriasis.Helps regenerate and soften the skin. Supports the growth of eyelashes and eyebrows. It is also recommended for the treatment of healed scars. It is also suitable for warm compresses of strained parts of the body. Usage: dry skin, sore body parts, hair growth support Application: Use on moist skin / skin. You will achieve the ideal result during night application after skin make-up removal / cleansing. Use a pump to remove the required amount of oil from the bottle into your hand, heat it in your palms and then apply it by massaging it on the skin.",
          "image":"castor-oil.png"
       }
    },
@@ -409,14 +434,15 @@
       "pk":28,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
-         "name":"Coffee Oil",
-         "description":"Cellulite, problem areas (tummy, arms, etc.) - we recommend with massage flasks. Also suitable for the skin - rather acne. Cold pressed oil, from green coffee seeds. The oil is used as a base in anti-cellulite and slimming compounds. It contains enzymes, vitamins and a high content of caffeine. This oil is one of the top anti-aging products and is sought after by celebrities around the world! You can apply coffee oil undiluted on your face or massage problem areas. It soothes the skin, cleanses it beautifully and maintains its adequate moisture. It is perfectly absorbed, leaves a delicate velvety feeling on the skin and smells imperceptibly. Suitable for all skin types, at any age. Application: The ideal result is achieved with night application after skin make-up removal. Get the required amount of oil from the vial into the palm of your hand, heat in the palm of your hand and then apply to the skin. Rub into damp skin. You can treat the neck, décolleté and skin of the whole body. Gently massage into skin and allow to absorb.",
-         "price":402,
+         "sku":"BO010004020005",
+         "name":"Cofee Oil",
+          "description_short":"Cold pressed oil, from green coffee seeds. The oil is used as a base in anti-cellulite and slimming compounds. ",
+         "price":40,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":5.2,
+         "description_long":"It contains enzymes, vitamins and a high content of caffeine. This oil is one of the top anti-aging products and is sought after by celebrities around the world! You can apply coffee oil undiluted on your face or massage problem areas. It soothes the skin, cleanses it beautifully and maintains its adequate moisture. It is perfectly absorbed, leaves a delicate velvety feeling on the skin and smells imperceptibly. Suitable for all skin types, at any age. For cellulite problem areas (tummy, arms, etc.) - we recommend with massage flasks. Also suitable for skin with acne.  Application: The ideal result is achieved with night application after skin make-up removal. Get the required amount of oil from the vial into the palm of your hand, heat in the palm of your hand and then apply to the skin. Rub into damp skin. You can treat the neck, décolleté and skin of the whole body. Gently massage into skin and allow to absorb.",
          "image":"coffee-oil.png"
       }
    },
@@ -424,14 +450,15 @@
       "pk":29,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO010004020006",
          "name":"Baobab Oil",
-         "description":"Baobab or 'Tree of Life' is a remarkable tree in Africa. Its composition and effects are similar to, for example, argan oil. Baobab oil hydrates the skin, regenerates it, restores its elasticity, keeps it in good condition. Baobab oil is rich in vitamin E. The oil is made from babobab seeds. Usage: all skin types. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin.",
-         "price":490,
+         "description_short":"Baobab or 'Tree of Life' is a remarkable tree in Africa. Its composition and effects are similar to, for example, argan oil.",
+         "price":49,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":4.5,
+         "description_long":"Baobab oil hydrates the skin, regenerates it, restores its elasticity, keeps it in good condition. Baobab oil is rich in vitamin E. The oil is made from babobab seeds. Usage: all skin types. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin.",
          "image":"baobab-oil.png"
       }
    },
@@ -439,14 +466,15 @@
       "pk":30,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO010004020007",
          "name":"Plum Oil",
-         "description":"Cold pressed plum oil has strong moisturizing effects. It is excellent in the care of mature, dry and sensitive skin. Plum oil can serve as a natural care for thin and damaged hair. The oil is quickly absorbed and does not leave a greasy feeling. You will fall in love with its scent! Usage: dry, sensitive, mature skin, dry, brittle hair without vitality. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin.",
-         "price":570,
+         "description_short":"Cold pressed plum oil has strong moisturizing effects.",
+         "price":57,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":4.9,
+         "description_long":"It is excellent in the care of mature, dry and sensitive skin. Plum oil can serve as a natural care for thin and damaged hair. The oil is quickly absorbed and does not leave a greasy feeling. You will fall in love with its scent! Usage: dry, sensitive, mature skin, dry, brittle hair without vitality. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin.",
          "image":"plum-oil.png"
       }
    },
@@ -454,14 +482,15 @@
       "pk":31,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO010004020008",
          "name":"Cherry Oil",
-         "description":"Our cherry oil by cold pressing the cherry kernels. It has similar properties to almond oil, but is better absorbed without feeling greasy. Regenerates the skin, improves skin elasticity. It does not clog pores. Suitable for dry, eczematous and psoriasis skin. In hair care, it adds shine to hair. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin.",
-         "price":359,
+         "description_short":"Our cherry oil by cold pressing the cherry kernels. It has similar properties to almond oil, but is better absorbed without feeling greasy.",
+         "price":35,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":4.1,
+         "description_long":"Regenerates the skin, improves skin elasticity. It does not clog pores. Suitable for dry, eczematous and psoriasis skin. In hair care, it adds shine to hair. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin.",
          "image":"cherry-oil.png"
       }
    },
@@ -469,14 +498,15 @@
       "pk":32,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO010004020009",
          "name":"Lavender Oil",
-         "description":"The scent of lavender calms our senses, it is excellent during the stressful period in the aroma lamp, bathtub, spray ... great and as a hair wrap, it can also be used by children. It is excellent for a soothing massage before bed, which relieves tension after a busy day, reduces muscle tone and promotes restful sleep. The scent of lavender affects our senses and washes away stress. Historically, lavender is also considered an herb that helps regenerate tired and problematic skin. The oil gives the skin softness and velvety softness. The oil can also be added to the water bath. Usage: Each skin type, before use on sensitive skin must be tested, contains allergenic substances! Application:  Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin. ",
-         "price":290,
+         "description_short":" The scent of lavender calms our senses, it is excellent during the stressful period in the aroma lamp, bathtub, spray ... great and as a hair wrap, it can also be used by children.",
+         "price":29,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":5.5,
+         "description_long":"It is excellent for a soothing massage before bed, which relieves tension after a busy day, reduces muscle tone and promotes restful sleep. The scent of lavender affects our senses and washes away stress. Historically, lavender is also considered an herb that helps regenerate tired and problematic skin. The oil gives the skin softness and velvety softness. The oil can also be added to the water bath. Usage: Each skin type, before use on sensitive skin must be tested, contains allergenic substances! Application:  Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin. ",
          "image":"lavender-oil-renovate.png"
       }
    },
@@ -484,14 +514,15 @@
       "pk":33,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO0050004020010",
          "name":"Opuntia Oil",
-         "description":"Cold pressed prickly pear oil. The most luxurious natural care for your skin. Prickly pear oil is the most expensive oil in the world. Prickly pear oil is made from the seeds of a cactus fruit. It is a rare oil that contains high amounts of essential fatty acids, vitamin E, organically bound minerals and amino acids. Prickly pear oil is quickly absorbed by the skin, its antioxidant and moisturizing properties help to delay premature skin aging, help brighten the skin, turn off wrinkles and improve skin elasticity. The oil also has anti-inflammatory and antimicrobial properties and can be used as a universal helper in the care of mature skin. Usage: Dry skin, eye areas. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin. ",
-         "price":1025,
+         "description_short":"Cold pressed prickly pear oil. The most luxurious natural care for your skin.",
+         "price":105,
          "amount":50,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":4.8,
+         "description_long":"Prickly pear oil is the most expensive oil in the world. Prickly pear oil is made from the seeds of a cactus fruit. It is a rare oil that contains high amounts of essential fatty acids, vitamin E, organically bound minerals and amino acids. Prickly pear oil is quickly absorbed by the skin, its antioxidant and moisturizing properties help to delay premature skin aging, help brighten the skin, turn off wrinkles and improve skin elasticity. The oil also has anti-inflammatory and antimicrobial properties and can be used as a universal helper in the care of mature skin. Usage: Dry skin, eye areas. Application: Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin. ",
          "image":"opuntia-oil.png"
       }
    },
@@ -499,14 +530,15 @@
       "pk":34,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"BO010004020011",
          "name":"Cucumber Oil",
-         "description":"Cold pressed oil that hydrates the skin and promotes skin cell regeneration. It helps keep the skin in good condition from wrinkles, stretch marks, acne and helps soothe reddened skin. Usage: All skin types. Application:  Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin. ",
-         "price":450,
+         "description_short":"Cold pressed oil that hydrates the skin and promotes skin cell regeneration.",
+         "price":45,
          "amount":100,
          "category":4,
-         "brand":"Renovate",
+         "brand":2,
          "rating":4.7,
+         "description_long":"It helps keep the skin in good condition from wrinkles, stretch marks, acne and helps soothe reddened skin. Usage: All skin types. Application:  Take the required amount of oil in the palm of your hand, heat in the palm of your hand and then apply to the skin or skin of the body. Rub into damp skin.",
          "image":"cucumber-oil.png"
       }
    },
@@ -514,14 +546,15 @@
       "pk":35,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070001",
          "name":"Tea Tree",
-         "description":"100% natural organic essential oil, the most used natural antiseptic, very suitable for colds, calms the mind and acts against insomnia. Strongly antiseptic, used to treat wounds, burns, acne, eczema, inflammation and injury in the oral cavity, bleeding gums, periodontitis, insect bites and cold sores, is the most widely used natural antiseptic. Protect eyes and keep out of reach of children.",
-         "price":170,
+         "description_short":"100% natural organic essential oil, the most used natural antiseptic, very suitable for colds, calms the mind and acts against insomnia.",
+         "price":17,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":5.4,
+         "description_long":"100% natural organic essential oil, the most used natural antiseptic, very suitable for colds, calms the mind and acts against insomnia. Strongly antiseptic, used to treat wounds, burns, acne, eczema, inflammation and injury in the oral cavity, bleeding gums, periodontitis, insect bites and cold sores, is the most widely used natural antiseptic. Protect eyes and keep out of reach of children.",
          "image":"tea-tree-oil.png"
       }
    },
@@ -529,14 +562,15 @@
       "pk":36,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070002",
          "name":"Eucalyptus",
-         "description":"100% natural bio essential oil with promotes concentration, has beneficial effects on migraines, cleanses the air and is one of the basic essences in aromatherapy. Do not use undiluted on the skin, protect eyes and keep out of reach of children.",
-         "price":85,
+         "description_short":"100% natural bio essential oil with promotes concentration, has beneficial effects on migraines, cleanses the air and is one of the basic essences in aromatherapy.",
+         "price":8.5,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":5.1,
+         "description_long":"100% natural bio essential oil with promotes concentration, has beneficial effects on migraines, cleanses the air and is one of the basic essences in aromatherapy. Do not use undiluted on the skin, protect eyes and keep out of reach of children.",
          "image":"eucalyptus-oil.png"
       }
    },
@@ -544,14 +578,15 @@
       "pk":37,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070003",
          "name":"Lavender",
-         "description":"100% natural organic essential oil with a soothing scent soothes, acts against insomnia and headaches, gently cleanses and disinfects. It is one of the most used essential oils, it can be used undiluted on the skin, soothes, suitable for insomnia, headaches, migraines, flu, respiratory problems, has significant healing effects, lowers blood pressure, and effective against moths. Protect eyes and keep out of reach of children. ",
-         "price":139,
+         "description_short":"100% natural organic essential oil with a soothing scent soothes, acts against insomnia and headaches, gently cleanses and disinfects.",
+         "price":13,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":5.2,
+         "description_long":"100% natural organic essential oil with a soothing scent soothes, acts against insomnia and headaches, gently cleanses and disinfects. It is one of the most used essential oils, it can be used undiluted on the skin, soothes, suitable for insomnia, headaches, migraines, flu, respiratory problems, has significant healing effects, lowers blood pressure, and effective against moths. Protect eyes and keep out of reach of children.",
          "image":"lavender-botanicas.png"
       }
    },
@@ -559,14 +594,15 @@
       "pk":38,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070004",
          "name":"Lemon",
-         "description":"100% natural bio essential oil with refreshing effects is very suitable for mental exertion, headaches, respiratory infections. Due to its refreshing effects, it is very suitable for mental exertion, it is effective for headaches, respiratory infections, it has antiseptic effects, lowers blood pressure, stimulates digestion and has a positive effect on the skin. Protect eyes and keep out of reach of children.",
-         "price":105,
+         "description_short":"100% natural bio essential oil with refreshing effects is very suitable for mental exertion, headaches, respiratory infections.",
+         "price":10,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":4.3,
+         "description_long":"100% natural bio essential oil with refreshing effects is very suitable for mental exertion, headaches, respiratory infections. Due to its refreshing effects, it is very suitable for mental exertion, it is effective for headaches, respiratory infections, it has antiseptic effects, lowers blood pressure, stimulates digestion and has a positive effect on the skin. Protect eyes and keep out of reach of children.",
          "image":"lemon.png"
       }
    },
@@ -574,14 +610,15 @@
       "pk":39,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070005",
          "name":"Cedar",
-         "description":"100% natural organic essential oil with a sweet woody scent acts against stress and maintains our mental well-being. Pleasantly sweet woody scent is a protector of our health and well-being. It works against fear, adds peace and harmony. It has significant antiseptic and antifungal effects, supports kidney function and improves metabolism. Due to its warm scent and antiseptic properties, it is a popular ingredient for the production of natural cosmetics for problematic skin. It acts against insects and is a suitable ingredient in repellent natural mixtures. We do not recommend using it during pregnancy. Protect eyes and keep out of reach of children.",
-         "price":95,
+         "description_short":"100% natural organic essential oil with a sweet woody scent acts against stress and maintains our mental well-being.",
+         "price":9.5,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":4.9,
+         "description_long":"100% natural organic essential oil with a sweet woody scent acts against stress and maintains our mental well-being. Pleasantly sweet woody scent is a protector of our health and well-being. It works against fear, adds peace and harmony. It has significant antiseptic and antifungal effects, supports kidney function and improves metabolism. Due to its warm scent and antiseptic properties, it is a popular ingredient for the production of natural cosmetics for problematic skin. It acts against insects and is a suitable ingredient in repellent natural mixtures. We do not recommend using it during pregnancy. Protect eyes and keep out of reach of children.",
          "image":"cedar.png"
       }
    },
@@ -589,14 +626,15 @@
       "pk":40,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070006",
          "name":"Rosemary",
-         "description":"100% natural organic essential oil promotes concentration, relieves anxiety and fatigue, helps with colds, flu and rheumatism. Strongly stimulates fatigue, promotes concentration, relieves anxiety, helps with colds, flu and rheumatism, is suitable for massages with muscle pain. Not suitable for pregnant women, epileptics and high blood pressure. Protect eyes and keep out of reach of children.",
-         "price":98,
+         "description_short":"100% natural organic essential oil promotes concentration, relieves anxiety and fatigue, helps with colds, flu and rheumatism.",
+         "price":9.8,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":5.2,
+         "description_long":"100% natural organic essential oil promotes concentration, relieves anxiety and fatigue, helps with colds, flu and rheumatism. Strongly stimulates fatigue, promotes concentration, relieves anxiety, helps with colds, flu and rheumatism, is suitable for massages with muscle pain. Not suitable for pregnant women, epileptics and high blood pressure. Protect eyes and keep out of reach of children.",
          "image":"rosemary.png"
       }
    },
@@ -604,14 +642,15 @@
       "pk":41,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070007",
          "name":"Litsea Cubeba",
-         "description":"100% natural organic essential oil from Vietnam with a popular fresh scent has an antidepressant effect, promotes concentration, cleanses and disinfects the air. Good prevention against colds, also suitable for massage products for tired feet. Do not use undiluted on the skin, protect the eyes and keep out of reach of children.",
-         "price":98,
+          "description_short":"100% natural organic essential oil from Vietnam with a popular fresh scent has an antidepressant effect, promotes concentration, cleanses and disinfects the air.",
+         "price":9.8,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":4.7,
+         "description_long":"100% natural organic essential oil from Vietnam with a popular fresh scent has an antidepressant effect, promotes concentration, cleanses and disinfects the air. Good prevention against colds, also suitable for massage products for tired feet. Do not use undiluted on the skin, protect the eyes and keep out of reach of children.",
          "image":"litsea-cubeba.png"
       }
    },
@@ -619,14 +658,15 @@
       "pk":42,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070008",
          "name":"Eucalyptus Citriodora",
-         "description":"100% natural bio essential oil disinfects, is effective for colds and breathing difficulties. The eucalyptus species Eucalyptus Citriodora, disinfects, is effective for colds and breathing difficulties. Do not use undiluted on the skin, protect eyes and keep out of reach of children.",
-         "price":91,
+         "description_short":"100% natural bio essential oil disinfects, is effective for colds and breathing difficulties.",
+         "price":9,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":4.8,
+         "description_long":"100% natural bio essential oil disinfects, is effective for colds and breathing difficulties. The eucalyptus species Eucalyptus Citriodora, disinfects, is effective for colds and breathing difficulties. Do not use undiluted on the skin, protect eyes and keep out of reach of children.",
          "image":"eucalyptus-citriodora.png"
       }
    },
@@ -634,14 +674,15 @@
       "pk":43,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070009",
          "name":"Lemongrass",
-         "description":"100% natural bio essential oil stimulates the refreshing scent, helps you concentrate better, eliminates cigarette odor. Refreshing scent stimulates during long-term exercise, helps concentration, is suitable for smoky environments, has beneficial effects on sprains, swellings and bruises. Do not use undiluted on the skin, protect eyes and keep out of reach of children.",
-         "price":94,
+         "description_short":"100% natural bio essential oil stimulates the refreshing scent, helps you concentrate better, eliminates cigarette odor.",
+         "price":9.4,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":4.6,
+         "description_long":"100% natural bio essential oil stimulates the refreshing scent, helps you concentrate better, eliminates cigarette odor. Refreshing scent stimulates during long-term exercise, helps concentration, is suitable for smoky environments, has beneficial effects on sprains, swellings and bruises. Do not use undiluted on the skin, protect eyes and keep out of reach of children.",
          "image":"lemongrass.png"
       }
    },
@@ -649,14 +690,15 @@
       "pk":44,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070010",
          "name":"Mint",
-         "description":"100% natural organic essential oil relieves respiratory problems, cleanses and disinfects, stimulates fatigue brain activity and soothes pain. It is suitable for baths and massages. It relieves nausea and has a positive effect on stomach activity. Do not use for homeopathic treatment. Do not use undiluted on the skin, protect eyes and keep out of reach of children.",
-         "price":102,
+         "description_short":"100% natural organic essential oil relieves respiratory problems, cleanses and disinfects, stimulates fatigue brain activity and soothes pain.",
+         "price":10.2,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":5.1,
+         "description_long":"100% natural organic essential oil relieves respiratory problems, cleanses and disinfects, stimulates fatigue brain activity and soothes pain. It is suitable for baths and massages. It relieves nausea and has a positive effect on stomach activity. Do not use for homeopathic treatment. Do not use undiluted on the skin, protect eyes and keep out of reach of children.",
          "image":"mint.png"
       }
    },
@@ -664,14 +706,15 @@
       "pk":45,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070011",
          "name":"Pine",
-         "description":"100% natural organic essential oil with a fresh scent promotes concentration, is suitable for relaxation, relieves respiratory problems. The fresh, soothing scent of the forest with excellent disinfecting effects perfects the home and sauna. It cleanses the air and mind, it is great for concentration and relaxation. In the form of inhalation, it promotes proper breathing, significantly relieves colds and colds. In baths and saunas, it has a beneficial effect on stiff muscles after exercise. Protect eyes and keep out of reach of children.",
-         "price":110,
+         "description_short":"100% natural organic essential oil with a fresh scent promotes concentration, is suitable for relaxation, relieves respiratory problems.",
+         "price":11,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":4.8,
+         "description_long":"100% natural organic essential oil with a fresh scent promotes concentration, is suitable for relaxation, relieves respiratory problems. The fresh, soothing scent of the forest with excellent disinfecting effects perfects the home and sauna. It cleanses the air and mind, it is great for concentration and relaxation. In the form of inhalation, it promotes proper breathing, significantly relieves colds and colds. In baths and saunas, it has a beneficial effect on stiff muscles after exercise. Protect eyes and keep out of reach of children.",
          "image":"pine.png"
       }
    },
@@ -679,14 +722,15 @@
       "pk":46,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070012",
          "name":"Orange",
-         "description":"100% natural organic essential oil has an antidepressant effect, refreshes and relaxes. It has an antidepressant effect, refreshes and relaxes, and is suitable for fever, anorexia, and bath and massage oils. Protect eyes and keep out of reach of children.",
-         "price":87,
+         "description_short":"100% natural organic essential oil has an antidepressant effect, refreshes and relaxes.",
+         "price":8.7,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":5.0,
+         "description_long":"100% natural organic essential oil has an antidepressant effect, refreshes and relaxes. It has an antidepressant effect, refreshes and relaxes, and is suitable for fever, anorexia, and bath and massage oils. Protect eyes and keep out of reach of children.",
          "image":"orange.png"
       }
    },
@@ -694,14 +738,15 @@
       "pk":47,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO001505070013",
          "name":"Wild Rose",
-         "description":"100% natural rare essential oil from a charming wild rose supporting self-confidence and femininity. The queen among essential oils with an intoxicating sweet floral scent is a symbol of romance and femininity. It helps to overcome difficult moments in a woman's life. It supports motherhood, is a support in similar menopause and comforts in traumatic experiences. It awakens self-confidence, love and comforts in grief. Protect eyes and keep out of reach of children.",
-         "price":105,
+         "description_short":"100% natural rare essential oil from a charming wild rose supporting self-confidence and femininity.",
+         "price":10.5,
          "amount":15,
          "category":5,
-         "brand":"Botanicas",
+         "brand":7,
          "rating":5.3,
+         "description_long":"100% natural rare essential oil from a charming wild rose supporting self-confidence and femininity. The queen among essential oils with an intoxicating sweet floral scent is a symbol of romance and femininity. It helps to overcome difficult moments in a woman's life. It supports motherhood, is a support in similar menopause and comforts in traumatic experiences. It awakens self-confidence, love and comforts in grief. Protect eyes and keep out of reach of children.",
          "image":"wild-rose.png"
       }
    },
@@ -709,14 +754,15 @@
       "pk":48,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO009005080001",
          "name":"Rose",
-         "description":"The pinnacle of floral luxury, rose natural fragrant oil, is a blend for the true rose lover, depicting the Bulgarian rose garden in full bloom. It combines top notes of green leaves, lemon and spices with seductive accents of violet and carnation strengthening the natural essence of rose and basic tones of honey and vanilla. This oil consists of essential oils and extracts of rose oil, rock rose oil, geranium, ylang ylang, palmarosa and vanilla extract.",
-         "price":475,
+         "description_short":" The pinnacle of floral luxury, rose natural fragrant oil, is a blend for the true rose lover, depicting the Bulgarian rose garden in full bloom. ",
+         "price":47,
          "amount":90,
          "category":5,
-         "brand":"Natural Cosmetics",
+         "brand":8,
          "rating":4.9,
+         "description_long": "It is considered a healthy vegetable fat that can be used for cooking, baking or can be applied directly to the skin and hair. The oil is rich in medium-term fatty acids, which is a type of saturated fat. The body easily converts them.",
          "image":"rose-natural-cosmetics.png"
       }
    },
@@ -724,14 +770,15 @@
       "pk":49,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO009005080002",
          "name":"Cinnamon",
-         "description":"Cinnamon essential oil is antibacterial, antifungal, strongly hydrates (warms) and stimulates the nervous system. It also has analgesic, anti-inflammatory, antiseptic and stimulating effects. Undiluted can cause severe skin irritation, it is unsuitable for higher blood pressure and pregnancy. Care must be taken with external application - allergens and etches - use highly diluted. The essential oil is obtained by distilling the leaves of a tree up to 10 meters high, the homeland of which is now Sri Lanka. India, China, Africa. Cinnamon leaf essential oil is finer than bark oil.",
-         "price":780,
+         "description_short":"Cinnamon essential oil is antibacterial, antifungal, strongly hydrates (warms) and stimulates the nervous system.",
+         "price":78,
          "amount":90,
          "category":5,
-         "brand":"Natural Cosmetics",
+         "brand":8,
          "rating":5.2,
+         "description_long":"Cinnamon essential oil is antibacterial, antifungal, strongly hydrates (warms) and stimulates the nervous system. It also has analgesic, anti-inflammatory, antiseptic and stimulating effects. Undiluted can cause severe skin irritation, it is unsuitable for higher blood pressure and pregnancy. Care must be taken with external application - allergens and etches - use highly diluted. The essential oil is obtained by distilling the leaves of a tree up to 10 meters high, the homeland of which is now Sri Lanka. India, China, Africa. Cinnamon leaf essential oil is finer than bark oil.",
          "image":"cinnamon.png"
       }
    },
@@ -739,14 +786,15 @@
       "pk":50,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO009005080003",
          "name":"Ylang-ylang",
-         "description":"Ylang Ylang essential oil is obtained by distilling the beautiful yellow flowers of the tall tree Cananga odorata, growing in Madagascar, the Philippines and Sumatra. The oil called Kananga is obtained from other parts of the plant, so it has the same properties as Ylang Ylang. The quality of this oil depends very much on the time of flower collection, the best is the morning harvest and this is where our extra oil comes from. It is antidepressant and aphrodisiac, reduces nervous tension and blood pressure. It takes care of all skin types, especially dry and oily skin. Ylang Ylang is suitable for treating acne.Ylnag Ylang essential oil goes through several stages of steam distillation. From the first two-hour distillation phase, the essential oil Ylang Ylang extra is obtained, which has a strong exotic floral aroma similar to jasmine. This oil is collected first and because it has a high density, it is most suitable for use in perfumery. Warning: Do not use Ylang ylang in higher doses, it has a strong sweet smell and too much could cause vomiting and headaches.",
-         "price":989,
+         "description_short":"Ylang Ylang essential oil is obtained by distilling the beautiful yellow flowers of the tall tree Cananga odorata, growing in Madagascar, the Philippines and Sumatra.",
+         "price":98,
          "amount":90,
          "category":5,
-         "brand":"Natural Cosmetics",
+         "brand":8,
          "rating":5.7,
+         "description_long":"The oil called Kananga is obtained from other parts of the plant, so it has the same properties as Ylang Ylang. The quality of this oil depends very much on the time of flower collection, the best is the morning harvest and this is where our extra oil comes from. It is antidepressant and aphrodisiac, reduces nervous tension and blood pressure. It takes care of all skin types, especially dry and oily skin. Ylang Ylang is suitable for treating acne. Ylnag Ylang essential oil goes through several stages of steam distillation. From the first two-hour distillation phase, the essential oil Ylang Ylang extra is obtained, which has a strong exotic floral aroma similar to jasmine. This oil is collected first and because it has a high density, it is most suitable for use in perfumery. Warning: Do not use Ylang ylang in higher doses, it has a strong sweet smell and too much could cause vomiting and headaches.",
          "image":"ylang-ylang.png"
       }
    },
@@ -754,14 +802,15 @@
       "pk":51,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO009005080004",
          "name":"Ginger",
-         "description":"Ginger is antiseptic, helps with sore throat, colds, runny nose, loss of appetite and rheumatism, promotes wound healing. A yellower, denser and very aromatic essential oil is obtained by distilling the rhizome of a 60-90 cm tall tropical herb, the homeland of which is India. Ginger is one of the first spices to be brought from Asia to Europe. Today, in addition to India, it is also grown in Malaysia, Japan, China, Africa and Florida. When applied to the skin, it is important to always dilute the essential oil with a suitable cold-pressed vegetable oil. Warning: Undiluted severely irritating to the skin.",
-         "price":859,
+         "description_short":"Ginger is antiseptic, helps with sore throat, colds, runny nose, loss of appetite and rheumatism, promotes wound healing.",
+         "price":85,
          "amount":90,
          "category":5,
-         "brand":"Natural Cosmetics",
+         "brand":8,
          "rating":4.8,
+         "description_long":"A yellower, denser and very aromatic essential oil is obtained by distilling the rhizome of a 60-90 cm tall tropical herb, the homeland of which is India. Ginger is one of the first spices to be brought from Asia to Europe. Today, in addition to India, it is also grown in Malaysia, Japan, China, Africa and Florida. When applied to the skin, it is important to always dilute the essential oil with a suitable cold-pressed vegetable oil. Warning: Undiluted severely irritating to the skin.",
          "image":"ginger.png"
       }
    },
@@ -769,14 +818,15 @@
       "pk":52,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO009005080005",
          "name":"Cocoa",
-         "description":"The cocoa to vanilla-chocolate scent saturates the air with its pleasant aroma. It adds a touch of chocolate to massage and bath products. It is mainly used to calm nerves and relax. For use on the skin, it is necessary to dilute the cocoa essential oil with a carrier oil (vegetable oil or a mixture of oils) in a ratio of 3-12 drops of essence per 90 ml of oil.",
-         "price":790,
+         "description_short":" The cocoa to vanilla-chocolate scent saturates the air with its pleasant aroma.",
+         "price":79,
          "amount":90,
          "category":5,
-         "brand":"Natural Cosmetics",
+         "brand":8,
          "rating":4.9,
+         "description_long":"It adds a touch of chocolate to massage and bath products. It is mainly used to calm nerves and relax. For use on the skin, it is necessary to dilute the cocoa essential oil with a carrier oil (vegetable oil or a mixture of oils) in a ratio of 3-12 drops of essence per 90 ml of oil.,",
          "image":"cocoa-natural-cosmetics.png"
       }
    },
@@ -784,14 +834,15 @@
       "pk":53,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"EO009005080006",
          "name":"Salge",
-         "description":"Sage calms the nervous system, suitable for throat infections, relieves sweating, helps with fungal diseases, relieves menstrual pain and repels insects. Suitable for inflammatory and watery skin. In cosmetic products, it cools inflammatory skin, removes water from the subcutaneous tissue. The essential oil is obtained by distillation of the whole herb, which occurs mainly in Spain, southern France, the USA, Russia and the former Yugoslavia. Not suitable for pregnant women. We recommend that you avoid this oil during pregnancy and breastfeeding.",
-         "price":770,
+         "description_short":"Sage calms the nervous system, suitable for throat infections, relieves sweating, helps with fungal diseases, relieves menstrual pain and repels insects. ",
+         "price":77,
          "amount":90,
          "category":5,
-         "brand":"Natural Cosmetics",
+         "brand":8,
          "rating":4.8,
+         "description_long":"Suitable for inflammatory and watery skin. In cosmetic products, it cools inflammatory skin, removes water from the subcutaneous tissue. The essential oil is obtained by distillation of the whole herb, which occurs mainly in Spain, southern France, the USA, Russia and the former Yugoslavia. Not suitable for pregnant women. We recommend that you avoid this oil during pregnancy and breastfeeding.",
          "image":"salge.png"
       }
    },
@@ -799,14 +850,15 @@
       "pk":54,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"NO025002030008",
          "name":"Coconut Oil",
-         "description":"Coconut oil is considered a healthy vegetable fat that can be used for cooking, baking or can be applied directly to the skin and hair. The oil is rich in medium-term fatty acids, which is a type of saturated fat. The body easily converts them into energy and does not store them in fats. Lauric acid dominates the fatty acids in coconut. Our coconut oil is RAW, BIO, 100% natural and cold pressed. Use: For cooking: The pour point for virgin coconut oil is 177 °. By tolerating high temperatures, the oil becomes a versatile helper in the kitchen. You can cook, bake and even fry with it. Replace butter and other oils with coconut oil in a ratio of 1: 1. For hair nutrition: Create your own coconut hair mask by dissolving a teaspoon of oil in your palms. Gently massage the oil with your fingers along the entire length of the hair, especially to the ends. Wrap your hair in a shower cap and leave on for 30 minutes. Then wash your hair thoroughly with shampoo.For skin hydration: Coconut oil is also an excellent moisturizer. It is easy to use, just rub it between your fingers and rub a small amount into the skin of the body or face. It can also be used as a 100% natural make-up remover - it can also remove waterproof mascara.",
-         "price":250,
+         "description_short":"Coconut oil is considered a healthy vegetable fat that can be used for cooking, baking or can be applied directly to the skin and hair. ",
+         "price":25,
          "amount":250,
          "category":2,
-         "brand":"Oils Factory",
+         "brand":3,
          "rating":5.1,
+         "description_long":"The oil is rich in medium-term fatty acids, which is a type of saturated fat. The body easily converts them into energy and does not store them in fats. Lauric acid dominates the fatty acids in coconut. Our coconut oil is RAW, BIO, 100% natural and cold pressed. Use: For cooking: The pour point for virgin coconut oil is 177 °. By tolerating high temperatures, the oil becomes a versatile helper in the kitchen. You can cook, bake and even fry with it. Replace butter and other oils with coconut oil in a ratio of 1: 1. For hair nutrition: Create your own coconut hair mask by dissolving a teaspoon of oil in your palms. Gently massage the oil with your fingers along the entire length of the hair, especially to the ends. Wrap your hair in a shower cap and leave on for 30 minutes. Then wash your hair thoroughly with shampoo. For skin hydration: Coconut oil is also an excellent moisturizer. It is easy to use, just rub it between your fingers and rub a small amount into the skin of the body or face. It can also be used as a 100% natural make-up remover - it can also remove waterproof mascara.",
          "image":"coconut-oil-oils-factory.png"
       }
    },
@@ -814,15 +866,16 @@
       "pk":55,
       "model":"products.product",
       "fields":{
-         "sku":"pp5002440521",
+         "sku":"NO025002030009",
          "name":"Coconut Oil Neutral",
-         "description":"Neutral Coconut oil has no taste and is therefore suitable for wide variety of cooking. It is considered a healthy vegetable fat that can be used for cooking, baking or can be applied directly to the skin and hair. The oil is rich in medium-term fatty acids, which is a type of saturated fat. The body easily converts them into energy and does not store them in fats. Lauric acid dominates the fatty acids in coconut. Our coconut oil is RAW, BIO, 100% natural and cold pressed. Use: For cooking: The pour point for virgin coconut oil is 177 °. By tolerating high temperatures, the oil becomes a versatile helper in the kitchen. You can cook, bake and even fry with it. Replace butter and other oils with coconut oil in a ratio of 1: 1. For hair nutrition: Create your own coconut hair mask by dissolving a teaspoon of oil in your palms. Gently massage the oil with your fingers along the entire length of the hair, especially to the ends. Wrap your hair in a shower cap and leave on for 30 minutes. Then wash your hair thoroughly with shampoo. For skin hydration: Coconut oil is also an excellent moisturizer. It is easy to use, just rub it between your fingers and rub a small amount into the skin of the body or face. It can also be used as a 100% natural make-up remover - it can also remove waterproof mascara.",
-         "price":260,
+         "description_short":"Neutral Coconut oil has no taste and is therefore suitable for wide variety of cooking as well as cosmetics.",
+         "price":25,
          "amount":250,
          "category":2,
-         "brand":"Oils Factory",
-         "rating":5.3,
-         "image":"coconut-oil-neutral-oils-factory.png"
+         "brand":3,
+         "rating":5.1,
+         "description_long":"It is considered a healthy vegetable fat that can be used for cooking, baking or can be applied directly to the skin and hair. The oil is rich in medium-term fatty acids, which is a type of saturated fat. The body easily converts them into energy and does not store them in fats. Lauric acid dominates the fatty acids in coconut. Our coconut oil is RAW, BIO, 100% natural and cold pressed. Use: For cooking: The pour point for virgin coconut oil is 177 °. By tolerating high temperatures, the oil becomes a versatile helper in the kitchen. You can cook, bake and even fry with it. Replace butter and other oils with coconut oil in a ratio of 1: 1. For hair nutrition: Create your own coconut hair mask by dissolving a teaspoon of oil in your palms. Gently massage the oil with your fingers along the entire length of the hair, especially to the ends. Wrap your hair in a shower cap and leave on for 30 minutes. Then wash your hair thoroughly with shampoo. For skin hydration: Coconut oil is also an excellent moisturizer. It is easy to use, just rub it between your fingers and rub a small amount into the skin of the body or face. It can also be used as a 100% natural make-up remover - it can also remove waterproof mascara.",
+         "image":"coconut-oil-oils-factory.png"
       }
    }
 ]

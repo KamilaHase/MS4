@@ -1,0 +1,66 @@
+[
+    {
+        "pk": 1,
+        "model": "products.brand",
+        "fields": {
+            "brand_name": "oooily",
+            "brand_frname": "Oooily"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.brand",
+        "fields": {
+            "brand_name": "renovate",
+            "brand_frname": "Renovate"
+        }
+    },
+        {
+        "pk": 3,
+        "model": "products.brand",
+        "fields": {
+            "brand_name": "oils_factory",
+            "brand_frname": "Oils Factory"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.brand",
+        "fields": {
+            "brand_name": "organic_farming",
+            "brand_frname": "Organic Farming"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.brand",
+        "fields": {
+            "brand_name": "olivius",
+            "brand_frname": "Olivius"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.brand",
+        "fields": {
+            "brand_name": "all_natural",
+            "brand_frname": "All Natural"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.brand",
+        "fields": {
+            "brand_name": "botanicas",
+            "brand_frname": "Botanicas"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.brand",
+        "fields": {
+            "brand_name": "natural_cosmetics",
+            "brand_frname": "Natural Cosmetics"
+        }
+    }
+]

@@ -5,11 +5,10 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from django.db.models import Avg
 
-from .models import Product, Category
+from .models import Product, Category, Brand
 from reviews.models import ProductReview
 from reviews.forms import ReviewForm
 
-# Create your views here.
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -19,6 +18,7 @@ def all_products(request):
     categories = None
     sort = None
     direction = None
+    brands = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -29,6 +29,8 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
+            if sortkey == 'brand':
+                sortkey = 'brand__brand_name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -39,6 +41,11 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+        
+        if 'brand' in request.GET:
+            brands = request.GET['brand'].split(',')
+            products = products.filter(brand__brand_name__in=brands)
+            brands = Brands.objects.filter(brand_name__in=brands)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -55,6 +62,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'current_brands': brands,
         'current_sorting': current_sorting,
     }
 
