@@ -81,6 +81,10 @@ body {
     position: absolute;
 }
 
+.text-golden {
+    color: #7b621a!important;
+}
+
 .bg-banner{
     background-color: #AB9C6E!important;
 }
