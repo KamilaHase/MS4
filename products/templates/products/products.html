@@ -16,7 +16,7 @@
             <div class="col text-center mt-5">
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <h1><span class="p-2 mt-2 badge badge-white text-black text-lg rounded-2 border border-dark">{{ c.friendly_name }}</span></h1>
+                        <h3><span class="p-2 mt-2 badge text-white text-lg rounded-2 border border-grey bg-banner uppercase-font">{{ c.friendly_name }}</span></h3>
                     </a>
                 {% endfor %}
                 <hr class="w-50 mb-1">
@@ -27,7 +27,7 @@
                 <div class="row mt-1 mb-2">
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
-                            <select id="sort-selector" class="custom-select custom-select-sm rounded-2 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <select id="sort-selector" class="custom-select custom-select-sm rounded-2 border border-{% if current_sorting != 'None_None' %}light{% else %}border-grey{% endif %}">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
                                 <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
@@ -46,7 +46,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                                <span class="small"><a href="{% url 'products' %}" class="text-golden">Products Home</a> | </span>
                             {% endif %}
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
@@ -75,7 +75,7 @@
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                                    <i class="fas fa-spray-can mr-1"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
                                             {% endif %}
@@ -125,9 +125,9 @@
             </div>
         </div>
     </div>
-    <div class="btt-button shadow-sm rounded-2 border border-black">
+    <div class="btt-button shadow-sm border border-grey rounded-2">
         <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+            <i class="fas fa-arrow-up text-golden mx-auto my-auto"></i>
         </a>	
     </div>
 {% endblock %}
