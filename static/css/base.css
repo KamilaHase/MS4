@@ -93,6 +93,7 @@ body {
     background: black;
     color: white;
     min-width: 260px;
+    border-radius: 25%;
 }
 
 .btn-black {
@@ -113,12 +114,19 @@ body {
     color: white !important;
 }
 
+.btn-submit {
+    background-color: #AB9C6E!important;
+    color: #555;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
-.btn-black:focus {
+.btn-black:focus,
+.btn-submit:hover,
+.btn-submit:focus {
     background: #222;
     color: white;
 }
@@ -360,10 +368,9 @@ input[name='q']::placeholder {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
+    border-color: #e4e0e0;
     border-radius: 0;
 }
-
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
