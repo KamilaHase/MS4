@@ -3,7 +3,7 @@ from .models import Contact
 
 
 class ContactAdmin(admin.ModelAdmin):
-    """ Renders Models to the Admin Backend View"""
+    """ Renders Models to the Admin View"""
 
     list_display = (
         'date_sent',
@@ -18,6 +18,5 @@ class ContactAdmin(admin.ModelAdmin):
     )
 
     ordering = ('date_sent',)
-
 
 admin.site.register(Contact, ContactAdmin)

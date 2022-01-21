@@ -22,10 +22,10 @@ def contact(request):
 
             sender_email = instance.email
             subject = render_to_string(
-                'contact/confirmation_emails/subject_contact_email.txt',
+                'contact/contact_emails/contact_email_subject.txt',
                 {'instance': instance})
             body = render_to_string(
-                'contact/confirmation_emails/body_contact_email.txt',
+                'contact/contact_emails/contact_email_body.txt',
                 {'instance': instance,
                  'contact_email': settings.DEFAULT_FROM_EMAIL})
             send_mail(

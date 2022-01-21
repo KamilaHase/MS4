@@ -6,4 +6,4 @@ https://github.com/PiotrWojniak/MS4
 https://github.com/AmyOShea/MS4-ARTstop/blob/main/contact/views.py
 
 
-Trying to add some test text into readme.
+- quote about oils adapted from: https://www.goodreads.com/quotes/tag/essential-oils

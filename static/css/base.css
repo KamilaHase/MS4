@@ -143,6 +143,12 @@ body {
     color: #7b621a !important;
 }
 
+.text-cursive {
+        font-family: 'Style Script', cursive;
+        color: #7b621a!important;
+        letter-spacing: .3rem;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
@@ -212,6 +218,7 @@ input[name='q']::placeholder {
 .toast-capper {
     height: 2px;
 }
+
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {

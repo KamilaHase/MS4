@@ -71,23 +71,25 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
+                                            
                                             <p class="lead mb-0 text-left font-weight-bold">{{ product.price }} €</p>
+                                            <div class="row">
                                             {% if product.category %}
-                                            <p class="small mt-1 mb-0">
+                                            <p class="small m-2">
                                                 <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                                    <i class="fas fa-spray-can mr-1"></i>{{ product.category.friendly_name }}
+                                                    <i class="fas fa-spray-can ms-2 me-1"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
                                             {% endif %}
                                             {% if product.brand %}
-                                            <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'products' %}?brand={{ product.brand.brand_name }}">
-                                                    <i class="fas fa-tag mr-1"></i>{{ product.brand.brand_frname }}
+                                            <p class="small m-2">
+                                                <a class="text-muted " href="{% url 'products' %}?brand={{ product.brand.brand_name }}">
+                                                    <i class="fas fa-tag ms-3 me-1"></i>{{ product.brand.brand_frname }}
                                                 </a>
                                             </p>
                                             {% endif %}
-
-                                            <small class="alert alert-warning m-0 p-1" role="alert">{{ product.amount }} ml</small>
+                                        </div>
+                                            <small class="alert alert-light text-white bg-grey m-0 p-1" role="alert">{{ product.amount }} ml</small>
 
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
