@@ -184,6 +184,10 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.container-contact-form {
+    margin-top: 14rem !important;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -263,6 +267,11 @@ input[name='q']::placeholder {
 
 .info-img-cont {
     margin-right: 6px !important;
+}
+
+.img-contact {
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 /* -------------------------------- Media Queries */
 

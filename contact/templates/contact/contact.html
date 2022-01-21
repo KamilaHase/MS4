@@ -1,25 +1,85 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block extra_title %}Contact Us{% endblock %}
 
-{% block content %}
-
-    <div class="row justify-content-center main-container">
-        <div class="col-12 col-md-10 col-xl-8 col-xxl-6 mx-auto">
-            <h1 class="page-title">Contact Us</h1>
-            <hr class="page-title-hr">
-            <div class="row">
-                <div class="col-12 col-lg-5 mt-3">
-                    <p class="mb-4">Whether you're an artist wanting to join our community or a customer with questions, fill in the form below to contact us!</p>
-                    <form action="{% url 'contact' %}" method="POST">
-                        {% csrf_token %}
-                        {{ form|crispy }}
-                        <button id="submit-button" class="btn">Send</button>
-                    </form>
-                </div>
-            </div>
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
         </div>
     </div>
+{% endblock %}
+
+{% block content %}
+    
+    <!-- Heading-->
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-5">
+            <h2 class="logo-font">Contact Us</h2>
+            <hr class="w-100 mb-1">
+        </div>
+    </div>
+</div>
+  <!-- Contact Form-->
+  <div class="container">
+      <div class="row">
+        
+          <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                    <p>Do you have any questions? We will happy to hear from you. Please fill in the contact details
+                        carefully.
+                    </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="row">
+                  <div class="card-body">
+                    <div class="d-none d-sm-block">
+                        <img src="{{ MEDIA_URL }}anna_smith.jpg" class="rounded-circle img-contact" height="100" width="100" alt="Anna Smith">
+                     </div>
+                      <h5 class="card-title mb-0">Anna Smith</h5>
+                      <p class="card-text">anna.smith@goodoils.se<small class="text-muted">
+                          <br>
+                        +46 792 54 87 22</small></p>
+                    <h6 class="card-title mt-0 mb-0">Virgin Oils</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-none d-sm-block">
+                        <img src="{{ MEDIA_URL }}nina_ali.jpg" class="rounded-circle img-contact" height="100" width="100" alt="Nina Ali">
+                     </div>
+                      <h5 class="card-title mb-0">Nina Ali</h5>
+                      <p class="card-text">nina.ali@goodoils.se<small class="text-muted">
+                          <br>
+                          +46 797 55 61 24</small></p>
+                    <h6 class="card-title mt-0 mb-0">Cosmetic Oils</h6>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          <div class="col-md-6">
+              <form id="contact-form" method="POST">
+                  {% csrf_token %}
+                  <fieldset class="form-group mt-3">
+                    <h3 class="">Get in touch</h3>
+                      <p>Do you have any questions? We will happy to hear from you. Please fill in the contact details
+                          carefully.
+                      </p>
+                      {{ form|crispy }}
+                  </fieldset>
+                  <div class="form-actions form-group mt-4 text-end">
+                      <button class="btn action-btn btn-lg" type="submit">Send</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  
+ 
+
 
 {% endblock %}
