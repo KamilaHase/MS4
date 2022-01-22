@@ -63,11 +63,33 @@ body {
     -o-object-fit: contain;
        object-fit: contain;
     min-width: 100vw;
+    min-height: 100vh;
 }
 
 .card-carousel {
     background-color: rgba(0, 0, 0, 0.678);
 }
+
+#delivery-banner {
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+}
+
+/* --------------------- Media Query */
+/* Slightly larger container on xl screens */
+@media (max-width: 576px) {
+#delivery-banner {
+    position: static;
+    width: 100vw; 
+  }
+
+.card-carousel {
+    left: -5rem;
+    width: 15rem;
+}
+}
+
 
 .img-virgin-oils {
     -o-object-fit: cover !important;
@@ -76,7 +98,7 @@ body {
 
 .text-carousel {
     z-index: 10;
-    margin-top: -450px;
+    margin-top: -34rem;
     margin-left: 150px;
     position: absolute;
 }
@@ -92,8 +114,6 @@ body {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 260px;
-    border-radius: 25%;
 }
 
 .btn-black {

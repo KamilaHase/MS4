@@ -78,6 +78,7 @@ def product_detail(request, product_id):
     avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
     product.save()
     template = 'products/product_detail.html'
+
     context = {
         'product': product,
         'reviews': reviews,

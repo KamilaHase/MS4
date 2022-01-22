@@ -7,9 +7,9 @@
    </div>
 </div>
 {% endblock %}
+
 {% block content %}
-<div class="container-fluid carousel-main-page">
-   <div class="row">
+
       <div id="mainPageCarousel" class="carousel slide" data-ride="carousel">
          <div class="carousel-inner">
             <div class="carousel-item active">
@@ -30,39 +30,37 @@
          <span class="carousel-control-next-icon" aria-hidden="true"></span>
          <span class="sr-only">Next</span>
          </a>
-      </div>
-   </div>
-</div>
-<div class="container text-carousel">
-   <div class="row">
-      <div class="card card-carousel col-7 col-md-6 my-auto">
-         <h1 class="logo-font text-white m-2">
-            The best oils for your healthy body.
-         </h1>
-         <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-            <h4>
-               <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Start Shopping</a>
-            </h4>
+         <div>
+            <div class="card card-carousel text-carousel">
+               <h1 class="logo-font text-white m-2">
+                  The best oils for your healthy body.
+               </h1>
+               <div class="d-grid gap-2 d-md-flex justify-content-center ms-2">
+                  <h4>
+                     <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-2 text-uppercase py-3">Start Shopping</a>
+                  </h4>
+               </div>
+            </div>
          </div>
       </div>
-   </div>
-</div>
+   
+
 <!-- -->
 <div class="container">
    <div class="row">
-      <div class="col-12">
-         <div class="col mb-3">
+      <div class="col-12 mb-3">
+         
             
-            <h4 class="text-cursive text-center"> “It doesn't get much greener than with good quality oils: when used correctly,
+            <h4 class="text-cursive text-center"> <br>“It doesn't get much greener than with good quality oils: when used correctly,
                they are among Mother Nature's most potent remedies.”</h4>
-               <p class="text-cursive text-center">― Amy Leigh Mercree, Essential Oils Handbook: Recipes for Natural Living</hp>
-         </div>
+               <p class="text-cursive text-center">― Amy Leigh Mercree, Essential Oils Handbook: Recipes for Natural Living</p>
+         
          <hr>
       </div>
    </div>
    <br>
   <div class="row">
-   <div class="col-md-6">
+   <div class="col-md-6 col-sm-12">
       <h3 class="mb-3">About Our <strong>Virgin Oils</strong></h3>
       <p>Virgin oils are oils obtained by slow cold pressing (up to 40 ° C) - from seeds, kernels, seed sprouts, or plant fruits, including herbs.. 
         The highest quality is those that are pressed from quality crops in a protective atmosphere and in the dark so as to maintain the highest possible efficiency. 
