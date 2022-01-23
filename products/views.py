@@ -9,6 +9,8 @@ from .models import Product, Category, Brand
 from reviews.models import ProductReview
 from reviews.forms import ReviewForm
 
+from .forms import ProductForm
+
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """

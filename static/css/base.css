@@ -113,30 +113,45 @@ body {
 
 .shop-now-button {
     background: black;
-    color: white;
+    color: #fff;
 }
 
 .btn-black {
     background: black;
-    color: white;
+    color: #fff;
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    background: #fff;
+    color: black !important; 
     border: 1px solid black;
 }
+
+
+
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
     background: black;
-    color: white !important;
+    color: #fff !important;
 }
 
 .btn-submit {
     background-color: #AB9C6E!important;
-    color: #555;
+    color: #31302e;
+}
+
+.btn-submit-brown {
+    background: #7b621a;
+    color: #fff !important; 
+}
+
+.btn-submit-brown:hover,
+.btn-submit-brown:active,
+.btn-submit-brown:focus {
+    background: #6c7c12;
+    color: #fff;
 }
 
 .shop-now-button:hover,
@@ -148,7 +163,7 @@ body {
 .btn-submit:hover,
 .btn-submit:focus {
     background: #222;
-    color: white;
+    color: #fff;
 }
 
 .text-black {
@@ -160,7 +175,7 @@ body {
 }
 
 .text-grey {
-    color: #7b621a !important;
+    color: #31302e !important;
 }
 
 .text-cursive {
@@ -185,13 +200,17 @@ body {
     background: #000 !important;
 }
 
+.bg-brown {
+    background: #7b621a !important;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #fff;
 	z-index: -1;
 }
 
@@ -252,9 +271,9 @@ input[name='q']::placeholder {
     right: 36px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
+/* Convenience classes */
 .arrow-primary {
-    border-bottom-color: #007bff !important;
+    border-bottom-color: #407cbb !important;
 }
 
 .arrow-secondary {
@@ -262,19 +281,19 @@ input[name='q']::placeholder {
 }
 
 .arrow-success {
-    border-bottom-color: #28a745 !important;
+    border-bottom-color: #3a9e51 !important;
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 !important;
+    border-bottom-color: #a74953 !important;
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 !important;
+    border-bottom-color: #c4a548 !important;
 }
 
 .arrow-info {
-    border-bottom-color: #17a2b8 !important;
+    border-bottom-color: #3f919e !important;
 }
 
 .arrow-light {
@@ -325,8 +344,8 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
+    border-color: #b3b1ac;
+    border-radius: .3rem;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -349,12 +368,12 @@ input[name='q']::placeholder {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #7b621a;
+    border-color: #7b621a;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
+    border-radius: .5rem;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -363,8 +382,9 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
+    background-color: #6c7c12;
+    border-color: #6c7c12;
+    border-radius: .5rem;
 }
 
 .allauth-form-inner-content a {
