@@ -40,7 +40,6 @@ class Product(models.Model):
     description_short = models.TextField()
     amount = models.DecimalField(max_digits=8, decimal_places=0, null=True, blank=True)
     price = models.DecimalField(max_digits=8, decimal_places=0)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
     description_long = models.TextField()
     image = models.ImageField(null=True, blank=True)
 
