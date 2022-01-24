@@ -5,14 +5,17 @@ from django.views.decorators.http import require_POST
 from django.contrib import messages
 from bag.contexts import bag_contents
 from django.conf import settings
-import stripe
-import json
 from .models import OrderLineItem, Order
 from products.models import Product
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from .forms import OrderForm
 
+import stripe
+import json
+from django.views.decorators.csrf import ensure_csrf_cookie
+
+@ensure_csrf_cookie
 
 @require_POST
 def cache_checkout_data(request):

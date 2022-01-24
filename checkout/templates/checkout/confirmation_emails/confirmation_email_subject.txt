@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Good Oils Confirmation for Order No. {{ order.order_number }}
