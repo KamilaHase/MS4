@@ -76,6 +76,10 @@ body {
     width: 100%; 
 }
 
+.display-sm-block {
+    display: none;
+}
+
 /* --------------------- Media Query */
 /* Slightly larger container on xl screens */
 @media (max-width: 576px) {
@@ -88,8 +92,15 @@ body {
     left: -5rem;
     width: 15rem;
 }
+
+.display-sm-none {
+   display: none; 
 }
 
+.display-sm-block {
+    display: block;
+}
+}
 
 .img-virgin-oils {
     -o-object-fit: cover !important;
