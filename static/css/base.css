@@ -81,7 +81,7 @@ body {
 }
 
 /* --------------------- Media Query */
-/* Slightly larger container on xl screens */
+
 @media (max-width: 576px) {
 #delivery-banner {
     position: static;
@@ -252,6 +252,8 @@ input[name='q']::placeholder {
     margin-top: 14rem !important;
 }
 
+
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -320,6 +322,11 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+.bag-image-width {
+    width: 40%;
+}
+
 
 /* --------- Product Details */
 
