@@ -13,9 +13,6 @@ from .forms import OrderForm
 
 import stripe
 import json
-from django.views.decorators.csrf import ensure_csrf_cookie
-
-@ensure_csrf_cookie
 
 @require_POST
 def cache_checkout_data(request):

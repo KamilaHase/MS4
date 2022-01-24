@@ -86,6 +86,7 @@
                                                 </a>
                                             </p>
                                             {% endif %}
+
                                         </div>
                                             <small class="alert alert-light text-white bg-grey m-0 p-1" role="alert">{{ product.amount }} ml</small>
 
@@ -162,4 +163,10 @@
             }
         })
     </script>
+
+{% include 'products/includes/quantity_input_script.html' %}
+
 {% endblock %}
+
+
+
