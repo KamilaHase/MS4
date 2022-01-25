@@ -42,6 +42,11 @@ body {
     color: #7b621a!important;
 }
 
+.logo-font-go {
+    font-family: 'Style Script', cursive;
+    color: #c32938 !important;
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -120,6 +125,12 @@ body {
 
 .bg-banner{
     background-color: #AB9C6E!important;
+}
+
+.bg-gom {
+    background-color: #91252f !important;
+    color: #fff;
+    font-family: 'Style Script', cursive;
 }
 
 .shop-now-button {
