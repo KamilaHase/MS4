@@ -47,6 +47,12 @@ body {
     color: #c32938 !important;
 }
 
+.logo-font-go-cursive {
+    font-family: 'Style Script', cursive;
+    color: #c32938 !important;
+    letter-spacing: 0.3rem;
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -472,4 +478,15 @@ input[name='q']::placeholder {
     body {
         height: calc(100vh - 116px);
     }
+}
+
+.card-top-mgo {
+    margin-top: 100px !important;
+}
+
+.card-img-top-mgo {
+   
+    -o-object-fit: contain;
+       object-fit: contain;
+    z-index: -1;
 }

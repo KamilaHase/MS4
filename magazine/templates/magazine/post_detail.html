@@ -2,77 +2,90 @@
 {% load crispy_forms_tags %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-<!--- Post Detail --->
-<div class="container-fluid">
-    <div class="row mt-5 py-2">
-        <div class="col-sm-10 offset-sm-1 col-md-5 offset-md-2">
-            <h3 class="text-dark text-center">{{ post.title}}</h3>
-        </div>
-        <div class="col-sm-10 offset-sm-1 col-md-3 offset-md-0">
-            <small><strong class="text-danger">Posted on: </strong>{{ post.date_added | date:"d M - Y - h:i  "}}</small>
-            {% if request.user.is_superuser %}
-            <span><small class="ml-3">
-            <a href="{% url 'edit_post' post.slug %}">| Edit</a> |
-            <a class="text-danger" href="{% url 'delete_post' post.slug %}">Delete</a></small>
-            </span>
-        {% endif %}
-        </div>
-        
-    </div>
-    <div class="row py-2">
-        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-            <img class="card-img-top img-fluid" src="{{ post.image.url }}" alt="{{ post.name }}">
-        </div>
-        
-    </div>
-    <div class="row py-1">
-        <div class=" col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-           <p class="about-text text-muted">{{ post.intro }}</p> 
-        </div>
-    </div>
-    <div class="row mb-4">
-        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 blog-article text-muted">
-            <p>{{ post.article|linebreaks }}</p>
-            <p><a class ="btn cta-button" href="{% url 'blog' %}">View All Posts</a> </p>
-        </div>
-    </div>
     
+<!-- Heading-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-5">
+            <h2 class="bg-gom pb-4">
+                <br>Good Oils Magazine</h2>
+        </div>
+    </div>
+</div>
+<!--- Post Detail --->
+<div class="container">
+    <div class="card col mb-3">
+        {% if post.image %}
+        <a href="{% url 'post_detail' post.slug %}">
+            <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.name }}">
+        </a>
+        {% else %}
+        <a href="{% url 'post_detail' post.slug %}">
+            <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top" alt="{{ post.name }}">
+        </a>
+        {% endif %}
+
+        <div class="card-body">
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p class="card-text">{{ post.intro }}</p>
+          <p class="card-text">{{ post.article|linebreaks }}</p>
+          <p class="card-text"><small class="text-muted">{{ post.date_added | date:"d M - Y | h:i"}}</small></p>
+        </div>
+      
+    </div>
     
     <!--- Comment Section--->
-    <div class="row pt-4 pb-2">
-        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-            <h3 class="comment-heading">Comments</h3>
+    <div class="row mt-5">
+        <div class="col-sm-10 col-md-8">
+            <h4 class="add-comment">Comments</h4>
         </div>
     </div>
-    <div class="row pt-2">
-        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+    {% if comments %}
+    <div class="row">
+        <div class="col-sm-10 col-md-8">
             {% for comment in post.comments.all %}
             <article class="article-comment">
-                <strong>{{ comment.name }} - {{ comment.date_added | date:"d M - Y - h:i "}}</strong><br>
+                <strong>{{ comment.name }} - {{ comment.date_added | date:"d M - Y - h:i "}}</strong>
                 {{ comment.comment_desc}}
             </article>
             {% endfor %}
         </div>
     </div>
-    <div class="row py-2">
-        <div class="ccol-sm-10 offset-sm-1 col-md-8 offset-md-2">
-            <hr class="line">
+
+    {% else %}
+    <div class="row">
+        <div class="col-sm-10 col-md-8">
+            <article class="article-comment">
+                No comments available yet. Be the first to comment!
+            </article>
         </div>
     </div>
-    <div class="row pb-4">
-        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+    {% endif %}
+
+
+    <div class="row mt-5">
+        <div class="col-sm-10 col-md-8">
             <h4 class="add-comment">Add A Comment</h4>
         </div>
     </div>
     <div class="row pb-4">
-        <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+        <div class="col-sm-10 col-md-8">
             <form method="post" action=".">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <input type="submit" class="cta-white cta-comment" value="Add comment">
+                <input type="submit" class="btn-submit-brown rounded-2" value="Add comment">
             </form>
         </div>
     </div>
 </div>
+
 {% endblock %}
