@@ -47,8 +47,11 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ post.title }}</h5>
                     <p class="card-text">{{ post.intro }}</p>
-                    <a href="{% url 'post_detail'  post.slug %}" class="logo-font-go-cursive button-magazine"><h5>Read article</h5></a>
+                   
                 </div>
+                <div class="card-body">
+                <a href="{% url 'post_detail'  post.slug %}" class="logo-font-go-cursive button-magazine mb-0"><h5>Read article</h5></a>
+            </div>
                 <div class="card-footer">
                     <small class="text-muted">{{ post.date_added | date:"d M - Y | h:i"}}</small>
                 </div>

@@ -7,3 +7,6 @@ https://github.com/AmyOShea/MS4-ARTstop/blob/main/contact/views.py
 
 
 - quote about oils adapted from: https://www.goodreads.com/quotes/tag/essential-oils
+
+- magazine: 
+    - https://aromatics.cz/blog/

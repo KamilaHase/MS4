@@ -22,7 +22,7 @@
                             <div class="card-body">
                             {% if reviews %}
                                 {% for review in reviews %}
-                                    <h5 class="mb-0 fw-bold text-uppercase">{{ review.title }}</h5>
+                                    <h5 class="mb-0">{{ review.title }}</h5>
                                     {% if request.user.is_authenticated %} 
                                         {% if request.user|lower == review.user|lower %}
                                             <span>
