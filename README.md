@@ -10,3 +10,4 @@ https://github.com/AmyOShea/MS4-ARTstop/blob/main/contact/views.py
 
 - magazine: 
     - https://aromatics.cz/blog/
+    https://www.goodie.cz/blog/orechove-kremy-popularni-delikatesa-a-zdroj-energie/

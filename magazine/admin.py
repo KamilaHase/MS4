@@ -14,7 +14,7 @@ class MagazineAdmin(admin.ModelAdmin):
 class PostAdmin(admin.ModelAdmin):
     list_display = (
         'title',
-        'intro',
+        'intro_text',
         'article',
         'image',
         'date_added',
@@ -25,8 +25,8 @@ class PostAdmin(admin.ModelAdmin):
 class CommentAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'comment_desc',
-        'date_added',
+        'comment_text',
+        'date_created',
     )
 
 

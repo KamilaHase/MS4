@@ -11,7 +11,7 @@ from .forms import PostForm
 def magazine(request):
     """ Magazine page to display all available posts """
 
-    posts = Post.objects.all()  # pylint: disable=no-member
+    posts = Post.objects.all()
     post_count = len(posts)
     template = 'magazine/magazine.html'
     context = {
@@ -48,8 +48,8 @@ def post_detail(request, slug):
 def add_post(request):
     """ Add a post to the magazine """
     if not request.user.is_superuser:
-        messages.error(request, 'Only our BUBBLES team has access to this.')
-        return redirect(reverse('homepage'))
+        messages.error(request, 'Only our admin team has access to this.')
+        return redirect(reverse('home'))
 
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
@@ -75,8 +75,8 @@ def add_post(request):
 def edit_post(request, slug):
     """ Edit an existing Post """
     if not request.user.is_superuser:
-        messages.error(request, 'Only our BUBBLES team has access to this.')
-        return redirect(reverse('homepage'))
+        messages.error(request, 'Only our team has access to this.')
+        return redirect(reverse('home'))
 
     post = get_object_or_404(Post, slug=slug)
     if request.method == 'POST':
@@ -106,9 +106,30 @@ def delete_post(request, slug):
     """ Delete a post from the magazine """
     if not request.user.is_superuser:
         messages.error(request, 'Only our admin team has access to this action.')
-        return redirect(reverse('homepage'))
+        return redirect(reverse('home'))
 
     post = get_object_or_404(Post, slug=slug)
     post.delete()
     messages.success(request, 'post deleted!')
     return redirect(reverse('post_detail'))
+
+@login_required
+def view_comment(request, slug):
+    """
+    Renders the comment section. To access this view, a user needs
+    to be logged in.
+    """
+    if not request.user.is_authenticated:
+        messages.error(
+            request, 'You must be logged in to see the the Comment section')
+        return redirect(reverse('login'))
+
+    comments = Comment.objects.all().order_by('date_added')
+    
+    template = 'magazine/post_detail.html'
+
+    context = {
+        'comments': comments,
+    }
+
+    return render(request, template, context)

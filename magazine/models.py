@@ -11,11 +11,10 @@ class Magazine(models.Model):
 
 
 class Post(models.Model):
-    magazine = models.ForeignKey(Magazine, related_name="posts", on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     slug = models.SlugField()
-    author = models.CharField(max_length=255)
-    intro = models.TextField()
+    author = models.CharField(max_length=200)
+    intro_text = models.TextField()
     article = models.TextField()
     image = models.ImageField(null=True, blank=True)
     date_added = models.DateTimeField(auto_now_add=True)
@@ -26,9 +25,9 @@ class Post(models.Model):
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
-    comment_desc = models.TextField()
-    date_added = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=255)
+    comment_text = models.TextField(max_length=200)
+    date_created = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=200)
 
     def __str__(self):
-        return '%s - %s - %s' % (self.post.title, self.name, self.date_added)
+       return '%s - %s - %s' % (self.post.title, self.name, self.date_created)

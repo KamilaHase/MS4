@@ -1,16 +1,6 @@
 from django import forms
-from .models import Comment
 from .models import Post
-
-
-class CommentForm(forms.ModelForm):
-    class Meta:
-        model = Comment
-        fields = ['name', 'comment_desc']
-
-    def __init__(self, *args, **kwargs):
-        super(CommentForm, self).__init__(*args, **kwargs)
-        self.fields['comment_desc'].label = "Comment"
+from .models import Comment
 
 
 class PostForm(forms.ModelForm):
@@ -25,3 +15,13 @@ class PostForm(forms.ModelForm):
 
         for field in self.fields:
             self.fields[field].widget.attrs['class'] = 'add-product-form-field'
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ['name', 'comment_text']
+
+    def __init__(self, *args, **kwargs):
+        super(CommentForm, self).__init__(*args, **kwargs)
+        self.fields['comment_text'].label = "Comment"

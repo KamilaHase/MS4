@@ -72,7 +72,8 @@
                       <div class="dropdown-menu border-0" aria-labelledby="user-options">
                           {% if request.user.is_authenticated %}
                               {% if request.user.is_superuser %}
-                                  <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                  <a href="{% url 'add_product' %}" class="dropdown-item text-info">Admin: Add Product</a>
+                                  <a href="{% url 'add_post' %}" class="dropdown-item text-info">Admin: Add Magazine Post</a>
                               {% endif %}
                               <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -112,8 +113,9 @@
     
     <div id="delivery-banner" class="row">
         <div class="col bg-banner text-white text-center w-100">
-            <h4 class="uppercase-font my-1">Free delivery on orders over {{ free_delivery_threshold }} €!</h4>                
-        </div>            
+            <button type="button" class="close text-white mr-2" aria-label="Close" onclick="hide();"><span aria-hidden="true">&times;</span></button>            
+            <h4 class="uppercase-font my-1">Free delivery on orders over {{ free_delivery_threshold }} €!</h4> 
+        </div>           
     </div>
     
   </header>
@@ -150,6 +152,15 @@
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
+
+    <script type="text/javascript">
+	    function hide() {
+            $("#delivery-banner").css("display","none");
+        }
+	</script>
+        
+    
+
     {% endblock %}
 
     
