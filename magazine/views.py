@@ -133,3 +133,4 @@ def view_comment(request, slug):
     }
 
     return render(request, template, context)
+    

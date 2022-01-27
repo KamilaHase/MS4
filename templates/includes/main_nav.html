@@ -2,10 +2,10 @@
     <ul class="navbar-nav w-auto mx-auto">
         
         <li class="nav-item dropdown">
-            <a class="uppercase-font font-weight-bold nav-link text-black mr-5" href="#" id="virgin-oils-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="uppercase-font font-weight-bold nav-link text-black ms-2 mr-5" href="#" id="virgin-oils-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Virgin Oils
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="virgin-oils-link">
+            <div class="dropdown-menu border-0 bg-light" aria-labelledby="virgin-oils-link">
                 <a href="{% url 'products' %}?category=olive_oils" class="dropdown-item">Olive Oils</a>
                 <a href="{% url 'products' %}?category=nut_oils" class="dropdown-item">Nut Oils</a>
                 <a href="{% url 'products' %}?category=seed_oils" class="dropdown-item">Seed Oils</a>
@@ -17,7 +17,7 @@
             <a class="uppercase-font font-weight-bold nav-link text-black mr-5" href="#" id="cosmetic-oils-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Cosmetic Oils
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="cosmetic-oils-link">
+            <div class="dropdown-menu border-0 bg-light" aria-labelledby="cosmetic-oils-link">
                 <a href="{% url 'products' %}?category=body_oils" class="dropdown-item">Body Oils</a>
                 <a href="{% url 'products' %}?category=essential_oils" class="dropdown-item">Essential Oils</a>
                 <a href="{% url 'products' %}?category=body_oils,essential_oils" class="dropdown-item">All Cosmetic Oils</a>
@@ -28,7 +28,7 @@
             <a class="uppercase-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0 bg-light" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}?sort=brand&direction=asc" class="dropdown-item">By Brand</a>
@@ -43,9 +43,21 @@
         </li>
 
         <li class="nav-item">
-            <a class="logo-font-go font-weight-bold nav-link" href="{% url 'magazine' %}">
+            <a class="logo-font-go font-weight-bold nav-link mr-5" href="{% url 'magazine' %}">
                 <h4>Good Oils Magazine</h4>
             </a>
         </li>
+        {% if request.user.is_superuser %}
+        <li class="nav-item dropdown">
+            <a class="uppercase-font font-weight-bold nav-link text-black" href="#" id="admin-section-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h6 class="btn text-white rounded-2 bg-info uppercase-font">Admin Section</h6>
+            </a>
+            <div class="dropdown-menu dropdown-menu-admin  border-0 bg-light" aria-labelledby="admin-section-link">
+                <a href="{% url 'add_product' %}" class="dropdown-item text-info">Add Product</a>
+                <a href="{% url 'add_post' %}" class="dropdown-item text-info">Add Magazine Post</a>               
+            </div>
+            </a>
+        </li>
+        {% endif %}
     </ul>
 </div>

@@ -32,7 +32,6 @@ footer {
     color: #7b621a !important;    
 }
 
-
 .uppercase-font {
     text-transform: uppercase;
 }
@@ -60,6 +59,15 @@ footer {
 .main-logo-link {
     width: fit-content;
 }
+
+.dropdown-menu {
+    top: 2rem;
+}
+
+.dropdown-menu-admin {
+    top: 3rem !important;
+}
+
 
 .card-img {
     height: 300px;
@@ -108,7 +116,7 @@ footer {
 }
 
 .text-golden {
-    color: #7b621a!important;
+    color: #664d02!important;
 }
 
 .bg-banner{
@@ -137,9 +145,6 @@ footer {
     color: black !important; 
     border: 1px solid black;
 }
-
-
-
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
