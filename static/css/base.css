@@ -123,6 +123,10 @@ footer {
     background-color: #AB9C6E!important;
 }
 
+.nav-admin-section {
+    z-index: -1;
+}
+
 .bg-gom {
     background-color: #91252f !important;
     color: #fff;
