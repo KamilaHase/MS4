@@ -59,6 +59,12 @@ body {
     top: 2rem;
 }
 
+.dropdown-mobile {
+    left: -5rem !important;
+}
+
+
+
 .card-img {
     height: 300px;
     width: 200px;
