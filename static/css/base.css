@@ -17,9 +17,10 @@ body {
     font-family: 'Jost', sans-serif!important;
 }
 
-footer {
-    bottom: 0 !important;
+.bottom-footer {
+    min-height: calc(100vh - 235px);
 }
+
 
 
 /* from Bulma */
@@ -63,11 +64,6 @@ footer {
 .dropdown-menu {
     top: 2rem;
 }
-
-.dropdown-menu-admin {
-    top: 3rem !important;
-}
-
 
 .card-img {
     height: 300px;
@@ -116,7 +112,7 @@ footer {
 }
 
 .text-golden {
-    color: #664d02!important;
+    color: #352904!important;
 }
 
 .bg-banner{
@@ -516,4 +512,20 @@ input[name='q']::placeholder {
         height: 45vw;
         object-fit: cover;
     }
+
+    .bottom-footer {
+        min-height: calc(100vh - 190px);
     }
+    }
+
+@media (min-width: 768px) {
+    .bottom-footer {
+        min-height: calc(100vh - 200px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .bottom-footer {
+        min-height: calc(100vh - 150px);
+    }
+}
