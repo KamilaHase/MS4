@@ -257,6 +257,10 @@ input[name='q']::placeholder {
     margin-top: 14rem !important;
 }
 
+.rating-stars {
+    color: #bd8e00 !important;
+}
+
 
 
 /* ------------------------------- bootstrap toasts */

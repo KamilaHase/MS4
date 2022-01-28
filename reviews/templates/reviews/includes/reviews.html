@@ -1,69 +1,74 @@
 {% block content %}
 {% load static %}
 
-            <div>
-                <h4>Reviews</h4>
-                {% if avg_rating %}
-                    <p class="rating-stars mt-2" data-value="{{ avg_rating }}"></p>
-                {% else %}
-                    <p class="rating-stars mt-2" data-value=0></p>
-                {% endif %}
-            </div>
-            <!-- view Reviews accordion -->
-            <div class="bs-example review-accordion">
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header text-start" id="headingOne">
-                            
-                                <button type="button" class="btn text-brown btn-link" data-toggle="collapse" data-target="#collapseOne">View Reviews</button>									
-                            
-                        </div>
-                        <div id="collapseOne" class="collapse view-review" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                            {% if reviews %}
-                                {% for review in reviews %}
-                                    <h5 class="mb-0">{{ review.title }}</h5>
-                                    {% if request.user.is_authenticated %} 
-                                        {% if request.user|lower == review.user|lower %}
-                                            <span>
-                                            <a href="{% url 'edit_review' review.id %}" data-toggle="tooltip" title="Edit Review" data-placement="top" class="btn">
-                                                <i class="far fa-edit"></i>
-                                            </a>
-                                            </span>
-                                            <span>
-                                            <a href="{% url 'delete_review' review.id %}" data-toggle="tooltip" title="Delete Review" data-placement="top" class="btn">
-                                                <i class="far fa-trash-alt"></i>
-                                            </a>
-                                            </span>
-                                        {% endif %}
-                                    {% endif %} 
-                                    <p class="rating-stars txt-small mt-1" data-value="{{ review.rating }}"></p>
-                                    <span class="text-secondary review-desc">Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}</span>
-                                    <p class="review-desc">"{{ review.description }}"</p>
-                                    <p class="text-right review-desc"> - {{ review.user }} </p>
-                                    
-                                    <hr>
-                                {% endfor %}
-                            {% else %}
-                                <p class="review-desc">No reviews avalibale for this product</p>
-                            {% endif %}   
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <a href="{% url 'add_review' product.id %}" class="btn cta-button mt-3">
-                        Add Your Review
+
+{% if avg_rating %}
+    <h5>Customers rated {{ product.name }} as:</h5>
+    <div class="text-start" id="headingOne">
+        <button class="btn text-brown btn-link" data-toggle="collapse" data-target="#collapseReview"
+            type="button" aria-expanded="false" aria-controls="collapseReview">
+            <span class="rating-stars" data-value="{{ avg_rating }}" data-toggle="tooltip" data-placement="bottom"
+                title="Click to view ratings"></span>
+        </button>
+        <a href="{% url 'add_review' product.id %}" class="btn btn-submit-brown mb-3 ml-5"><small>Add Review</small></a>
+    </div>
+
+{% else %}
+    <h5>No customers have rated {{ product.name }} yet.</h5>
+    <p class="rating-stars" data-value=0></p>
+    <a href="{% url 'add_review' product.id %}" class="btn btn-submit-brown mb-3">
+        <small>Be the first to add a review</small>
+    </a>
+{% endif %}
+
+<!-- view Reviews -->
+
+<div class="card">
+    <div id="collapseReview" class="collapse">
+        <div class="card-body">
+            {% if reviews %}
+            {% for review in reviews %}
+            <p class="rating-stars" data-value="{{ review.rating }}"></p>
+
+            <p class="review-desc">"{{ review.description }}"</p>
+            <span class="text-secondary review-desc">Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}</span>
+            <p class="text-right review-desc"> - {{ review.user }} </p>
+            {% if request.user.is_authenticated %}
+            {% if request.user|lower == review.user|lower %}
+            <span>
+                <a href="{% url 'edit_review' review.id %}" data-toggle="tooltip" title="Edit Review"
+                    data-placement="bottom" class="btn">
+                    <i class="fa fa-edit"></i>
                 </a>
-            </div> 
+            </span>
+            <span>
+                <a href="{% url 'delete_review' review.id %}" data-toggle="tooltip" title="Delete Review"
+                    data-placement="bottom" class="btn">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </span>
+            {% endif %}
+            {% endif %}
+            <hr>
+            {% endfor %}
+
+
+            {% endif %}
+        </div>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}
 <script type="text/javascript" src="{% static 'js/review.js' %}"></script>
 <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
     });
-    </script>
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 {% endblock %}
