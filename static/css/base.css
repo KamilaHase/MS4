@@ -17,12 +17,6 @@ body {
     font-family: 'Jost', sans-serif!important;
 }
 
-.bottom-footer {
-    min-height: calc(100vh - 235px);
-}
-
-
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -518,9 +512,30 @@ input[name='q']::placeholder {
     }
     }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .bottom-footer {
         min-height: calc(100vh - 200px);
+    }
+
+    .text-carousel {
+        z-index: 10;
+        margin-top: -36rem;
+        margin-left: 75px;
+        position: absolute;
+        left: 0rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .bottom-footer {
+        min-height: calc(100vh - 187px);
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .bottom-footer {
+        min-height: calc(100vh - 180px);
     }
 }
 
