@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import Product, Category, Brand
 
+""" Renders Models to the Admin View"""
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
