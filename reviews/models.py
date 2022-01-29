@@ -20,7 +20,7 @@ class ProductReview(models.Model):
 
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    title = models.CharField(max_length=50)
+    nickname = models.CharField(max_length=200, default='Anonymous')
     description = models.TextField()
     rating = models.IntegerField(choices=RATE)
     review_date = models.DateTimeField(auto_now_add=True)

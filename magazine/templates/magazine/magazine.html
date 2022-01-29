@@ -36,11 +36,11 @@
 
                 {% if post.image %}
                 <a href="{% url 'post_detail' post.slug %}">
-                    <img src="{{ post.image.url }}" class="card-img-top card-img-top-mgo" alt="{{ post.name }}">
+                    <img src="{{ post.image.url }}" class="card-img-top card-img-top-mgo" alt="{{ post.nickname }}">
                 </a>
                 {% else %}
                 <a href="{% url 'post_detail' post.slug %}">
-                    <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top card-img-top-mgo" alt="{{ post.name }}">
+                    <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top card-img-top-mgo" alt="{{ post.nickname }}">
                 </a>
                 {% endif %}
 

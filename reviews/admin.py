@@ -4,9 +4,10 @@ from .models import ProductReview
 
 class ReviewAdmin(admin.ModelAdmin):
     list_display = (
-        'title',
         'product',
         'user',
+        'nickname',
+        'decription',
         'rating',
         'review_date'
     )
