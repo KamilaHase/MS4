@@ -34,4 +34,4 @@ class Comment(models.Model):
     nickname = models.CharField(max_length=200)
 
     def __str__(self):
-       return '%s - %s - %s' % (self.post.title, self.nickname, self.date_created)
+       return(self.post.title, self.nickname, self.date_created)

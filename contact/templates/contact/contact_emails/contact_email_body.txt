@@ -1,7 +1,10 @@
-Hello Good Oils,
+Hello {{ instance.name }},
 
-You received a new message.
-Please respond {{ contact.name }} at {{ contact.email }}.
+We confirm the message you sent on our Good Oils webpage.
+We will do our best to reply as soon as possible.
 
 Best wishes, 
-your email robot.
+your Good Oils team.
+
+Message content: 
+{{ instance.message }}

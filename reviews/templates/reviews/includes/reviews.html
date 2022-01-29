@@ -30,8 +30,8 @@
             {% for review in reviews %}
             <p class="rating-stars" data-value="{{ review.rating }}"></p>
 
-            <p class="review-desc">"{{ review.description }}"</p>
-            <span class="text-secondary review-desc">Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}, by: {{ review.nickname }} </span>
+            <p>"{{ review.description }}"</p>
+            <span class="text-secondary">Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}, by: {{ review.nickname }} </span>
             {% if request.user.is_authenticated %}
             {% if request.user|lower == review.user|lower %}
             <span>
