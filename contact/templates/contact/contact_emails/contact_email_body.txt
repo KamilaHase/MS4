@@ -1,0 +1,10 @@
+Hello {{ instance.name }},
+
+We confirm the message you sent on our Good Oils webpage.
+We will do our best to reply as soon as possible.
+
+Best wishes, 
+your Good Oils team.
+
+Message content: 
+{{ instance.message }}
