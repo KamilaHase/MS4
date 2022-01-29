@@ -10,6 +10,9 @@ class ProductReview(models.Model):
     CRUD operations on product reviews
     """
 
+    class Meta:
+        ordering = ['-review_date']
+
     RATE = [
         (1, '1'),
         (2, '2'),

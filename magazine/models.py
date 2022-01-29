@@ -24,6 +24,10 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+
+    class Meta:
+        ordering = ['-date_created']
+
     post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
     comment_text = models.TextField(max_length=200)
     date_created = models.DateTimeField(auto_now_add=True)

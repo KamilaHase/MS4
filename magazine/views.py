@@ -8,6 +8,7 @@ from .forms import CommentForm
 from .forms import PostForm
 
 
+
 def magazine(request):
     """ Magazine page to display all available posts """
 
@@ -113,6 +114,7 @@ def delete_post(request, slug):
     messages.success(request, 'post deleted!')
     return redirect(reverse('post_detail'))
 
+
 @login_required
 def view_comment(request, slug):
     """
@@ -124,7 +126,7 @@ def view_comment(request, slug):
             request, 'You must be logged in to see the the Comment section')
         return redirect(reverse('login'))
 
-    comments = Comment.objects.all().order_by('date_added')
+    comments = Comment.objects.all().order_by('-date_created')
     
     template = 'magazine/post_detail.html'
 
@@ -133,4 +135,3 @@ def view_comment(request, slug):
     }
 
     return render(request, template, context)
-    
