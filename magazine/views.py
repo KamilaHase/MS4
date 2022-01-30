@@ -8,7 +8,6 @@ from .forms import CommentForm
 from .forms import PostForm
 
 
-
 def magazine(request):
     """ Magazine page to display all available posts """
 
@@ -49,7 +48,8 @@ def post_detail(request, slug):
 def add_post(request):
     """ Add a post to the magazine """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only our admin team can do this action.')
+        messages.error(request, 'Sorry, only our admin \
+            team can do this action.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -76,7 +76,8 @@ def add_post(request):
 def edit_post(request, slug):
     """ Edit an existing Post """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only our admin team can do this action.')
+        messages.error(request, 'Sorry, only our admin \
+            team can do this action.')
         return redirect(reverse('home'))
 
     post = get_object_or_404(Post, slug=slug)
@@ -106,7 +107,8 @@ def edit_post(request, slug):
 def delete_post(request, slug):
     """ Delete a post from the magazine """
     if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only our admin team can do this action.')
+        messages.error(request, 'Sorry, only our admin \
+            team can do this action.')
         return redirect(reverse('home'))
 
     post = get_object_or_404(Post, slug=slug)
@@ -127,7 +129,7 @@ def view_comment(request, slug):
         return redirect(reverse('login'))
 
     comments = Comment.objects.all().order_by('-date_created')
-    
+
     template = 'magazine/post_detail.html'
 
     context = {

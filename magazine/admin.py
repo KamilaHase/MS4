@@ -5,6 +5,7 @@ from .models import Magazine, Post, Comment
 
 """ Renders Models to the Admin View"""
 
+
 class MagazineAdmin(admin.ModelAdmin):
     list_display = (
         'title',

@@ -11,8 +11,7 @@
 {% endblock %}
 
 {% block content %}
-
-<!-- Heading-->
+<!--Heading-->
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-5">
@@ -22,7 +21,7 @@
     </div>
 </div>
 
-<!--- Post Detail --->
+<!--Post Detail-->
 <div class="container">
     <div class="card col mb-3">
         {% if post.image %}
@@ -53,14 +52,14 @@
 
     </div>
 
-<!--- Comment Section--->
+    <!--Comment Section-->
     <div class="row mt-5">
         <div class="col-sm-10 col-md-8">
             <h4 class="add-comment">Comments</h4>
         </div>
     </div>
 
-{% if user.is_authenticated %}
+    {% if user.is_authenticated %}
 
     {% if post.comments.all %}
     {% for comment in post.comments.all %}
@@ -73,7 +72,7 @@
             </article>
 
         </div>
-    </div> 
+    </div>
     {% endfor %}
 
     {% else %}
@@ -101,15 +100,13 @@
         </div>
     </div>
 
-{% else %}
-<div class="">
-    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-    <a class="text-info" href="{% url 'account_login' %}">login</a> to see the comments section.
-</div>
-{% endif %}
-    
-</div>
+    {% else %}
+    <div class="">
+        <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
+        <a class="text-info" href="{% url 'account_login' %}">login</a> to see the comments section.
+    </div>
+    {% endif %}
 
-
+</div>
 
 {% endblock %}

@@ -28,10 +28,11 @@ class Comment(models.Model):
     class Meta:
         ordering = ['-date_created']
 
-    post = models.ForeignKey(Post, related_name="comments", on_delete=models.CASCADE)
+    post = models.ForeignKey(
+        Post, related_name="comments", on_delete=models.CASCADE)
     comment_text = models.TextField(max_length=200)
     date_created = models.DateTimeField(auto_now_add=True)
     nickname = models.CharField(max_length=200)
 
     def __str__(self):
-       return(self.post.title, self.nickname, self.date_created)
+        return(self.post.title, self.nickname, self.date_created)
