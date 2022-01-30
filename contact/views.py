@@ -16,9 +16,7 @@ def contact(request):
             instance = form.save()
             messages.success(request, 'Your message was submitted successfully. \
                 We will be in touch soon')
-
             sender_email = instance.email
-
             subject = render_to_string(
                 'contact/contact_emails/contact_email_subject.txt',
                 {'instance': instance})

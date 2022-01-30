@@ -17,6 +17,10 @@ body {
     font-family: 'Jost', sans-serif!important;
 }
 
+footer {
+    margin-bottom: 0 !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -550,7 +554,8 @@ input[name='q']::placeholder {
 }
 
 @media (min-width: 1200px) {
-    .bottom-footer {
-        min-height: calc(100vh - 150px);
+    .bottom-footer, .bottom-footer-lg {
+        min-height: calc(100vh - 90px);
     }
 }
+
