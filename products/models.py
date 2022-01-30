@@ -33,12 +33,15 @@ class Brand(models.Model):
 
 
 class Product(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-    brand = models.ForeignKey('Brand', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        'Category', null=True, blank=True, on_delete=models.SET_NULL)
+    brand = models.ForeignKey(
+        'Brand', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description_short = models.TextField()
-    amount = models.DecimalField(max_digits=8, decimal_places=0, null=True, blank=True)
+    amount = models.DecimalField(
+        max_digits=8, decimal_places=0, null=True, blank=True)
     price = models.DecimalField(max_digits=8, decimal_places=0)
     description_long = models.TextField()
     image = models.ImageField(null=True, blank=True)
