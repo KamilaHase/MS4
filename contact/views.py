@@ -13,14 +13,12 @@ def contact(request):
 
         form = ContactForm(request.POST)
         if form.is_valid():
-            form.save()
+            instance = form.save()
             messages.success(request, 'Your message was submitted successfully. \
                 We will be in touch soon')
-            return redirect(reverse('home'))
-
-            instance = form.save()
 
             sender_email = instance.email
+
             subject = render_to_string(
                 'contact/contact_emails/contact_email_subject.txt',
                 {'instance': instance})
@@ -33,6 +31,7 @@ def contact(request):
                 body, settings.DEFAULT_FROM_EMAIL,
                 [sender_email]
             )
+            return redirect(reverse('home'))
         else:
             messages.error(
                 request, 'There was a problem with the form. \
