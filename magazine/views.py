@@ -49,7 +49,7 @@ def post_detail(request, slug):
 def add_post(request):
     """ Add a post to the magazine """
     if not request.user.is_superuser:
-        messages.error(request, 'Only our admin team has access to this.')
+        messages.error(request, 'Sorry, only our admin team can do this action.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -76,7 +76,7 @@ def add_post(request):
 def edit_post(request, slug):
     """ Edit an existing Post """
     if not request.user.is_superuser:
-        messages.error(request, 'Only our team has access to this.')
+        messages.error(request, 'Sorry, only our admin team can do this action.')
         return redirect(reverse('home'))
 
     post = get_object_or_404(Post, slug=slug)
@@ -106,7 +106,7 @@ def edit_post(request, slug):
 def delete_post(request, slug):
     """ Delete a post from the magazine """
     if not request.user.is_superuser:
-        messages.error(request, 'Only our admin team has access to this action.')
+        messages.error(request, 'Sorry, only our admin team can do this action.')
         return redirect(reverse('home'))
 
     post = get_object_or_404(Post, slug=slug)

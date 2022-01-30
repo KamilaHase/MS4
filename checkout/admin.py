@@ -3,6 +3,7 @@ from .models import Order, OrderLineItem
 
 """ Renders Models to the Admin View"""
 
+
 class OrderLineItemAdminInline(admin.TabularInline):
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)

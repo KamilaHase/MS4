@@ -14,6 +14,7 @@ from .forms import OrderForm
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -26,7 +27,8 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request, 'Sorry, we cannot process your payment at the moment. Please try again later.')
+        messages.error(request, 'Sorry, we cannot \
+            process your payment at the moment. Please try again later.')
         return HttpResponse(content=e, status=400)
 
 
@@ -65,10 +67,11 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
-                    
+
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "Sorry, we cannot find one of the products in your bag in our database."
+                        "Sorry, we cannot find \
+                        one of the products in your bag in our database."
                         "Please call us for assistance!")
                     )
                     order.delete()
@@ -76,7 +79,8 @@ def checkout(request):
 
             # Save the info to the user's profile if all is well processed
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse(
+                'checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
@@ -114,7 +118,7 @@ def checkout(request):
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
-            Make sure it has been set in your environment?')
+            Make sure it has been set in your environment.')
 
     template = 'checkout/checkout.html'
 
