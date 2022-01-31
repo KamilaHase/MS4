@@ -356,7 +356,6 @@ input[name='q']::placeholder {
     color: #bd8e00 !important;
 }
 
-
 /* Allauth form formatting */
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */

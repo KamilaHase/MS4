@@ -5,9 +5,9 @@
 {% if avg_rating %}
     <h5>Customers rated {{ product.name }} as:</h5>
     <div class="text-start" id="headingOne">
-        <button class="btn text-brown btn-link" data-toggle="collapse" data-target="#collapseReview"
+        <button class="btn text-brown btn-link" id="collapse-stars" data-target="#collapseReview"
             type="button" aria-expanded="false" aria-controls="collapseReview">
-            <span class="rating-stars" data-value="{{ avg_rating }}" data-toggle="tooltip" data-placement="bottom"
+            <span class="rating-stars" data-value="{{ avg_rating }}" data-toggle="tooltip" data-placement="top"
                 title="Click to view ratings"></span>
         </button>
         <a href="{% url 'add_review' product.id %}" class="btn btn-submit-brown mb-1 ml-5"><small>Add Review</small></a>
@@ -24,8 +24,8 @@
 <!-- view Reviews -->
 
 <div class="card">
-    <div id="collapseReview" class="collapse">
-        <div class="card-body">
+    <div id="collapseReview" class="collapseReview">
+        <div class="card-body" id="effect">
             {% if reviews %}
             {% for review in reviews %}
             <p class="rating-stars" data-value="{{ review.rating }}"></p>
@@ -64,6 +64,13 @@
 <script>
     $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+<script type="text/javascript">
+    $( "#effect" ).hide(); 
+    $( "#collapse-stars" ).click(function() {
+    $( "#effect" ).toggle("slow");
     });
 </script>
 {% endblock %}
