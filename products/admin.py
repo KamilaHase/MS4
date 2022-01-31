@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Product, Category, Brand
+from reviews.models import ProductReview
 
 """ Renders Models to the Admin View"""
 
@@ -32,6 +33,17 @@ class BrandAdmin(admin.ModelAdmin):
     )
 
 
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = (
+        'product',
+        'user',
+        'nickname',
+        'description',
+        'rating',
+        'review_date'
+    )
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Brand, BrandAdmin)
+admin.site.register(ProductReview, ReviewAdmin)

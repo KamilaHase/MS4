@@ -35,4 +35,4 @@ class Comment(models.Model):
     nickname = models.CharField(max_length=200)
 
     def __str__(self):
-        return(self.post.title, self.nickname, self.date_created)
+        return'{} {} {}'.format(self.post.title, self.nickname, self.date_created)
