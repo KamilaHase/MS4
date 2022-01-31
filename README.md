@@ -1,3 +1,9 @@
+- future implementation: 
+    - modal window for delete actions
+    - correct rating - for each product
+    - correct for add_product display "----" for Brands as default
+
+
 Credits:
 
 Overall structure of the website: Tutorial from Code Institute - Boutique Ado

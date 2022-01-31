@@ -105,10 +105,19 @@
       <div class="col-12 mb-3">
          <h4 class="logo-font-go-cursive text-center">
             <br>
-            Find out more in our 
-            <a class="text-center logo-font-go-cursive" href="{% url 'magazine' %}">Good Oils Magazine!</a> 
+            Find out more in our
+            <a class="text-center logo-font-go-cursive" href="{% url 'magazine' %}">Good Oils Magazine!</a>
          </h4>
       </div>
    </div>
 </div>
 {% endblock %}
+
+{% block postloadjs %}
+<script>
+    $(document).ready(function () {
+      $('.carousel').carousel();
+    });
+</script>
+{% endblock %}
+

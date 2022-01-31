@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Style+Script&display=swap');
 
-/*-------------------------general-------------------------------------------------*/
+/*---------------------general---------------------------------------*/
+
 html {
     height: 100%;
 }
@@ -14,7 +15,7 @@ footer {
     margin-bottom: 0 !important;
 }
 
-/* adapted from Bulma */
+/* icon adapted from https://bulma.io/ */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -39,11 +40,13 @@ footer {
     width: fit-content;
 }
 
+/*--Magazine logo--*/
 .logo-font-go {
     font-family: 'Style Script', cursive;
     color: #c32938 !important;
 }
 
+/*--Magazine font--*/
 .logo-font-go-cursive {
     font-family: 'Style Script', cursive;
     color: #c32938 !important;
@@ -60,15 +63,6 @@ footer {
 
 .nav-admin-section {
     z-index: -1;
-}
-
-.card-img {
-    height: 300px;
-    width: 200px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    z-index: -1;
-    border-radius: 0;
 }
 
 .carousel-inner {
@@ -108,6 +102,21 @@ footer {
     position: absolute;
 }
 
+.shop-now-button {
+    background: black;
+    color: #fff;
+}
+
+/*product images*/
+.card-img {
+    height: 300px;
+    width: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    z-index: -1;
+    border-radius: 0;
+}
+
 .text-golden {
     color: #352904!important;
 }
@@ -121,11 +130,6 @@ footer {
     color: #fff;
     font-family: 'Style Script', cursive;
     width: 100% !important;
-}
-
-.shop-now-button {
-    background: black;
-    color: #fff;
 }
 
 .btn-black {
@@ -245,13 +249,8 @@ input[name='q']::placeholder {
     margin-top: 14rem !important;
 }
 
-.rating-stars {
-    color: #bd8e00 !important;
-}
 
-
-
-/* ------------------------------- bootstrap toasts */
+/* ---------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -266,6 +265,16 @@ input[name='q']::placeholder {
 
 .toast-capper {
     height: 2px;
+}
+
+.card-top-mgo {
+    margin-top: 100px !important;
+}
+
+.card-img-top-mgo {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
 }
 
 
@@ -342,17 +351,13 @@ input[name='q']::placeholder {
     -o-object-fit: cover;
        object-fit: cover;
 }
-/* -------------------------------- Media Queries */
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+.rating-stars {
+    color: #bd8e00 !important;
 }
 
-/* Allauth form formatting */
 
+/* Allauth form formatting */
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
@@ -407,7 +412,6 @@ input[name='q']::placeholder {
 }
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -434,43 +438,8 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
 
-    .header-container {
-        padding-top: 164px;
-    }
-}
-
-/* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-}
-
-.card-top-mgo {
-    margin-top: 100px !important;
-}
-
-.card-img-top-mgo {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
-}
-
-/* --------------------- Media Query */
+/* -------------------------------- Media Queries */
 
 @media (max-width: 576px) {
     .logo-good-oils {
@@ -523,9 +492,35 @@ input[name='q']::placeholder {
     }
 }
 
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+
 @media (max-width: 992px) {
     .bottom-footer {
         min-height: calc(100vh - 187px);
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
     }
 }
 
@@ -537,8 +532,11 @@ input[name='q']::placeholder {
 }
 
 @media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+      }
+
     .bottom-footer, .bottom-footer-lg {
         min-height: calc(100vh - 90px);
     }
 }
-
