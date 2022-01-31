@@ -1,16 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Libre+Franklin:wght@300;400&family=Style+Script&family=Varela+Round&display=swap');
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Style+Script&display=swap');
 
-font-family: 'Jost', sans-serif;
-font-family: 'Libre Franklin', sans-serif;
-font-family: 'Style Script', cursive;
-font-family: 'Varela Round', sans-serif;
-*/
-
+/*-------------------------general-------------------------------------------------*/
 html {
     height: 100%;
 }
-
 
 body {
     color: #555;
@@ -21,7 +14,7 @@ footer {
     margin-bottom: 0 !important;
 }
 
-/* from Bulma */
+/* adapted from Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -35,13 +28,15 @@ footer {
     text-transform: uppercase;
 }
 
-
 .logo-good-oils {
     font-family: 'Style Script', cursive;
     font-size: 80px;
     margin-top: 30px !important;
-    padding: -10px;
     color: #7b621a!important;
+}
+
+.main-logo-link {
+    width: fit-content;
 }
 
 .logo-font-go {
@@ -55,10 +50,6 @@ footer {
     letter-spacing: 0.1rem;
 }
 
-.main-logo-link {
-    width: fit-content;
-}
-
 .dropdown-menu {
     top: 2rem;
 }
@@ -67,7 +58,9 @@ footer {
     left: -5rem !important;
 }
 
-
+.nav-admin-section {
+    z-index: -1;
+}
 
 .card-img {
     height: 300px;
@@ -123,10 +116,6 @@ footer {
     background-color: #AB9C6E!important;
 }
 
-.nav-admin-section {
-    z-index: -1;
-}
-
 .bg-gom {
     background-color: #91252f !important;
     color: #fff;
@@ -155,11 +144,6 @@ footer {
 .btn-outline-black:focus {
     background: black;
     color: #fff !important;
-}
-
-.btn-submit {
-    background-color: #AB9C6E!important;
-    color: #31302e;
 }
 
 .btn-submit-brown {
@@ -493,7 +477,6 @@ input[name='q']::placeholder {
         font-family: 'Style Script', cursive;
         color: #7b621a!important;
         margin-top: 1rem !important;
-        padding: -10px;
         font-size: 2rem;
     }
 
