@@ -17,9 +17,7 @@ class ReviewForm(forms.ModelForm):
         fields = ['nickname', 'description', 'rating']
 
         labels = {
-            'nickname': 'Nickname',
-            'description': 'Description',
-            'rating': 'Rating',           
+            'rating': 'Rating',
         }
 
     def __init__(self, *args, **kwargs):
