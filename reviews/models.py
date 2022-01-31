@@ -29,5 +29,5 @@ class ProductReview(models.Model):
     review_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return '{} {} {}'.format(self.rating, self.product)
+        return str(self.review_date)
 
