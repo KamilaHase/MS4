@@ -441,6 +441,15 @@ input[name='q']::placeholder {
 
 /* -------------------------------- Media Queries */
 
+@media (max-width: 315px) {
+.text-carousel {
+    z-index: 10;
+    margin-top: -30rem !important;
+    margin-left: 1.9rem !important;
+    margin-left: 75px;
+}
+}
+
 @media (max-width: 576px) {
     .logo-good-oils {
         font-family: 'Style Script', cursive;

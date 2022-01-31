@@ -2,6 +2,7 @@
     - modal window for delete actions
     - correct rating - for each product
     - correct for add_product display "----" for Brands as default
+    - correct footer position
 
 
 Credits:

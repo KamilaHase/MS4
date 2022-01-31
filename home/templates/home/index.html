@@ -113,11 +113,12 @@
 </div>
 {% endblock %}
 
+
 {% block postloadjs %}
-<script>
-    $(document).ready(function () {
+{{ block.super }}
+<script type="text/javascript">
+   $(document).ready(function () {
       $('.carousel').carousel();
-    });
+   });
 </script>
 {% endblock %}
-
