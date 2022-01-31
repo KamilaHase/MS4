@@ -17,7 +17,9 @@ class ReviewForm(forms.ModelForm):
         fields = ['nickname', 'description', 'rating']
 
         labels = {
-            'rating': 'Rating',
+            'nickname': 'Nickname',
+            'description': 'Description',
+            'rating': 'Rating',           
         }
 
     def __init__(self, *args, **kwargs):
@@ -26,8 +28,8 @@ class ReviewForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'description': 'Description',
             'nickname': 'Nickname',
+            'description': 'Description',
         }
 
         # Add placeholders and classes to input fields
