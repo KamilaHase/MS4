@@ -70,8 +70,8 @@ footer {
 }
 
 .carousel-inner img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     min-width: 100vw;
     min-height: 100vh;
 }
@@ -88,11 +88,6 @@ footer {
 
 .display-sm-block {
     display: none;
-}
-
-.img-virgin-oils {
-    -o-object-fit: cover !important;
-    object-fit: cover !important;   
 }
 
 .text-carousel {
