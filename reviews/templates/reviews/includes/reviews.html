@@ -33,13 +33,20 @@
             <p>"{{ review.description }}"</p>
             <span class="text-secondary">Posted on: &nbsp;{{ review.review_date|date:"M d, Y" }}, by: {{ review.nickname }} </span>
             {% if request.user.is_authenticated %}
-            {% if request.user|lower == review.user|lower %}
+            {% if request.user|lower == review.user|lower %}           
             <span>
                 <a href="{% url 'edit_review' review.id %}" data-toggle="tooltip" title="Edit Review"
                     data-placement="bottom" class="btn">
                     <i class="fa fa-edit text-primary"></i>
                 </a>
             </span>
+            <span>
+                <a href="{% url 'delete_review' review.id %}" data-toggle="tooltip" title="Delete Review"
+                    data-placement="bottom" class="btn">
+                    <i class="fas fa-trash text-danger"></i>
+                </a>
+            </span>
+            {% elif request.user.is_superuser %}
             <span>
                 <a href="{% url 'delete_review' review.id %}" data-toggle="tooltip" title="Delete Review"
                     data-placement="bottom" class="btn">
