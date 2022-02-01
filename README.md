@@ -2,7 +2,8 @@
 
 # Good Oils
 Good Oils is an e-commerce website built for study purposes at Code Institute. It is a specialized website for the best quality of oils: virgin oils and oils used for cosmetic purposes. Customers can visit the website and order online the products of their choices as well as learn more about certain products in the Good Oils Magazine. The shop is oriented on organic and best quality oils that are on the market in order to target the market trend of healthy lifestile closer to the nature.
-The website was developed for study purposes only and all content is fictional.
+The website was developed for study purposes only and all content is fictional. Currently the website would serve in real world as functional starter website where more development is recommended for better user experience. 
+
 View live version of website can be seen via Heroku here.
 
 ## Table of Contents
@@ -82,10 +83,10 @@ The web has been built to provide simple yet clear information to all users. The
 
 4. **Admin**
  - I am an administrator of the website closely connected to the store owners (if I am not the store owner myself)
- - I want to have control over the page and feedback from customers in all forms
+ - I want to have full control over the page and feedback from customers in all forms
  - I am registered as administrator - superuser
 
-    - Goal of an Admin to visit the website: 
+    - Goal of an Admin to visit the website (e.g."goodoils.com"): 
         - To add new products 
         - To update, read or delete existing products
         - To access reviews of products
@@ -94,13 +95,8 @@ The web has been built to provide simple yet clear information to all users. The
         - To add new posts to Magazine
         - To update or delete existing posts
         - To access Comments of posts
-
-5. **Store Owner**
- - I am an administrator of the website closely connected to the store owners (if I am not the store owner myself)
- - I want to have control over the page and feedback from customers in all forms
- - I am registered as store owner - superuser
-
-    - Goal of a Store Owner to visit the website: 
+    
+    - Goal of an Admin to visit the the Admin site (Django Admin site): 
         - To have full acces the admin site of the e-shop
         - To add new products 
         - To update or delete existing products
