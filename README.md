@@ -137,11 +137,15 @@ The web has been built to provide simple yet clear information to all users. The
 - **Missing secret keys due to opening new workspace**
     - Another serious bug that was connected to the first one was that the env.py file was not pushed to GitHub and therefore there were no secret keys logged into settings.py file. The bug was mainly presented by not working Stripe payments. Again, with an extensive help of a tutor, this has been resolved and the payments work well now. 
 
+- **Contact app and sending emails**
+   - Issue that took a long time to resolve was a bug where the command return was placed before the code to actually send messages. This took a long time to resolve including deleting the app and installing it again, before it was resolved thanks to the tutor team.
+
+- **Webhook not sending emails**
+   - Similar issue but with different sourse happened later on with checkout app. The purchase was proceeded successfully, order shown on Admin site but email was not printed to the terminal. Issue was resolved: gitpod changed the url of the current workspace (from number 28 to 29). Once the number was corrected in Stripe Webhooks, everything worked well again. 
+
 - **Carousel stutters**
     - The last image on carousel "stutters" - doesn´t slide smoothly and stops for a short while while sliding away. Assumption is that it is caused by the Bootstrap class "active". Bug left for future development.
 
-- **Contact app and sending emails**
-   - Issue that took a long time to resolve was a bug where the command return was placed before the code to actually send messages. This took a long time to resolve including deleting the app and installing it again, before it was resolved thanks to the tutor team.
 
 - **Buttons styling**
 
