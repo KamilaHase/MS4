@@ -40,8 +40,14 @@ The web has been built to provide simple yet clear information to all users. The
         - To gather more information
         - To check availability or price of products
         - To get in touch with store owners/admin team with my queries
+        - If customer is registered to the website: 
+            - To see and to post a review to products
+            - To create, read, update and delete own product review
+            - View comments and add own comment to Magazine posts
+        - If customer is not registered to the website: 
+            - To see reviews of products 
 
-1. **Customer**
+2. **Customer**
  - I am a person who visits the website with an intention to make a purchase
  - I spend some time looking at Products and finally make an order
  - I can be registered to the website if I want to see Reviews of Products, Comments to Magazine and save my purchase information for future orders
@@ -55,9 +61,15 @@ The web has been built to provide simple yet clear information to all users. The
         - To gather more information
         - To check availability or price of products
         - To get in touch with store owners/admin team with my queries
+        - If customer is registered to the website: 
+            - To see and to post a review to products
+            - To create, read, update and delete own review
+            - View comments and add own comment to Magazine posts
+        - If customer is not registered to the website: 
+            - To see reviews of products 
 
 
-1. **Seller**
+3. **Seller**
  - I am a representative of an oil producer (or an oil producer himself/herself) who wants to promote products to Good Oils store owners
  - I spend some time on the website reading information about the available products, compatibility with products I offer and possible competition
  - Most likely I will finally register myself to be able to see reviews of products and comments about article posts
@@ -68,23 +80,42 @@ The web has been built to provide simple yet clear information to all users. The
         - To check availability or price of products
         - Possibly to make a purchase of a product of interest in order to check competition or to check the smoothness of the ordering process
 
-1. **Admin**
+4. **Admin**
  - I am an administrator of the website closely connected to the store owners (if I am not the store owner myself)
  - I want to have control over the page and feedback from customers in all forms
  - I am registered as administrator - superuser
 
     - Goal of an Admin to visit the website: 
-        - Add new products 
-        - Update or delete existing products
-        - Access reviews of products
-        
-        - Access messages from website visitors via Contact form
-        - Add new posts to Magazine
-        - Update or delete existing posts
-        - Access Comments of posts
+        - To add new products 
+        - To update, read or delete existing products
+        - To access reviews of products
+        - To delete reviews of others
+        - To create, read, update and delete own review
+        - To add new posts to Magazine
+        - To update or delete existing posts
+        - To access Comments of posts
+
+5. **Store Owner**
+ - I am an administrator of the website closely connected to the store owners (if I am not the store owner myself)
+ - I want to have control over the page and feedback from customers in all forms
+ - I am registered as store owner - superuser
+
+    - Goal of a Store Owner to visit the website: 
+        - To have full acces the admin site of the e-shop
+        - To add new products 
+        - To update or delete existing products
+        - To have full acces to product reviews, is able to create, read, update and delete them
+        - To access messages from website visitors via Contact form, able to delete them as well as create,read and update them
+        - To add new posts to Magazine
+        - To update or delete existing posts
+        - To have full access to comments of posts in Magazine section, is able to create, read, update and delete them
+        - To create new categories and brands of products
+        - To have access to queries from Contact form
+        - To have access to orders and manage them accordingly
 
 
 ### Design of the website:
+
 #### Typography
 #### Colors
 
