@@ -16,7 +16,8 @@
     <div class="row">
         <div class="col text-center mt-5">
             <h2 class="bg-gom pb-4">
-                <br>Good Oils Magazine</h2>
+                <br>Good Oils Magazine
+            </h2>
         </div>
     </div>
 </div>
@@ -50,9 +51,18 @@
                     {{ post.date_added | date:"d M - Y | h:i"}}</small></p>
         </div>
 
+        <div class="card-body">
+        <div class="row">
+            <a href="{% url 'magazine' %}" role="button" class="btn btn-outline-danger rounded-2">
+                Back to all articles
+            </a>
+        </div>
+    </div>
+
     </div>
 
     <!--Comment Section-->
+    
     <div class="row mt-5">
         <div class="col-sm-10 col-md-8">
             <h4 class="add-comment">Comments</h4>
