@@ -111,13 +111,61 @@ The web has been built to provide simple yet clear information to all users. The
 
 
 ### Design of the website:
+Design has been chosen to present classic yet modern look in earth/golden colors as that would be a color of an oil.
 
 #### Typography
+- For most of texts on the website have been chosen font 'Jost' which brings light and modern-classic feeling.
+- Logo and motivational slogan on index.html are written with font 'Style Script'
+- Good Oils Magazine also uses font 'Style Script' in order to clearly visualize different section of the website. It is used for the title Good Oils Magazine, link on the bottom of index.html (again to visualize it links to a different section of the site) and links to read an article.
+- All fonts come from [Google Fonts](https://fonts.google.com/ "Google Fonts").
+
 #### Colors
+As mentioned above, the website uses earthy/golden beige color together with black and white:
+ - #7b621a - for logo Good Oils
+            - icons on large screen view
+            - class btn-submit-brown used for submit buttons ("Agree with an action" buttons)
+            - motivational slogan on index.html - cursive text
+            - varieties for specific classes where darker/lighter versions were needed are: #352904, #AB9C6E, #bd8e00
+ - #555 - as main body text color
+ - #b3b1ac - as it's grey variety for borders and small background areas
+ - #000 as black color
+ - #fff as white color
+
+ The golden/brown color has been given to actions where it is in "agreement" such buttons add, order, sign in etc. Black and white has been assigned for buttons where the action is to cancel.
+
+Good Oils Magazine uses red to show it is a different section of the site:
+ - #c32938 for logo Good Oils Magazine with its variant for div's background #91252f
+
+Certain Bootstrap color palettes were adapted to fit the "earthy" feeling.
+
+Admin navbar is presented in Bootstrap primary color in order to clearly distinguish what are the actions dedicated only for an administrator.
 
 #### Imagery
+Images on website are to be found under these links (all have been downloaded from [Shutterstock](https://www.shutterstock.com/).)
+
+- [magazine article](https://www.shutterstock.com/cs/image-photo/different-cooking-oils-on-blue-wooden-1605581422)
+- [olive oils: lables](https://www.shutterstock.com/cs/image-vector/olive-oil-labels-collection-hand-drawn-435373711)
+- [olive oils: bottles](https://www.shutterstock.com/cs/image-photo/olive-oil-bottles-isolated-on-white-669076666)
+- [cosmetic oils: bottles](https://www.shutterstock.com/cs/image-vector/set-realistic-glass-bottles-dropper-box-1158265597)
+- [cosmetic oils: bottles](https://www.shutterstock.com/cs/image-photo/set-glass-bottle-cosmetics-dropper-liquid-1770196145)
+- [essential oils: bottles](https://www.shutterstock.com/cs/image-vector/realistic-essential-oil-brown-bottle-mock-451075381)
+- [magazine article](https://www.shutterstock.com/cs/image-photo/pecs-hungray-febr-27-2021-illustrative-1938731431)
+- [essential oils: bottles](https://www.shutterstock.com/cs/image-photo/various-amber-glass-bottles-cosmetics-natural-1460464658)
+- [products: coconut oil](https://www.shutterstock.com/cs/image-photo/nutrition-concept-healthy-food-diet-detox-774696967)
+- [index.html carousel](https://www.shutterstock.com/cs/image-photo/selection-essential-oils-various-herbs-flowers-684766534)
+- [index.html carousel](https://www.shutterstock.com/cs/image-photo/dropper-lavender-essential-oil-over-bottle-1481069378)
+- [index.html carousel](https://www.shutterstock.com/cs/image-photo/different-sorts-cooking-oil-bottles-on-1600238197)
+- [contacts: Nina Ali](https://www.shutterstock.com/cs/image-photo/close-isolated-studio-shot-good-looking-640005094)
+- [contacts: Anna Smith](https://www.shutterstock.com/cs/image-photo/beautiful-woman-blue-eyes-portrait-619769840)
+- [magazine article](https://www.shutterstock.com/cs/image-photo/herbal-medicine-natural-cosmetic-phytotherapy-concept-1447910942)
+- [magazine article](https://www.shutterstock.com/cs/image-photo/coconut-milk-tropical-useful-dessert-1580400694)
+- [magazine article](https://www.shutterstock.com/cs/image-photo/hazelnut-butter-on-wooden-background-1269963892)
+
+All images that have not been listed above were used from Microsof Office icons library.
+
 #### Wireframes
 #### Mockup - main page
+
 ## Features
 
 ### Existing Features
