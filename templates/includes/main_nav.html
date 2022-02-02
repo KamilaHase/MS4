@@ -1,6 +1,6 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        
+        <!--Virgin oils and dropdown-->
         <li class="nav-item dropdown">
             <a class="uppercase-font font-weight-bold nav-link text-black ms-2 mr-5" href="#" id="virgin-oils-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Virgin Oils
@@ -12,7 +12,7 @@
                 <a href="{% url 'products' %}?category=olive_oils,nut_oils,seed_oils" class="dropdown-item">All Virgin Oils</a>
             </div>
         </li>
-
+        <!--Cosmetic oils and dropdown-->
         <li class="nav-item dropdown">
             <a class="uppercase-font font-weight-bold nav-link text-black mr-5" href="#" id="cosmetic-oils-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Cosmetic Oils
@@ -23,7 +23,7 @@
                 <a href="{% url 'products' %}?category=body_oils,essential_oils" class="dropdown-item">All Cosmetic Oils</a>
             </div>
         </li>
-
+        <!--All products and filter by-->
         <li class="nav-item dropdown">
             <a class="uppercase-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
@@ -35,18 +35,19 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-
+        <!--Contact Us-->
         <li class="nav-item">
             <a class="uppercase-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}">
                 Contact Us
             </a>
         </li>
-
+        <!--Good Oils Magazine-->
         <li class="nav-item">
             <a class="logo-font-go font-weight-bold nav-link mr-5" href="{% url 'magazine' %}">
                 <h4>Good Oils Magazine</h4>
             </a>
         </li>
+        <!--Admin section links-->
         {% if request.user.is_superuser %}
         <li class="nav-item dropdown">
             <a class="uppercase-font font-weight-bold nav-link text-info" href="#" id="admin-section-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

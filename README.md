@@ -161,14 +161,62 @@ Images on website are to be found under these links (all have been downloaded fr
 - [magazine article](https://www.shutterstock.com/cs/image-photo/coconut-milk-tropical-useful-dessert-1580400694)
 - [magazine article](https://www.shutterstock.com/cs/image-photo/hazelnut-butter-on-wooden-background-1269963892)
 
-All images that have not been listed above were used from Microsof Office icons library.
+All images that have not been listed above were used from Microsoft Office icons library. Other images (such as product labels) I created in Microsoft Power Point.
 
 #### Wireframes
 #### Mockup - main page
 
 ## Features
-
 ### Existing Features
+1. **Features presented on each page** 
+- the overall website renders certain features that are loaded from templates: 
+    - **base.html** contains:
+        - **Logo** Good Oils representing the brand of the page
+        - **Search bar** allows users to search among available products
+        - **Link to My Account**: 
+            - for unregietred users offers dropdown menu:
+                - Register: leading to /accounts/signup/ (see bellow)
+                - Login: leading to /accounts/login/ (see bellow)
+            - for registered users offers dropdown menu: 
+                - My Profile: leading to /profile (see bellow)
+                - Logout leading to /accounts/logout/ (see bellow)
+
+        - **Link to Bag**: shopping bag of the products a user clicked in order to purchase, links goes to /bag site (see bellow) 
+        - **Delivery banner** - a banner presenting free delivery for purchases over 25 €. Banner can be closed by clicking/tapping on close button
+
+    - **main_nav.html** contains:
+        - **Navbar menu:**
+            - *Virgin Oils* with dropdown: 
+                - Olive Oils
+                - Nut Oils
+                - Seed Oils
+                - All Virgin Oils
+
+            - *Cosmetic Oils* with dropdown: 
+                - Body Oils
+                - Essential Oils
+                - All Cosmetic Oils
+            
+            - *All Products* with dropdown: 
+                - By Price
+                - By Category
+                - By Brand
+                - All Products
+            
+            - *Contact Us*
+            - *Good Oils Magazine*
+            - Registered Admin sees another menu link *Admin Section* with a dropdown:
+                - Add Product
+                - Add Magazine Post
+            - these sites are described bellow
+    
+    - **mobile_top_header.html**
+    - **footer.html**
+    - 
+
+1. - **Home - home.html** 
+
+
 ### Features Left to Implement
 ## Technologies Used
 ### Database
