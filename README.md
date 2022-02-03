@@ -169,17 +169,17 @@ All images that have not been listed above were used from Microsoft Office icons
 ## Features
 ### Existing Features
 1. **Features presented on each page** 
-- the overall website renders certain features that are loaded from templates: 
+- the overall website displays certain features that are loaded from templates: 
     - **base.html** contains:
         - **Logo** Good Oils representing the brand of the page
         - **Search bar** allows users to search among available products
-        - **Link to My Account**: 
+        - **Link to My Profile**: 
             - for unregietred users offers dropdown menu:
-                - Register: leading to /accounts/signup/ (see bellow)
-                - Login: leading to /accounts/login/ (see bellow)
+                - Register: leading to /accounts/signup/ (see below)
+                - Login: leading to /accounts/login/ (see below)
             - for registered users offers dropdown menu: 
-                - My Profile: leading to /profile (see bellow)
-                - Logout leading to /accounts/logout/ (see bellow)
+                - My Profile: leading to /profile (see below)
+                - Logout leading to /accounts/logout/ (see below)
 
         - **Link to Bag**: shopping bag of the products a user clicked in order to purchase, links goes to /bag site (see bellow) 
         - **Delivery banner** - a banner presenting free delivery for purchases over 25 €. Banner can be closed by clicking/tapping on close button
@@ -208,11 +208,20 @@ All images that have not been listed above were used from Microsoft Office icons
             - Registered Admin sees another menu link *Admin Section* with a dropdown:
                 - Add Product
                 - Add Magazine Post
+
+            - **Toggle button for small screens**
             - these sites are described bellow
     
     - **mobile_top_header.html**
-    - **footer.html**
-    - 
+          - displays toggle button with *Navbar menu* listed in main_nav.html
+          - *Logo Good Oils*
+          - *Search bar*
+          - *My Profile* button - see above
+          - *Shopping Bag* button
+
+    - **footer.html** - presents links to Contact Us form (below), links to to social media (Instagram, Facebook, Twitter) - external resources of information about the project(fictional) and Copyright (fictional).
+
+    - **toast messages** - to comment the process of an action (succes, error, info, warning), toast messages with according message appear in the riht top corner.
 
 1. - **Home - home.html** 
 

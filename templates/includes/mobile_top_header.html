@@ -1,15 +1,15 @@
+<!--Logo Good Oils-->
 <li class="list-inline-item mt-0 p-0">
     <a href="{% url 'home' %}" class="nav-link m-0 p-0">
     <p class="logo-good-oils d-lg-none">Good Oils</p></a>   
 </li>
-
+<!--Search bar-->
 <li class="list-inline-item m-0 p-0">
     <a class="text-black nav-link d-block d-lg-none p-0" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
     <div class="text-center">
             <i class="fas fa-search fa-lg"></i>
         </div>
-    </a>  
-    
+    </a>      
     <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
         <form class="form" method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
@@ -25,7 +25,7 @@
         </form>
     </div>
 </li>
-
+<!--My Profile button-->
 <li class="list-inline-item dropdown m-0 p-0">
     <a class="text-black nav-link d-block d-lg-none m-0 p-0" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
@@ -43,7 +43,7 @@
         {% endif %}
     </div>
 </li>
-
+<!--Shopping Bag-->
 <li class="list-inline-item m-0 p-0">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none m-0 p-0" href="{% url 'view_bag' %}">
         <div class="text-center">
