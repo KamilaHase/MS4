@@ -335,11 +335,47 @@ As already mentioned the website in the current state would serve as a good e-co
     - **Convenient allerts for Admin** - currently the Admin is not informed via email about new orders or new contact messages. It is recommended to include in future development. 
 
 ## Technologies Used
-### Database
-
 ### Frameworks, Libraries & Programs Used: 
 
+### Database
+The project was built with SQLite, which is Django built-in database for development mode and Heroku Postgres for used for production mode. AWS (Amazon Web Services) are used to store all static files and folders for the website in the production mode.
+
+Database schema is following: 
+
+
+### Languages: 
+- HTML5 for markup
+- CSS3 for styles
+- JavaScript for interaction
+- Python3 as a backend programming language
+
+### Frameworks, Libraries & Tools Used: 
+- **GitHub** - used to store the project's code after being pushed from Gitpod.
+- **Gitpod** used to develop the project.
+- **Git** - used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub. 
+- **Django** - The high-level Python web framework used as the main Python framework, including its specific dependencies
+- **Stripe** – Allows individuals and businesses to make and receive payments over the Internet.
+- **Heroku** - platform for the website deployement
+- **AWS (Amazon Web Services)** - for hosting static files and images
+- **SQLite3** (Django built-in database) as a database in development mode
+- **PostgreSQL** (Heroku built-in) as a database in production mode
+- **Google Fonts** - Google fonts were used to import fonts into the style.css file which is used on all pages throughout the project
+- **Bootstrap 4** - was used to assist with the responsiveness and styling of the website
+- **Font Awesome** - for icons in footer, shopping bag and my profile
+- **jQuery** - JavaScript library to provide support with JavaScript codes
+
+
+Tools used for wireframes and images:
+- **MS Office Power Point** - used for creating wireframes, adjusting all print screens
+- **techsini.com** for mockup
+
 ## Testing
+Website has been manually tested and corrected by:
+- http://pep8online.com/ - for Python files, no errors found
+- https://validator.w3.org/ - validating HTML content was showing errors because of Django expressions. When those are removed, the validation tests of all html pages are currently not showing any errors.
+- https://jigsaw.w3.org/css-validator/ - CSS validator, no errors found
+- https://www.jshint.com/ - JavaScript validator, no errors found
+
 #### Bugs and problems in development:
 - **Add Brand filter**
     - First bug I experienced was adding Brand as another option to filter products. As it was the first functionality to be implemented, I managed to make some unknown serious errors that unfortunately did not lead to be solved even with a massive help of Code Institute tutor. In the end I decided to reopen the workspace from GitHub. Second try days later was successful therefore products can be now filtered according to their brands.
