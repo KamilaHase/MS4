@@ -23,6 +23,7 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+    <!--Display products according to chosen filter-->
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2">
@@ -63,6 +64,7 @@
                     </p>
                 </div>
             </div>
+            <!--Products displayed-->
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -109,6 +111,7 @@
                                     <small class="alert alert-light text-white bg-grey m-0 p-1"
                                         role="alert">{{ product.amount }} ml</small>
 
+                                    <!--Admin options to edit/delete product-->
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
                                         <a href="{% url 'edit_product' product.id %}">Edit</a> |
@@ -120,6 +123,7 @@
                         </div>
                     </div>
                 </div>
+                <!--Breakline-->
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>
@@ -145,6 +149,7 @@
         </div>
     </div>
 </div>
+<!--Button to lead to top of the page-->
 <div class="btt-button shadow-sm border border-grey rounded-2">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-golden mx-auto my-auto"></i>

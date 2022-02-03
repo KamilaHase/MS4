@@ -163,8 +163,8 @@ Images on website are to be found under these links (all have been downloaded fr
 
 All images that have not been listed above were used from Microsoft Office icons library. Other images (such as product labels) I created in Microsoft Power Point.
 
-#### Wireframes
-#### Mockup - main page
+### Wireframes
+### Mockup - main page
 
 ## Features
 ### Existing Features
@@ -223,8 +223,89 @@ All images that have not been listed above were used from Microsoft Office icons
 
     - **toast messages** - to comment the process of an action (succes, error, info, warning), toast messages with according message appear in the riht top corner.
 
-1. - **Home - home.html** 
+2. **Home - home.html** 
+    - **Carousel** 
+         - presenting motivational images, currently listed 3 images
+         - motivational slogan with button leading to all products
+    - **Quote** - motivational quote promoting good quality oils
+    - **Description of Virgin and Cosmetics Oils from the shop** - in order to raise awareness of good quality oils the website offers, there are two "educational" texts providing description of the oils offered on the shop
+    - **Advertisement for Good Oils Magazine** - link to Good Oils Magazine offering more information about the oils
 
+3. **Products - products.html** 
+    - Pages where users can see all products and sort them by required criteria: category, brand, price, alphabet
+    - Each product displays its image, product name, category, brand, amount and price
+    - Products are visible for both registered and unregistered users
+    - If Admin is the registered user, he/she can also see links to edit or delete product
+    - if a user clicks on image of the product, he is linked to the product detail - product_detail.html
+
+4. **Product Detail - product_detail.html**   
+    - Product detail page shows all information available for a certain product: its image, name, category, brand, bottle content, short description. 
+    - Buttons to add product in a shopping bag or go back to all products
+    - Long descripton od a product
+    - Product rating - described on rating page
+    - Signed in Admin may also update or delete product
+
+5. **Add Product - add_product.html - ADMIN only**
+    - For registered admin user
+    - A form to add a new product
+    - Accessible from from menu navbar
+
+6. **Edit Product - edit_product.html - ADMIN only**
+    - For registered admin user
+    - A form to edit an existing product
+    - Accessible from products.html page and from product_detail.page
+
+4. **Product Reviews - reviews.html** 
+   - In case there are no reviews available yet, a message "No customers have rated .....(name of product)" and a suggestion to "be the first to review the product". 
+    - To rate a product a user has to be signed in. Therefore the button "be the first.." leads to sign in page in case the user has not signed in. For users who are already signed in, the button leads them to page add_review.html
+    - In case product already contains some reviews, a heading states "Customers rated .....(name of product) as:", below is a scale of 5 empty stars, the average rating is displayed graphicaly by filled stars. Next is placed a button with text "Add review".
+    - Reviews are visible to both registered and unregistered users, new review can be added only by a user that is signed in.
+    - User can can also update and delete own product review.
+    - Admin can delete a product review of another user but has no ability to update it from the website.
+
+5. **Contact Us - contact.html** 
+    - Gives the user to contact the company either directly or by a form.
+    - Direct contacts are presented on left side of the page, on right side of the page is a form to send in.
+
+6. **Good Oils Magazine - magazine.html** 
+    - Site presenting list of articles dedicated to oils. Each article is presented by a card containing short introduction to an article, link to read more and date and author of the article. 
+
+7. **Good Oils Magazine - Post Detail - post_detail.html** 
+    - Article in its full length. Contains button with a link to all articles - magazine.html
+    - *Comments section* 
+        - Signed in users have the option to add their comment on an article
+        - Users who have not signed in or registered are linked to sign in page in case they want to see the comments and add their own
+
+8. **Good Oils Magazine - Add Post - add_post.html - ADMIN only** 
+    - For registered admin user
+    - A form to add a new post
+    - Accessible from from menu navbar
+
+9. **Good Oils Magazine - Edit Post - edit_post.html - ADMIN only**
+    - For registered admin user
+    - A form to edit an existing post
+    - Accessible from from post_detail.page
+
+8. **Shopping Bag - bag.html** 
+    - Users can see all products they have added to their shopping bag. Page contains image of the product, its name, brand, price, quantity and subtotal price.
+    - User has the option to add or decrease the amount of the chosen products.
+    - On the bottom of the page is a summary of all ordered products (Bag total costs, delivery costs and total costs) together with link to "continue shopping" or "secure checkout".
+
+9. **Checkout - checkout.html, checkout_success.html** 
+    - Section displays a summary of the order and a checkout form where user writes his/hers delivery information for shipping together with his payment card number.
+    - Payment field uses Stripe element. 
+    - If the user has a saved profile, then checkout form is prefilled with personal and shipping information
+    - Webhooks are used to ensure secure and safe purchase.
+    - User has also the option of going back and adjusting their bag if he/she wishes to.
+    - If a purchase went well, a page checkou_success.html is displayed a confirmation of a successful purchase together with purchase summary.
+
+10. **My Profile** 
+    - Registered and signed in user can see all his previous orders and shipping information
+
+11. **Login**
+12. **Sign Out**
+13. **Register**
+   
 
 ### Features Left to Implement
 ## Technologies Used
@@ -246,6 +327,8 @@ All images that have not been listed above were used from Microsoft Office icons
 
 - **Carousel stutters**
     - The last image on carousel "stutters" - doesn´t slide smoothly and stops for a short while while sliding away. Assumption is that it is caused by the Bootstrap class "active". Bug left for future development.
+
+- **Update and delete comments for articles**
 
 
 - **Buttons styling**

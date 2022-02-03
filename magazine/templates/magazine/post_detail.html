@@ -34,10 +34,10 @@
             <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top w-100" alt="{{ post.nickname }}">
         </a>
         {% endif %}
-
         <div class="card-body">
             <h3 class="card-title">{{ post.title }}</h3>
-
+            
+            <!--Admin options to edit/delete article-->
             {% if request.user.is_superuser %}
             <span><small class="">
                     <a href="{% url 'edit_post' post.slug %}"> Edit article</a>
@@ -50,7 +50,6 @@
             <p class="card-text"><small class="text-muted">Written by: {{ post.author }},
                     {{ post.date_added | date:"d M - Y | h:i"}}</small></p>
         </div>
-
         <div class="card-body">
         <div class="row">
             <a href="{% url 'magazine' %}" role="button" class="btn btn-outline-danger rounded-2">
@@ -58,11 +57,9 @@
             </a>
         </div>
     </div>
-
     </div>
 
-    <!--Comment Section-->
-    
+<!--Comment Section-->
     <div class="row mt-5">
         <div class="col-sm-10 col-md-8">
             <h4 class="add-comment">Comments</h4>
@@ -70,21 +67,17 @@
     </div>
 
     {% if user.is_authenticated %}
-
     {% if post.comments.all %}
     {% for comment in post.comments.all %}
     <div class="row">
         <div class="col-sm-10 col-md-8">
-
             <article class="article-comment">
                 <strong>{{ comment.nickname }} ( {{ comment.date_created | date:"d M Y, h:i "}} )</strong>
                 {{ comment.comment_text}}
             </article>
-
         </div>
     </div>
     {% endfor %}
-
     {% else %}
     <div class="row">
         <div class="col-sm-10 col-md-8">
@@ -94,12 +87,12 @@
         </div>
     </div>
     {% endif %}
-
     <div class="row mt-5">
         <div class="col-sm-10 col-md-8">
             <h4 class="add-comment">Add A Comment</h4>
         </div>
     </div>
+    <!--Add article form-->
     <div class="row pb-4">
         <div class="col-sm-10 col-md-8">
             <form method="post" action=".">
