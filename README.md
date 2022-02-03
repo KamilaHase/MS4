@@ -319,10 +319,26 @@ All images that have not been listed above were used from Microsoft Office icons
 12. **403, 404 & 500 Pages**
     -  Pages explain an encountered error. Button returns user to Good Oils homepage.
 
+13. **Django Admin site https://good-oils.herokuapp.com/admin**
+    - As [Django](https://docs.djangoproject.com/en/4.0/ref/contrib/admin/) explains, the admin site is an "automatic admin interface. It reads metadata from your models to provide a quick, model-centric interface where trusted users can manage content on your site. The admin’s recommended use is limited to an organization’s internal management tool."
+    - Provides complete control over the website content.
+
 ### Features Left to Implement
+As already mentioned the website in the current state would serve as a good e-commerce starter page but many features can be added for better user experience. Some of them would be: 
+    - **Update and delete comments for articles** - currently no user (apart in the Django Admin site) can update or delete comments in Good Oils Magazine section. For better user experience, it is highly recommended to add these functionalities.
+    - **Product detail - load products from same brand** - another of the project idea parts were to load products from the same brand on product detail page. 
+    - **About us page** - currently there is no "About us" page which would give better understanding of the e-commerce store owners and their approach to the business. It is highly recommended to include in future development for better user experience as well as for better marketing purposes.
+    - **Sign up vs. Register** - for a better user experience it is recommended to fully align the uses of terms "register" vs. "sign up", "login" vs. "sign in". From time reasons those have not been properly corrected in the allauth files. 
+    - **Button styling** - during the development of the website, my intent was to unify all buttons. However few of them on the page still kept their styling from django forms and Code Institute tutorial (such as "insert image") or "Add post" in the Magazine section. 
+    - **Search functionality accross the entire page** - currently the search bar searches only among the products. It would be better if it searches through the entire page and includes the magazine posts as well. 
+    - **Magazine Posts** - include buttons to share posts via social media or email.
+    - **Convenient allerts for Admin** - currently the Admin is not informed via email about new orders or new contact messages. It is recommended to include in future development. 
+
 ## Technologies Used
 ### Database
+
 ### Frameworks, Libraries & Programs Used: 
+
 ## Testing
 #### Bugs and problems in development:
 - **Add Brand filter**
@@ -340,14 +356,8 @@ All images that have not been listed above were used from Microsoft Office icons
 - **Carousel stutters**
     - The last image on carousel "stutters" - doesn´t slide smoothly and stops for a short while while sliding away. Assumption is that it is caused by the Bootstrap class "active". Bug left for future development.
 
-- **Update and delete comments for articles**
 
 
-- **Sign up vs. Register**
-
-- **Buttons styling**
-
-- **Buttons styling**
 
 ## Deployment
 ### Deploying to Heroku
