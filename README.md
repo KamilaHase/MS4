@@ -185,29 +185,30 @@ All images that have not been listed above were used from Microsoft Office icons
         - **Delivery banner** - a banner presenting free delivery for purchases over 25 €. Banner can be closed by clicking/tapping on close button
 
     - **main_nav.html** contains:
-        - **Navbar menu:**
+        - **Navbar menu:** 
+            - links to products that are sorted according to categories:
             - *Virgin Oils* with dropdown: 
-                - Olive Oils
-                - Nut Oils
-                - Seed Oils
-                - All Virgin Oils
+                - Olive Oils (/products/?category=olive_oils)
+                - Nut Oils (/products/?category=nut_oils)
+                - Seed Oils (/products/?category=seed_oils)
+                - All Virgin Oils (/products/?category=olive_oils,nut_oils,seed_oils)
 
             - *Cosmetic Oils* with dropdown: 
-                - Body Oils
-                - Essential Oils
-                - All Cosmetic Oils
+                - Body Oils (/products/?category=body_oils)
+                - Essential Oils (/products/?category=essential_oils)
+                - All Cosmetic Oils (/products/?category=body_oils,essential_oils)
             
             - *All Products* with dropdown: 
-                - By Price
-                - By Category
-                - By Brand
-                - All Products
+                - By Price (/products/?sort=price&direction=asc)
+                - By Category (/products/?sort=category&direction=asc)
+                - By Brand (/products/?sort=brand&direction=asc)
+                - All Products (/products/)
             
-            - *Contact Us*
-            - *Good Oils Magazine*
+            - *Contact Us* - contact.html
+            - *Good Oils Magazine* - magazine.html
             - Registered Admin sees another menu link *Admin Section* with a dropdown:
-                - Add Product
-                - Add Magazine Post
+                - Add Product (add_product.html)
+                - Add Magazine Post (add_post.html))
 
             - **Toggle button for small screens**
             - these sites are described bellow
@@ -216,7 +217,7 @@ All images that have not been listed above were used from Microsoft Office icons
           - displays toggle button with *Navbar menu* listed in main_nav.html
           - *Logo Good Oils*
           - *Search bar*
-          - *My Profile* button - see above
+          - *My Profile* button - see below
           - *Shopping Bag* button
 
     - **footer.html** - presents links to Contact Us form (below), links to to social media (Instagram, Facebook, Twitter) - external resources of information about the project(fictional) and Copyright (fictional).
@@ -300,12 +301,23 @@ All images that have not been listed above were used from Microsoft Office icons
     - If a purchase went well, a page checkou_success.html is displayed a confirmation of a successful purchase together with purchase summary.
 
 10. **My Profile** 
-    - Registered and signed in user can see all his previous orders and shipping information
+    - Registered and signed in user can see all his/hers previous orders and shipping information
 
-11. **Login**
-12. **Sign Out**
-13. **Register**
-   
+11. **Login - login.html**, **Sign Out logout.html**, **Register signup.html** and other social account pages
+    -  Based on built in functionalities of [django-allauth](https://django-allauth.readthedocs.io/en/latest/) Python package: "Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication." 
+    - Register (sign up page)
+        - User provides username, email and password
+        - Register button
+    - Login 
+        - User provides username or email and password. 
+        - Remember me option to save information.
+        - Sign in button
+        - Help for forgotten password
+    - Sign Out
+        - sign out (logout) page for confirming the wish to logout of the current session
+
+12. **403, 404 & 500 Pages**
+    -  Pages explain an encountered error. Button returns user to Good Oils homepage.
 
 ### Features Left to Implement
 ## Technologies Used
@@ -331,7 +343,7 @@ All images that have not been listed above were used from Microsoft Office icons
 - **Update and delete comments for articles**
 
 
-- **Buttons styling**
+- **Sign up vs. Register**
 
 - **Buttons styling**
 
