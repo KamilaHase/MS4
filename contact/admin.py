@@ -19,4 +19,5 @@ class ContactAdmin(admin.ModelAdmin):
 
     ordering = ('date_sent',)
 
+
 admin.site.register(Contact, ContactAdmin)

@@ -11,5 +11,6 @@ class ReviewAdmin(admin.ModelAdmin):
         'rating',
         'review_date'
     )
-    
+
+
 admin.site.register(ProductReview, ReviewAdmin)
