@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container bottom-footer m-2">
+    <div class="container bottom-footer">
         <div class="row">
             <div class="col">
                 <hr>
@@ -86,6 +86,10 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('[data-toggle="tooltip"]').tooltip();
+</script>
+
 {% include 'products/includes/quantity_input_script.html' %}
 <script type="text/javascript">
     // Update quantity on click
