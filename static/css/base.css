@@ -510,6 +510,10 @@ input[name='q']::placeholder {
     .bottom-footer {
         min-height: calc(100vh - 187px);
     }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
 }
 
 /* fixed top navbar only on medium and up */
