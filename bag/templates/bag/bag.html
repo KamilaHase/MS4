@@ -43,7 +43,7 @@
 
                             {% for item in bag_items %}
                                 <tr>
-                                    <td>
+                                    <td class="display-sm-none">
                                         {% include "bag/product_image.html" %}
                                     </td>
                                     
@@ -92,14 +92,14 @@
 
 {% block postloadjs %}
 {{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %}
-
 <script type="text/javascript">
     <script type="text/javascript">
     $('.btt-link').click(function(e) {
         window.scrollTo(0,0)
     })
 </script>
+{% include 'products/includes/quantity_input_script.html' %}
+<script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
