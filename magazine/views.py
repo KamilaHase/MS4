@@ -50,7 +50,7 @@ def add_post(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only our admin \
             team can do this action.')
-        return redirect(reverse('home'))
+        return redirect(reverse('magazine'))
 
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
@@ -78,7 +78,7 @@ def edit_post(request, slug):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only our admin \
             team can do this action.')
-        return redirect(reverse('home'))
+        return redirect(reverse('magazine'))
 
     post = get_object_or_404(Post, slug=slug)
     if request.method == 'POST':
@@ -109,7 +109,7 @@ def delete_post(request, slug):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only our admin \
             team can do this action.')
-        return redirect(reverse('home'))
+        return redirect(reverse('magazine'))
 
     post = get_object_or_404(Post, slug=slug)
     post.delete()
@@ -137,3 +137,18 @@ def view_comment(request, slug):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_comment(request, slug):
+    """ Delete a comment from the magazine """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only our admin \
+            team can do this action.')
+        return redirect(reverse('home'))
+
+    comments = Comment.objects.all()
+    comment.delete()
+    messages.success(request, 'Comment deleted!')
+    return redirect(reverse('post_detail'))
+
