@@ -415,10 +415,31 @@ Tools used for wireframes and images:
 
 Credits:
 
-Overall structure of the website: Tutorial from Code Institute - Boutique Ado
-- Contact app:
+#### Overall structure of the website: 
+Tutorial from Code Institute - Boutique Ado, https://github.com/Code-Institute-Solutions/boutique_ado_v1
+
+#### Contact app:
+Based on: https://github.com/PiotrWojniak/MS4/tree/main/contact
+Inspiration from: 
+    - https://github.com/AmyOShea/MS4-ARTstop/blob/main/contact/views.py
+    - https://learndjango.com/tutorials/django-email-contact-form
+
+
+#### Reviews app: 
+Based on: https://github.com/gomathishankar28/ms4_bubbles/tree/main/reviews
+
+#### Magazine app: 
+Based on: https://github.com/gomathishankar28/ms4_bubbles/tree/main/blog
+
+### Other overall inspiration from:
+https://docs.djangoproject.com/en/4.0/
+https://github.com/Franciskadtt/happybean
 https://github.com/PiotrWojniak/MS4
-https://github.com/AmyOShea/MS4-ARTstop/blob/main/contact/views.py
+https://github.com/AmyOShea/MS4-ARTstop
+https://github.com/Sojasmine/alana
+
+
+
 
 
 - quote about oils adapted from: https://www.goodreads.com/quotes/tag/essential-oils
