@@ -38,7 +38,9 @@
             </a>
             {% endif %}
             <div class="card-body">
-               <h5 class="card-title">{{ post.title }}</h5>
+               <a href="{% url 'post_detail' post.slug %}" class="text-grey-products">
+                  <h5 class="card-title">{{ post.title }}</h5>
+               </a>
                <p class="card-text">{{ post.intro_text }}</p>
             </div>
             <div class="card-footer mb-3">
