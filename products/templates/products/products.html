@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid page-container">
+<div class="container-fluid page-container bottom-footer">
     <div class="row">
         <div class="col text-center mt-5">
             {% for c in current_categories %}
@@ -82,7 +82,7 @@
                         {% endif %}
                         <div class="card-body pb-0">
                             <a href="{% url 'product_detail' product.id %}" class="text-grey">
-                            <h3 class="mb-0 text-grey">{{ product.name }}</h3>
+                            <h4 class="mb-0 text-grey">{{ product.name }}</h4>
                             </a>
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
