@@ -15,14 +15,17 @@ class Migration(migrations.Migration):
             name='Contact',
             fields=[
                 ('id', models.BigAutoField(
-                    auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                    auto_created=True,
+                    primary_key=True,
+                    serialize=False,
+                    verbose_name='ID')),
                 ('name', models.CharField(max_length=100)),
                 ('email', models.EmailField(max_length=150)),
                 ('subject', models.CharField(
                     choices=[('general_question', 'GENERAL QUESTION'),
-                    ('update_my_order', 'UPDATE MY ORDER'),
-                    ('account_issue', 'ACCOUNT ISSUE'),
-                    ('offer_your_products', 'OFFER YOUR PRODUCTS')],
+                             ('update_my_order', 'UPDATE MY ORDER'),
+                             ('account_issue', 'ACCOUNT ISSUE'),
+                             ('offer_your_products', 'OFFER YOUR PRODUCTS')],
                     default='general_question', max_length=100)),
                 ('message', models.TextField()),
                 ('date_sent', models.DateTimeField(auto_now_add=True)),

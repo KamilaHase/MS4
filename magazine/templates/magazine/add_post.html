@@ -3,48 +3,44 @@
 
 {% block page_header %}
 <div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
+   <div class="row">
+      <div class="col"></div>
+   </div>
 </div>
 {% endblock %}
-
 
 {% block content %}
 <!-- Add new post header -->
 <div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6 offset-md-5">
-            <hr>
-            <h2 class="mb-4 mt-4 btn text-white rounded-2 bg-info uppercase-font"><strong>Admin Section</strong></h2>
-        </div>
-        <div class="col-12 col-md-6 offset-md-3">
-
-            <h5 class="text-muted">Add a New Post to Magazine</h5>
-            <hr>
-        </div>
-
-    </div>
-    <!-- Add New Post form -->
-    <div class="row">
-        <div class="col-12 col-md-6 offset-md-3">
-            <form class="mt-3" action="{% url 'add_post' %}" method="POST" enctype="multipart/form-data"
-                id="add-magazine-form">
-                {% csrf_token %}
-                {% for field in form %}
-                {% if field.nickname != 'image' %}
-                {{ field | as_crispy_field }}
-                {% else %}
-                {{ field }}
-                {% endif %}
-                {% endfor %}
-                <div class="text-right">
-                    <a class="btn btn-outline-black rounded-2 mb-3 mr-5" href="{% url 'products' %}">Cancel</a>
-                    <button class="btn btn-submit-brown rounded-2 mb-3" type="submit">Add Post</button>
-                </div>
-            </form>
-        </div>
-    </div>
+   <div class="row">
+      <div class="col-12 col-md-6 offset-md-5">
+         <hr>
+         <h2 class="mb-4 mt-4 btn text-white rounded-2 bg-info uppercase-font"><strong>Admin Section</strong></h2>
+      </div>
+      <div class="col-12 col-md-6 offset-md-3">
+         <h5 class="text-muted">Add a New Post to Magazine</h5>
+         <hr>
+      </div>
+   </div>
+   <!-- Add New Post form -->
+   <div class="row">
+      <div class="col-12 col-md-6 offset-md-3">
+         <form class="mt-3" action="{% url 'add_post' %}" method="POST" enctype="multipart/form-data"
+            id="add-magazine-form">
+            {% csrf_token %}
+            {% for field in form %}
+            {% if field.nickname != 'image' %}
+            {{ field | as_crispy_field }}
+            {% else %}
+            {{ field }}
+            {% endif %}
+            {% endfor %}
+            <div class="text-right">
+               <a class="btn btn-outline-black rounded-2 mb-3 mr-5" href="{% url 'products' %}">Cancel</a>
+               <button class="btn btn-submit-brown rounded-2 mb-3" type="submit">Add Post</button>
+            </div>
+         </form>
+      </div>
+   </div>
 </div>
-
 {% endblock %}

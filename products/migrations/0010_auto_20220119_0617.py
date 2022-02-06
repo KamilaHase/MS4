@@ -14,9 +14,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Brand',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True,
+                    serialize=False, verbose_name='ID')),
                 ('brand_name', models.CharField(max_length=254)),
-                ('brand_frname', models.CharField(blank=True, max_length=254, null=True)),
+                ('brand_frname', models.CharField(
+                    blank=True, max_length=254, null=True)),
             ],
             options={
                 'verbose_name_plural': 'Brands',
@@ -36,11 +39,15 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='product',
             name='amount',
-            field=models.DecimalField(blank=True, decimal_places=0, max_digits=8, null=True),
+            field=models.DecimalField(
+                blank=True, decimal_places=0, max_digits=8, null=True),
         ),
         migrations.AlterField(
             model_name='product',
             name='brand',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.brand'),
+            field=models.ForeignKey(
+                blank=True, null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to='products.brand'),
         ),
     ]

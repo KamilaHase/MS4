@@ -4,112 +4,108 @@
 
 {% block page_header %}
 <div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
+   <div class="row">
+      <div class="col"></div>
+   </div>
 </div>
 {% endblock %}
 
 {% block content %}
 <!--Heading-->
 <div class="container-fluid">
-    <div class="row">
-        <div class="col text-center mt-5">
-            <h2 class="bg-gom pb-4">
-                <br>Good Oils Magazine
-            </h2>
-        </div>
-    </div>
+   <div class="row">
+      <div class="col text-center mt-5">
+         <h2 class="bg-gom pb-4">
+            <br>Good Oils Magazine
+         </h2>
+      </div>
+   </div>
 </div>
 
 <!--Post Detail-->
 <div class="container">
-    <div class="card col mb-3">
-        {% if post.image %}
-        <a href="{% url 'post_detail' post.slug %}">
-            <img src="{{ post.image.url }}" class="card-img-top w-100" alt="{{ post.nickname }}">
-        </a>
-        {% else %}
-        <a href="{% url 'post_detail' post.slug %}">
-            <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top w-100" alt="{{ post.nickname }}">
-        </a>
-        {% endif %}
-        <div class="card-body">
-            <h3 class="card-title">{{ post.title }}</h3>
-            
-            <!--Admin options to edit/delete article-->
-            {% if request.user.is_superuser %}
-            <span><small class="">
-                    <a href="{% url 'edit_post' post.slug %}"> Edit article</a>
-                    <a class="text-danger" href="{% url 'delete_post' post.slug %}">Delete article</a></small>
-            </span>
-            {% endif %}
-
-            <p class="card-text mt-2">{{ post.intro_text }}</p>
-            <p class="card-text">{{ post.article|linebreaks }}</p>
-            <p class="card-text"><small class="text-muted">Written by: {{ post.author }},
-                    {{ post.date_added | date:"d M - Y | h:i"}}</small></p>
-        </div>
-        <div class="card-body">
-        <div class="row">
+   <div class="card col mb-3">
+      {% if post.image %}
+      <a href="{% url 'post_detail' post.slug %}">
+      <img src="{{ post.image.url }}" class="card-img-top w-100" alt="{{ post.nickname }}">
+      </a>
+      {% else %}
+      <a href="{% url 'post_detail' post.slug %}">
+      <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top w-100" alt="{{ post.nickname }}">
+      </a>
+      {% endif %}
+      <div class="card-body">
+         <h3 class="card-title">{{ post.title }}</h3>
+         <!--Admin options to edit/delete article-->
+         {% if request.user.is_superuser %}
+         <span><small class="">
+         <a href="{% url 'edit_post' post.slug %}"> Edit article</a>
+         <a class="text-danger" href="{% url 'delete_post' post.slug %}">Delete article</a></small>
+         </span>
+         {% endif %}
+         <p class="card-text mt-2">{{ post.intro_text }}</p>
+         <p class="card-text">{{ post.article|linebreaks }}</p>
+         <p class="card-text"><small class="text-muted">Written by: {{ post.author }},
+            {{ post.date_added | date:"d M - Y | h:i"}}</small>
+         </p>
+      </div>
+      <div class="card-body">
+         <div class="row">
             <a href="{% url 'magazine' %}" role="button" class="btn btn-outline-danger rounded-2">
-                Back to all articles
+            Back to all articles
             </a>
-        </div>
-    </div>
-    </div>
+         </div>
+      </div>
+   </div>
 
-<!--Comment Section-->
-    <div class="row mt-5">
-        <div class="col-sm-10 col-md-8">
-            <h4 class="add-comment">Comments</h4>
-        </div>
-    </div>
-
-    {% if user.is_authenticated %}
-    {% if post.comments.all %}
-    {% for comment in post.comments.all %}
-    <div class="row">
-        <div class="col-sm-10 col-md-8">
-            <article class="article-comment">
-                <strong>{{ comment.nickname }} ( {{ comment.date_created | date:"d M Y, h:i "}} )</strong>
-                {{ comment.comment_text}}
-            </article>
-        </div>
-    </div>
-    {% endfor %}
-    {% else %}
-    <div class="row">
-        <div class="col-sm-10 col-md-8">
-            <article class="article-comment">
-                No comments available yet. Be the first to comment!
-            </article>
-        </div>
-    </div>
-    {% endif %}
-    <div class="row mt-5">
-        <div class="col-sm-10 col-md-8">
-            <h4 class="add-comment">Add A Comment</h4>
-        </div>
-    </div>
-    <!--Add article form-->
-    <div class="row pb-4">
-        <div class="col-sm-10 col-md-8">
-            <form method="post" action=".">
-                {% csrf_token %}
-                {{ form | crispy }}
-                <input type="submit" class="btn-submit-brown rounded-2" value="Add comment">
-            </form>
-        </div>
-    </div>
-
-    {% else %}
-    <div class="">
-        <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
-        <a class="text-info" href="{% url 'account_login' %}">login</a> to see the comments section.
-    </div>
-    {% endif %}
-
+   <!--Comment Section-->
+   <div class="row mt-5">
+      <div class="col-sm-10 col-md-8">
+         <h4 class="add-comment">Comments</h4>
+      </div>
+   </div>
+   {% if user.is_authenticated %}
+   {% if post.comments.all %}
+   {% for comment in post.comments.all %}
+   <div class="row">
+      <div class="col-sm-10 col-md-8">
+         <article class="article-comment">
+            <strong>{{ comment.nickname }} ( {{ comment.date_created | date:"d M Y, h:i "}} )</strong>
+            {{ comment.comment_text}}
+         </article>
+      </div>
+   </div>
+   {% endfor %}
+   {% else %}
+   <div class="row">
+      <div class="col-sm-10 col-md-8">
+         <article class="article-comment">
+            No comments available yet. Be the first to comment!
+         </article>
+      </div>
+   </div>
+   {% endif %}
+   <div class="row mt-5">
+      <div class="col-sm-10 col-md-8">
+         <h4 class="add-comment">Add A Comment</h4>
+      </div>
+   </div>
+   
+   <!--Add article form-->
+   <div class="row pb-4">
+      <div class="col-sm-10 col-md-8">
+         <form method="post" action=".">
+            {% csrf_token %}
+            {{ form | crispy }}
+            <input type="submit" class="btn-submit-brown rounded-2" value="Add comment">
+         </form>
+      </div>
+   </div>
+   {% else %}
+   <div class="">
+      <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
+      <a class="text-info" href="{% url 'account_login' %}">login</a> to see the comments section.
+   </div>
+   {% endif %}
 </div>
-
 {% endblock %}

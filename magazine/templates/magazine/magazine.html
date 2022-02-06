@@ -1,69 +1,62 @@
 {% extends 'base.html' %}
 {% load static %}
 
-
 {% block page_header %}
 <div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
+   <div class="row">
+      <div class="col"></div>
+   </div>
 </div>
 {% endblock %}
 
 {% block content %}
-
 <!-- Heading-->
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-12 text-center mt-5">
-            <h2 class="bg-gom pb-4">
-                <br>Good Oils Magazine
-            </h2>
-        </div>
-    </div>
+   <div class="row">
+      <div class="col-12 text-center mt-5">
+         <h2 class="bg-gom pb-4">
+            <br>Good Oils Magazine
+         </h2>
+      </div>
+   </div>
 </div>
-
 <!--Magazine article cards-->
 <div class="container">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        {% for post in posts %}
-        {% if posts %}
-        <div class="col">
-            <div class="card h-100">
-                {% if post.image %}
-                <a href="{% url 'post_detail' post.slug %}">
-                    <img src="{{ post.image.url }}" class="card-img-top card-img-top-mgo" alt="{{ post.nickname }}">
-                </a>
-                {% else %}
-                <a href="{% url 'post_detail' post.slug %}">
-                    <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top card-img-top-mgo"
-                        alt="{{ post.nickname }}">
-                </a>
-                {% endif %}
-
-                <div class="card-body">
-                    <h5 class="card-title">{{ post.title }}</h5>
-                    <p class="card-text">{{ post.intro_text }}</p>
-                </div>
-                <div class="card-footer mb-3">
-                    <a href="{% url 'post_detail'  post.slug %}" class="logo-font-go-cursive button-magazine mb-0">
-                        <h5>Read article</h5>
-                    </a>
-                    <small class="text-muted">Added: {{ post.date_added | date:"d M - Y | h:i"}}</small>
-                </div>
+   <div class="row row-cols-1 row-cols-md-3 g-4">
+      {% for post in posts %}
+      {% if posts %}
+      <div class="col">
+         <div class="card h-100">
+            {% if post.image %}
+            <a href="{% url 'post_detail' post.slug %}">
+            <img src="{{ post.image.url }}" class="card-img-top card-img-top-mgo" alt="{{ post.nickname }}">
+            </a>
+            {% else %}
+            <a href="{% url 'post_detail' post.slug %}">
+            <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top card-img-top-mgo"
+               alt="{{ post.nickname }}">
+            </a>
+            {% endif %}
+            <div class="card-body">
+               <h5 class="card-title">{{ post.title }}</h5>
+               <p class="card-text">{{ post.intro_text }}</p>
             </div>
-        </div>
-        {% else %}
-        <div class="row">
-            <div class="col-8 offset-2">
-                <h2> No Posts Available</h2>
+            <div class="card-footer mb-3">
+               <a href="{% url 'post_detail'  post.slug %}" class="logo-font-go-cursive button-magazine mb-0">
+                  <h5>Read article</h5>
+               </a>
+               <small class="text-muted">Added: {{ post.date_added | date:"d M - Y | h:i"}}</small>
             </div>
-        </div>
-
-        {% endif %}
-        {% endfor %}
-
-    </div>
-    </div>
-
-    {% endblock %}
+         </div>
+      </div>
+      {% else %}
+      <div class="row">
+         <div class="col-8 offset-2">
+            <h2> No Posts Available</h2>
+         </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+   </div>
+</div>
+{% endblock %}
