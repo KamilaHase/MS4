@@ -206,6 +206,18 @@ input[name='q']::placeholder {
     color: #31302e !important;
 }
 
+.text-grey-products {
+    color: #31302e !important;
+}
+
+.text-grey-products:hover,
+.text-grey-products:active,
+.text-grey-products:focus {
+    color: #31302e !important;
+    text-decoration-color: #31302e !important;
+}
+
+
 .text-cursive {
         font-family: 'Style Script', cursive;
         color: #7b621a!important;
