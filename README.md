@@ -388,6 +388,9 @@ Tools used for wireframes and images:
 - **Carousel stutters**
     - The last image on carousel "stutters" - doesn´t slide smoothly and stops for a short while while sliding away. Assumption is that it is caused by the Bootstrap class "active". Bug left for future development.
 
+- **Registration failed**
+    - After the deployment and correcting files for PEP8 requirements, I splited AUTH_PASSWORD_VALIDATORS in settings.py in an incorrect way, therefore registration of a new user was failing. Thanks to the tutor team, this has been fixed and now works properly.
+
 
 
 
