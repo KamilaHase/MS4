@@ -6,7 +6,7 @@ from products.models import Product
 
 class ProductReview(models.Model):
     """
-    Creates a review model to allow user to perform
+    Creates a model to allow users to perform
     CRUD operations on product reviews
     """
 

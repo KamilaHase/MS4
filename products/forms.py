@@ -4,7 +4,7 @@ from .models import Product, Category, Brand
 
 
 class ProductForm(forms.ModelForm):
-
+    """ Form for Product model """
     class Meta:
         model = Product
         fields = '__all__'
@@ -26,4 +26,3 @@ class ProductForm(forms.ModelForm):
         self.fields['brand'].choices = brand_frnames
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-grey rounded-2'
-        
