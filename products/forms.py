@@ -18,11 +18,13 @@ class ProductForm(forms.ModelForm):
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
 
         self.fields['category'].choices = friendly_names
+        self.fields['category'].widget.attrs['placeholder'] = False
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-grey rounded-2'
 
         brands = Brand.objects.all()
         brand_frnames = [(c.id, c.get_brand_frname()) for c in brands]
         self.fields['brand'].choices = brand_frnames
+        self.fields['brands'].widget.attrs['placeholder'] = False
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-grey rounded-2'
