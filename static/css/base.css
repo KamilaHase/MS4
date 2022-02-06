@@ -210,11 +210,6 @@ input[name='q']::placeholder {
     color: #31302e !important;
 }
 
-.text-grey-products:hover {
-    color: #31302e !important;
-    text-decoration-color: #31302e !important;
-}
-
 
 .text-cursive {
         font-family: 'Style Script', cursive;
