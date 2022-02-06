@@ -276,6 +276,9 @@ a.category-badge > span.badge:hover {
     object-fit: cover;
 }
 
+.badge-heading {
+    font-size: large;
+}
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
