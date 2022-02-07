@@ -10,7 +10,7 @@ Website has been manually tested and corrected by:
 and
 <details>
 <summary>Flake8</summary>
-![Flake8](/documentation/images/flake8_result.png)
+![Flake8](documentation/images/flake8_result.png)
 </details>
 
 - https://validator.w3.org/ - validating HTML content was showing errors because of Django expressions. When those are removed, the validation tests of all html pages are currently not showing any errors.
@@ -21,12 +21,12 @@ and
 
 <details>
 <summary>1. Prospective Customer</summary>
-![Prospective Customer](/documentation/images/prospective_customer_testing.png)
+![Prospective Customer](documentation/images/prospective_customer_testing.png)
 </details>
 
 <details>
 <summary>2. Customer</summary>
-![Customer](/documentation/images/customer_testing.png)
+![Customer](documentation/images/customer_testing.png)
 </details>
 
 <details>
