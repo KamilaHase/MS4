@@ -9,12 +9,11 @@ View live version of website can be seen via Heroku here.
 ## Table of Contents
 - [Project Construction](#project-construction)
 - [UX](#ux)
-    - [UX](#ux)
     - [Business Goals](#business-goals)
     - [User stories](#user-stories)
     - [Design of the website](#design-of-the-website)
     - [Wireframes](#wireframes)
-    - [Mockup](#mockup)
+    - [Mockup](#mockups)
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
@@ -178,7 +177,19 @@ Images on website are to be found under these links (all have been downloaded fr
 All images that have not been listed above were used from Microsoft Office icons library. Other images (such as product labels) I created in Microsoft Power Point.
 
 ### Wireframes
-### Mockup - main page
+### Mockups
+<details>
+<summary>Mockup 1</summary>
+
+![Mockup](/documentation/images/mockup1.png)
+</details>
+
+
+<details>
+<summary>Mockup 2</summary>
+
+![Mockup](/documentation/images/mockup2.png)
+</details>
 
 ## Features
 ### Existing Features
@@ -348,6 +359,7 @@ As already mentioned the website in the current state would serve as a good e-co
    - **Search functionality accross the entire page** - currently the search bar searches only among the products. It would be better if it searches through the entire page and includes the magazine posts as well. 
    - **Magazine Posts** - include buttons to share posts via social media or email.
    - **Convenient allerts for Admin** - currently the Admin is not informed via email about new orders or new contact messages. It is recommended to include in future development. 
+   - **Language corrections of content** - the actual content of the website such product information, detailed information and magazine articles were translated by Google Translate from Czech language websites (see Credits) and therefore there may be some language imperfections. It is advisable to correct the language thoroughouly. 
 
 ## Technologies Used
 ### Frameworks, Libraries & Programs Used: 
@@ -643,11 +655,12 @@ The project was deployed to GitHub Pages using the following steps:
 
 ## Credits
 #### Overall structure of the website: 
-Tutorial from Code Institute - Boutique Ado, https://github.com/Code-Institute-Solutions/boutique_ado_v1
+Based on tutorial from Code Institute - Boutique Ado, https://github.com/Code-Institute-Solutions/boutique_ado_v1
 
 #### Contact app:
 Based on: https://github.com/PiotrWojniak/MS4/tree/main/contact
-Inspiration from: 
+
+- Inspiration from: 
     - https://github.com/AmyOShea/MS4-ARTstop/blob/main/contact/views.py
     - https://learndjango.com/tutorials/django-email-contact-form
 
@@ -658,12 +671,12 @@ Based on: https://github.com/gomathishankar28/ms4_bubbles/tree/main/reviews
 Based on: https://github.com/gomathishankar28/ms4_bubbles/tree/main/blog
 
 ### Other overall inspiration from:
-https://docs.djangoproject.com/en/4.0/
-https://github.com/Franciskadtt/happybean
-https://github.com/gomathishankar28/ms4_bubbles
-https://github.com/PiotrWojniak/MS4
-https://github.com/AmyOShea/MS4-ARTstop
-https://github.com/Sojasmine/alana
+- https://docs.djangoproject.com/en/4.0/
+- https://github.com/Franciskadtt/happybean
+- https://github.com/gomathishankar28/ms4_bubbles
+- https://github.com/PiotrWojniak/MS4
+- https://github.com/AmyOShea/MS4-ARTstop
+- https://github.com/Sojasmine/alana
 
 
 ### Text content:
