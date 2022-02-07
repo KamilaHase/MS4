@@ -5,18 +5,21 @@
 #### Website has been tested and corrected by: 
 Website has been manually tested and corrected by:
 
-- http://pep8online.com/ - for Python files, no errors found
+- [Python validator](http://pep8online.com/) - for Python files, no errors found
 
-and
-<details>
-<summary>Flake8</summary>
+    and
+    <details>
+    <summary>Flake8</summary>
 
-![Flake8](/documentation/images/flake8_result.png)
-</details>
+    ![Flake8](/documentation/images/flake8_result.png)
+    </details>
 
-- https://validator.w3.org/ - validating HTML content was showing errors because of Django expressions. When those are removed, the validation tests of all html pages are currently not showing any errors.
-- https://jigsaw.w3.org/css-validator/ - CSS validator, no errors found
-- https://www.jshint.com/ - JavaScript validator, no errors found
+- [HTML validator](https://validator.w3.org/) - validating HTML content was showing errors because of Django expressions. When those are removed, the validation tests of all html pages are currently not showing any errors.
+- [CSS validator](https://jigsaw.w3.org/css-validator/) - CSS validator, no errors found
+- [JavaScript validator](https://www.jshint.com/) - JavaScript validator, no errors found
+- [Link Checker](https://validator.w3.org/checklink) - To check that all links are working and not broken. The report did not have any issues in final testing.
+- [Responsinator](http://www.responsinator.com/ to check responsivity of the website, website is fully responsive.
+
 
 #### Test User Stories - Images
 <details>
@@ -65,7 +68,7 @@ and
 <details>
 <summary>Register</summary>
 
-![Register](/documentation/images/features/Register.png)
+![Register](/documentation/images/features/register.png)
 </details>
 
 <details>
@@ -131,7 +134,7 @@ and
 <details>
 <summary>Edit my own review</summary>
 
-![Edit own review](documentation/images/features/edit_my_review.png)
+![Edit own review](/documentation/images/features/edit_my_review.png)
 </details>
 
 <details>
