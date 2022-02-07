@@ -7,11 +7,25 @@ The website was developed for study purposes only and all content is fictional. 
 View live version of website can be seen via Heroku here.
 
 ## Table of Contents
-- [Demo](#demo)
- 
+- [Project Construction](#project-construction)
+- [UX](#ux)
+    - [UX](#ux)
+    - [Business Goals](#business-goals)
+    - [User stories](#user-stories)
+    - [Design of the website](#design-of-the-website)
+    - [Wireframes](#wireframes)
+    - [Mockup](#mockup)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#Acknowledgements)
 
-### Project Construction:
-This website contains full options for an e-commerce website: it is a full-stack website with authentication mechanism together with CRUD requirement functionalities (create, read, update, delete). Data handling document is database based on XXXXX. Functionality is created using Django, Python, HTML5, CSS and JavaScript. Bootstrap framework was used in building fronted structure to make sure website is as responsive as possible and can be used on multiple screen sizes.
+## Project Construction:
+This website contains full options for an e-commerce website: it is a full-stack website with authentication mechanism together with CRUD requirement functionalities (create, read, update, delete). Functionality is created using Django, Python, HTML5, CSS and JavaScript. As Django works with SQL databases by default, I was using SQLite in development. Heroku, however, provides a PostgreSQL database for deployment. Bootstrap framework was used in building fronted structure to make sure website is as responsive as possible and can be used on multiple screen sizes.
 Website offers a registration and login system with password hashing to protect each user. 
 
 ## UX
@@ -343,7 +357,6 @@ The project was built with SQLite, which is Django built-in database for develop
 
 Database schema is following: 
 
-
 ### Languages: 
 - HTML5 for markup
 - CSS3 for styles
@@ -403,11 +416,15 @@ Made sure that the env.py file is included in the gitignore file.
 ### To clone the project:
 From the application's repository, click the "code" button and download the zip of the repository. Alternatively, you can clone the repository using the following line in your terminal: 
 ```
-git clone https://github.com/Franciskadtt/happybean.git
+git clone https://github.com/KamilaHase/MS4-Good-Oils.git
 ```
 
 #### To install required software:
-While you are still in the terminal, type pip3 install -r requirements.txt, this will install all the required softwares to run the project:
+In the terminal at first delete all the authomatically installed dependencies and extentions by inserting: 
+```
+pip3 freeze > unins.txt && pip3 uninstall -y -r unins.txt && rm unins.txt
+```
+Afterwards, type pip3 install -r requirements.txt, which will install all the required softwares to run the project:
 ```
 pip3 install -r requirements.txt
 ```
@@ -417,12 +434,11 @@ You now need to set up the database with environment variables. Create a file ti
 
 Option 1: Env.py file:
 ```
- os.environ.setdefault('SECRET_KEY', '<your_variable_here>')
- os.environ.setdefault('DEVELOPMENT', 'True')
- os.environ.setdefault('STRIPE_PUBLIC_KEY', '<your_variable_here>')
- os.environ.setdefault('STRIPE_SECRET_KEY', '<your_variable_here>')
- os.environ.setdefault('STRIPE_WH_SECRET_CH', '<your_variable_here>')
- os.environ.setdefault('STRIPE_WH_SECRET_SUB', '<your_variable_here>')
+ os.environ['SECRET_KEY'] = ('your_variable_here')
+ os.environ["DEVELOPMENT"] = "True"
+ os.environ['STRIPE_PUBLIC_KEY'] = ('your_variable_here')
+ os.environ['STRIPE_SECRET_KEY'] = ('your_variable_here')
+ os.environ['STRIPE_WH_SECRET'] = ('your_variable_here')
  ```
 - In ` settings.py`  add:
 ```
@@ -452,7 +468,7 @@ KEY = 'USE_AWS', VALUE: 'True'
 
 #### DEBUG 
 ```
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = os.environ.get('DEBUG')
 ```
 
 ### **Heroku Deployment**
@@ -479,7 +495,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
     ```
 - Create a Procfile and inside, add the following:
     ```
-    web: gunicorn happybean.wsgi:application
+    web: gunicorn good-oils.wsgi:application
 - In `settings.py`, use an if statement so that when the app runs on Heroku, you will connect to Postgres, and otherwise, it will connect to sqlite3, like so:
     ```
     if 'DATABASE_URL' in os.environ:
@@ -508,10 +524,10 @@ DEBUG = 'DEVELOPMENT' in os.environ
     ```
 - Login to Heroku in the CLI and temporarity disable collectstatic, with the following command:
     ```
-    heroku config:set DISABLE_COLLECTSTATIC=1 --app happybean
+    heroku config:set DISABLE_COLLECTSTATIC=1 --app good-oils
     ```
 - Add your Heroku app and local host to allowed hosts in `settings.py.`
-- Push to Github, and then to Heroku master. 
+- Push to Github, and then to Heroku master (main). 
 - In Heroku, go to the 'Deploy' tab. In the section 'Deployment Method' click on 'Github - Connect to Github'. Make sure your Github profile is displayed. Add the repository name and click on 'Search'. After Heroku has found the repository, click on 'Connect'. This will connect your Heroku app to your GitHub repository. Click 'Enable automatic deploys'. Your code will automatically be deployed to Heroku as well. 
 
 ### **AWS (Amazon Web Services)**
@@ -537,12 +553,12 @@ Create an account with [AWS](www.aws.amazon.com), follow the steps and sign in.
 ```
 - Go to the Bucket policy tab and click 'policy generator', to create a policy. Choose 's3 bucket policy', allow all principals by typing a star. From the action dropdown menu select 'GetObject'. Copy the ARN and paste it into the ARN box. Then click 'add statment' and then click 'generate policy'. Copy the policy into the bucket policy editor. Add a slash star onto the end of the resource key. Click 'save'. 
 - Go to access control list tab, under public access, click on 'Everyone', select 'List Objects'. Then click 'save'. 
-- Go to IAM (from services menu), click on 'groups' and create a new user group. Give the group a group name (f.e. 'manage-happybean'). Then click 'create group'. 
+- Go to IAM (from services menu), click on 'groups' and create a new user group. Give the group a group name (f.e. 'manage-good-oils'). Then click 'create group'. 
 - Click 'policies' in the dashboard, and then click 'create policy'. Go to the JSON tab. Click 'import managed policy'. Import 'AmazonS3FullAccess'. Get the bucket ARN from the bucket policy page in S3, and paste that in after 'Resource', as a list (first the ARN, then also the ARN with a slash and star). Click 'next tags' and then 'next review'. Give it a name and description. Click 'create policy'. 
-- Go to 'groups'. Click the manage-happybean group. Go to 'permissions'. Click 'attach policy'. Select the policy you just created. Click 'add permissions' and then 'Attach policy'.
-- Go to 'users'. Click 'add user'. As username write 'happybean-staticfiles-user. Give programmatic access. Click 'next'. Add the user to the group. Click through to the end. Download the .csv file. 
+- Go to 'groups'. Click the manage-good-oils group. Go to 'permissions'. Click 'attach policy'. Select the policy you just created. Click 'add permissions' and then 'Attach policy'.
+- Go to 'users'. Click 'add user'. As username write 'good-oils-staticfiles-user. Give programmatic access. Click 'next'. Add the user to the group. Click through to the end. Download the .csv file. 
 
-### **Connecting to DJANGO to S3**
+### **Connecting DJANGO to S3**
 - Go back to GitPod. Install boto3 and Django storages, and freeze them to the requirement file with the following commands:
     ```
     pip3 install boto3
@@ -553,50 +569,78 @@ Create an account with [AWS](www.aws.amazon.com), follow the steps and sign in.
 - Add the following if statement:
     ```
     if 'USE_AWS' in os.environ:
-        AWS_STORAGE_BUCKET_NAME = 'happybean'
-        AWS_S3_REGION_NAME = 'eu-west-1'
-        AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-        AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-        AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    # Cache control
+    AWS_S3_OBJECT_PARAMETERS = {
+        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+        'CacheControl': 'max-age=94608000',
+    }
+
+    # Bucket Config
+    AWS_STORAGE_BUCKET_NAME = 'good-oils'
+    AWS_S3_REGION_NAME = 'eu-north-1'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
     ```
 - On Heroku, add the AWS keys to the Config Variables (they can be found in the csv file you downloaded earlier). Also, add USE_AWS and set it to True. 
 - Remove the DISABLE_COLLECTSTATIC from the variables. 
 - In GitPod, create a file called custom_storages.py and add:
     ```
     from django.conf import settings
-    from storages.backends.s3boto3 import S#Boto3Storage
+    from storages.backends.s3boto3 import S3Boto3Storage
+
 
     class StaticStorage(S3Boto3Storage):
-        location = settings.STATICFILES_LOCATION
+    location = settings.STATICFILES_LOCATION
 
 
     class MediaStorage(S3Boto3Storage):
-        location = settings.MEDIAFILES_LOCATION 
+    location = settings.MEDIAFILES_LOCATION
     ```
 - To the before mentioned if statement from above, in settings.py, also add:
     ```
-        STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-        STATICFILES_LOCATION = 'static'
-        DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-        MEDIAFILES_LOCATION = 'media'
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
 
-        STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-        MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
     ```
 - Add, commit and push these changes. If you now go to the bucket, you will see all the static files. 
 - Go to your bucket and add a new folder called media. Inside it, click 'upload' and then 'add files'. Then select all the images you'd like to use. Click 'next'. Under 'manage public permissions', select 'grant public read access'.
 - On Stripe, add a new webhook endpoint, with the URL of your Heroku app, followed by 
 ```/checkout/wh/```. Select 'receive all events' and click 'add endpoint'.
 
-___
-<br>
-
-<a></a>
 ### GitHub Pages
-### Forking the GitHub Repository
-### Making a Local Clone
+(credit: https://github.com/Code-Institute-Solutions/SampleREADME)
+The project was deployed to GitHub Pages using the following steps:
+1. Log in to GitHub and locate the GitHub Repository
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+4. Scroll down on the left list of options to find "Pages" section, alternatively scroll down the Settings page until you locate the "GitHub Pages" Section. 
+5. Under "Source", click the dropdown called "None" and select "Master Branch".
+6. The page will automatically refresh.
+7. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 
-### Gitpod
+### Forking the GitHub Repository
+1. By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+2. Log in to GitHub and locate the GitHub Repository
+3. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+4. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+1. Log in to GitHub and locate the GitHub Repository
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied in Step 3.
+7. $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+8. Press Enter. Your local clone will be created.
+
+
 ## Credits
 #### Overall structure of the website: 
 Tutorial from Code Institute - Boutique Ado, https://github.com/Code-Institute-Solutions/boutique_ado_v1
@@ -607,7 +651,6 @@ Inspiration from:
     - https://github.com/AmyOShea/MS4-ARTstop/blob/main/contact/views.py
     - https://learndjango.com/tutorials/django-email-contact-form
 
-
 #### Reviews app: 
 Based on: https://github.com/gomathishankar28/ms4_bubbles/tree/main/reviews
 
@@ -617,14 +660,30 @@ Based on: https://github.com/gomathishankar28/ms4_bubbles/tree/main/blog
 ### Other overall inspiration from:
 https://docs.djangoproject.com/en/4.0/
 https://github.com/Franciskadtt/happybean
+https://github.com/gomathishankar28/ms4_bubbles
 https://github.com/PiotrWojniak/MS4
 https://github.com/AmyOShea/MS4-ARTstop
 https://github.com/Sojasmine/alana
 
-- quote about oils adapted from: https://www.goodreads.com/quotes/tag/essential-oils
+
+### Text content:
+Text content was translated mainly from Czech websites dedicated to oils using Google Translate. Oil sites that served as content sources were:
+- products: 
+    - https://www.grizly.cz/
+    - https://www.renovality.cz/
+    - https://www.zdrave-oleje.cz/
+    - https://www.saloos.cz/
+    - https://phytos.cz/
+    - https://eshop.nobilis.cz
+    - https://www.zdravykos.cz
 
 - magazine: 
     - https://aromatics.cz/blog/
-    https://www.goodie.cz/blog/orechove-kremy-popularni-delikatesa-a-zdroj-energie/
+    - https://www.goodie.cz/blog/orechove-kremy-popularni-delikatesa-a-zdroj-energie/
 
-### Acknoledgements
+- quote about oils adapted from: https://www.goodreads.com/quotes/tag/essential-oils
+
+
+## Acknowledgements
+Many thanks to mentor Daisy who provided me with inspiration, valuable tips and boosted my motivation.
+Many thanks to tutors of Code Institue who´s help was highly appreciated and saved my nerves.
