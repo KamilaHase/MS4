@@ -4,7 +4,7 @@
 Good Oils is an e-commerce website built for study purposes at Code Institute. It is a specialized website for the best quality of oils: virgin oils and oils used for cosmetic purposes. Customers can visit the website and order online the products of their choices as well as learn more about certain products in the Good Oils Magazine. The shop is oriented on organic and best quality oils that are on the market in order to target the market trend of healthy lifestile closer to the nature.
 The website was developed for study purposes only and all content is fictional. Currently the website would serve in real world as functional starter website where more development is recommended for better user experience. 
 
-View live version of website can be seen via Heroku here.
+[View live version of website can be seen via Heroku here.](https://good-oils.herokuapp.com/)
 
 ## Table of Contents
 - [Project Construction](#project-construction)
@@ -13,7 +13,7 @@ View live version of website can be seen via Heroku here.
     - [User stories](#user-stories)
     - [Design of the website](#design-of-the-website)
     - [Wireframes](#wireframes)
-    - [Mockup](#mockups)
+    - [Mockups](#mockups)
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
@@ -48,7 +48,7 @@ The web has been built to provide simple yet clear information to all users. The
  - I can be registered to the website if I want to see Reviews of Products and Comments to Magazine
  - I don't have to be registered to the website yet 
 
-    - Goals of a Prospective Customer to visit the website: 
+    - **Goals of a Prospective Customer to visit the website:** 
         - To find information about products
         - To find information about use of the products at Magazine section
         - To gather more information
@@ -67,7 +67,7 @@ The web has been built to provide simple yet clear information to all users. The
  - I can be registered to the website if I want to see Reviews of Products, Comments to Magazine and save my purchase information for future orders
  - I don't have to be registered to the website
 
-    - Goal of a Customer to visit the website: 
+    - **Goals of a Customer to visit the website:** 
         - To make a purchase of the product of my first interest
         - To make a purchase of more products than I initially intended
         - To find information about products
@@ -88,7 +88,7 @@ The web has been built to provide simple yet clear information to all users. The
  - I spend some time on the website reading information about the available products, compatibility with products I offer and possible competition
  - Most likely I will finally register myself to be able to see reviews of products and comments about article posts
 
-    - Goal of a Seller to visit the website: 
+    - **Goal of a Seller to visit the website:**
         - To get in touch with Good Oils store owners and offer my products to present on the website
         - To gather more information
         - To check availability or price of products
@@ -99,7 +99,7 @@ The web has been built to provide simple yet clear information to all users. The
  - I want to have full control over the page and feedback from customers in all forms
  - I am registered as administrator - superuser
 
-    - Goal of an Admin to visit the website (e.g."goodoils.com"): 
+    - **Goal of an Admin to visit the website (e.g."goodoils.com"):**
         - To add new products 
         - To update, read or delete existing products
         - To access reviews of products
@@ -109,7 +109,7 @@ The web has been built to provide simple yet clear information to all users. The
         - To update or delete existing posts
         - To access Comments of posts
     
-    - Goal of an Admin to visit the the Admin site (Django Admin site): 
+    - **Goal of an Admin to visit the the Admin site (Django Admin site):**
         - To have full acces the admin site of the e-shop
         - To add new products 
         - To update or delete existing products
@@ -235,7 +235,7 @@ All images that have not been listed above were used from Microsoft Office icons
                 - Add Product (add_product.html)
                 - Add Magazine Post (add_post.html))
 
-            - **Toggle button for small screens**
+            - *Toggle button for small screens*
             - these sites are described bellow
     
     - **mobile_top_header.html**
@@ -392,7 +392,7 @@ Database schema is following:
 
 
 Tools used for wireframes and images:
-- **MS Office Power Point** - used for creating wireframes, adjusting all print screens
+- **MS Office Power Point** - used for creating wireframes, adjusting all print screens. Used for creating product images.
 - **techsini.com** for mockup
 
 ## Testing

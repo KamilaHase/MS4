@@ -1,4 +1,5 @@
 <!--Logo Good Oils-->
+<ul>
 <li class="list-inline-item mt-0 p-0">
     <a href="{% url 'home' %}" class="nav-link m-0 p-0">
     <p class="logo-good-oils d-lg-none">Good Oils</p></a>   
@@ -27,12 +28,12 @@
 </li>
 <!--My Profile button-->
 <li class="list-inline-item dropdown m-0 p-0">
-    <a class="text-black nav-link d-block d-lg-none m-0 p-0" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="text-black nav-link d-block d-lg-none m-0 p-0" href="#" id="user-optionsm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-user fa-lg mb-2"></i></div>
         </div>
     </a>
-    <div class="dropdown-menu dropdown-mobile border-0 bg-light" aria-labelledby="user-options">
+    <div class="dropdown-menu dropdown-mobile border-0 bg-light" aria-labelledby="user-optionsm">
         {% if request.user.is_authenticated %}
             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -58,3 +59,4 @@
         </div>
     </a>
 </li>
+</ul>
