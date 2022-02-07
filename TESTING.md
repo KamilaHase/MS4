@@ -17,4 +17,25 @@ and
 - https://jigsaw.w3.org/css-validator/ - CSS validator, no errors found
 - https://www.jshint.com/ - JavaScript validator, no errors found
 
-#### **Testing of features:**
+#### Test User Stories - Images
+
+<details>
+<summary>1. Prospective Customer</summary>
+![Prospective Customer](/documentation/images/prospective_customer_testing.png)
+</details>
+
+<details>
+<summary>2. Customer</summary>
+![Customer](/documentation/images/customer_testing.png)
+</details>
+
+<details>
+<summary>3. Seller</summary>
+![Seller](/documentation/images/seller_testing.png)
+</details>
+
+<details>
+<summary>4. Admin</summary>
+![Admin](/documentation/images/admin_testing.png)
+</details>
+

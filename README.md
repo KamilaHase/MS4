@@ -325,14 +325,15 @@ All images that have not been listed above were used from Microsoft Office icons
 
 ### Features Left to Implement
 As already mentioned the website in the current state would serve as a good e-commerce starter page but many features can be added for better user experience. Some of them would be: 
-    - **Update and delete comments for articles** - currently no user (apart in the Django Admin site) can update or delete comments in Good Oils Magazine section. For better user experience, it is highly recommended to add these functionalities.
-    - **Product detail - load products from same brand** - another of the project idea parts were to load products from the same brand on product detail page. 
-    - **About us page** - currently there is no "About us" page which would give better understanding of the e-commerce store owners and their approach to the business. It is highly recommended to include in future development for better user experience as well as for better marketing purposes.
-    - **Sign up vs. Register** - for a better user experience it is recommended to fully align the uses of terms "register" vs. "sign up", "login" vs. "sign in". From time reasons those have not been properly corrected in the allauth files. 
-    - **Button styling** - during the development of the website, my intent was to unify all buttons. However few of them on the page still kept their styling from django forms and Code Institute tutorial (such as "insert image") or "Add post" in the Magazine section. 
-    - **Search functionality accross the entire page** - currently the search bar searches only among the products. It would be better if it searches through the entire page and includes the magazine posts as well. 
-    - **Magazine Posts** - include buttons to share posts via social media or email.
-    - **Convenient allerts for Admin** - currently the Admin is not informed via email about new orders or new contact messages. It is recommended to include in future development. 
+   - **Modal for delete - actions** - for better user experience, it is recommended to add modals for deleting items.
+   - **Update and delete comments for articles** - currently no user (apart in the Django Admin site) can update or delete comments in Good Oils Magazine section. For better user experience, it is highly recommended to add these functionalities.
+   - **Product detail - load products from same brand** - another of the project idea parts were to load products from the same brand on product detail page. 
+   - **About us page** - currently there is no "About us" page which would give better understanding of the e-commerce store owners and their approach to the business. It is highly recommended to include in future development for better user experience as well as for better marketing purposes.
+   - **Sign up vs. Register** - for a better user experience it is recommended to fully align the uses of terms "register" vs. "sign up", "login" vs. "sign in". From time reasons those have not been properly corrected in the allauth files. 
+   - **Button styling** - during the development of the website, my intent was to unify all buttons. However few of them on the page still kept their styling from django forms and Code Institute tutorial (such as "insert image") or "Add post" in the Magazine section. 
+   - **Search functionality accross the entire page** - currently the search bar searches only among the products. It would be better if it searches through the entire page and includes the magazine posts as well. 
+   - **Magazine Posts** - include buttons to share posts via social media or email.
+   - **Convenient allerts for Admin** - currently the Admin is not informed via email about new orders or new contact messages. It is recommended to include in future development. 
 
 ## Technologies Used
 ### Frameworks, Libraries & Programs Used: 
@@ -402,22 +403,6 @@ Tools used for wireframes and images:
 
 ### Gitpod
 ## Credits
-
-### Acknowledgements
-
-
-
-
-
-- future implementation: 
-    - modal window for delete actions
-    - correct rating - for each product
-    - correct for add_product display "----" for Brands as default
-    - correct footer position
-
-
-Credits:
-
 #### Overall structure of the website: 
 Tutorial from Code Institute - Boutique Ado, https://github.com/Code-Institute-Solutions/boutique_ado_v1
 
@@ -441,12 +426,10 @@ https://github.com/PiotrWojniak/MS4
 https://github.com/AmyOShea/MS4-ARTstop
 https://github.com/Sojasmine/alana
 
-
-
-
-
 - quote about oils adapted from: https://www.goodreads.com/quotes/tag/essential-oils
 
 - magazine: 
     - https://aromatics.cz/blog/
     https://www.goodie.cz/blog/orechove-kremy-popularni-delikatesa-a-zdroj-energie/
+
+### Acknoledgements
