@@ -34,20 +34,20 @@ and
 <details>
 <summary>3. Seller</summary>
 
-![Seller](documentation/images/user_stories/seller_testing.png)
+![Seller](/documentation/images/user_stories/seller_testing.png)
 </details>
 
 <details>
 <summary>4. Admin</summary>
 
-![Admin](documentation/images/user_stories/admin_testing.png)
+![Admin](/documentation/images/user_stories/admin_testing.png)
 </details>
 
 #### Test of Featurs - Images
 <details>
 <summary>Home</summary>
 
-![Home](documentation/images/features/home.png)
+![Home](/documentation/images/features/home.png)
 </details>
 
 <details>
