@@ -448,7 +448,7 @@ a.category-badge > span.badge:hover {
 /* -------------------------------- Media Queries -------------- */
 @media (min-width: 280px) {
 .header-container {
-    padding-top: 200px;
+    padding-top: 210px;
 }
 }
 
@@ -463,7 +463,7 @@ a.category-badge > span.badge:hover {
 
 @media (min-width: 315px) {
     .header-container {
-        padding-top: 180px;
+        padding-top: 200px;
     }
     }
 
@@ -505,7 +505,7 @@ a.category-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 144px;
+        padding-top: 180px;
     }
 }
 
@@ -529,14 +529,6 @@ a.category-badge > span.badge:hover {
         margin-left: 75px;
         position: absolute;
         left: 0rem;
-    }
-}
-
-
-/* pad the top a bit when navbar is collapsed on mobile */
-@media (min-width: 991px) {
-    .header-container {
-        padding-top: 130px;
     }
 }
 
