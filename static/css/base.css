@@ -8,6 +8,7 @@ html {
 body {
     color: #555;
     font-family: 'Jost', sans-serif!important;
+    min-height: 100%;;
 }
 
 footer {
@@ -462,11 +463,6 @@ a.category-badge > span.badge:hover {
         margin-top: 1rem !important;
         font-size: 2rem;
     }
-
-    #delivery-banner {
-        position: static;
-        width: 100vw; 
-      }
     
     .card-carousel {
         left: -5rem;
@@ -512,22 +508,25 @@ a.category-badge > span.badge:hover {
         position: absolute;
         left: 0rem;
     }
+
+    .header-container {
+        padding-top: 144px;
+    }
+
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
+        padding-top: 110px;
     }
 }
 
 @media (max-width: 992px) {
-    #delivery-banner h4 {
+    #delivery-banner {
         font-size: .9rem;
+        position: static;
+        width: 100vw; 
     }
 }
 
@@ -542,7 +541,7 @@ a.category-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 144px;
     }
 }
 
