@@ -44,7 +44,7 @@
          </span>
          {% endif %}
          <p class="card-text mt-2">{{ post.intro_text }}</p>
-         <p class="card-text">{{ post.article|linebreaks }}</p>
+         <div class="card-text">{{ post.article|linebreaks }}</div>
          <p class="card-text"><small class="text-muted">Written by: {{ post.author }},
             {{ post.date_added | date:"d M - Y | h:i"}}</small>
          </p>
