@@ -446,9 +446,9 @@ a.category-badge > span.badge:hover {
 
 
 /* -------------------------------- Media Queries -------------- */
-@media (min-width: 315px) {
+@media (min-width: 280px) {
 .header-container {
-    padding-top: 90px;
+    padding-top: 200px;
 }
 }
 
@@ -460,6 +460,12 @@ a.category-badge > span.badge:hover {
     margin-left: 75px;
 }
 }
+
+@media (min-width: 315px) {
+    .header-container {
+        padding-top: 180px;
+    }
+    }
 
 @media (max-width: 576px) {
     .logo-good-oils {
