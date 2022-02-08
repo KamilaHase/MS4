@@ -463,11 +463,6 @@ a.category-badge > span.badge:hover {
         margin-top: 1rem !important;
         font-size: 2rem;
     }
-
-    #delivery-banner {
-        position: static;
-        width: 100vw; 
-      }
     
     .card-carousel {
         left: -5rem;
@@ -516,15 +511,17 @@ a.category-badge > span.badge:hover {
     body {
         height: calc(100vh - 116px);
     }
+
+    #delivery-banner {
+        position: relative;
+        width: 100vw; 
+        font-size: .9rem;
+      }
 }
 
 @media (max-width: 992px) {
     .bottom-footer {
         min-height: calc(100vh - 187px);
-    }
-
-    #delivery-banner h4 {
-        font-size: .9rem;
     }
 }
 

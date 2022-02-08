@@ -54,9 +54,9 @@
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <!--Search bar-->
-                <form method="GET" action="{% url 'products' %}" aria-label="Search">
+                <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-150">
-                        <input class="form-control border border-grey rounded-2" type="text" name="q"
+                        <input class="form-control border border-grey rounded-2" aria-label="Search among the products" type="text" name="q"
                             placeholder="Search among the products">
                         <div class="input-group-append text-lg-right">
                             <button class="form-control btn bg-grey border-grey rounded-2" type="submit">
