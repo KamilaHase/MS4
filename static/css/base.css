@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Style+Script&display=swap');
 
 /*-------------------General------------*/
+.container, .container-md, .container-sm {
+    min-height: 100vh !important;
+}
 
 html {
     height: 100%;
@@ -14,22 +17,6 @@ body {
 footer {
     margin-bottom: 0 !important;
 }
-
-/*--Footer to bottom from https://css-tricks.com/couple-takes-sticky-footer/--*/
-html, body {
-    height: 100%;
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  .bottom-footer {
-    flex: 1 0 auto;
-  }
-  footer {
-    flex-shrink: 0;
-  }
-
 
 /* icon adapted from https://bulma.io/ */
 .icon {
@@ -479,6 +466,11 @@ a.category-badge > span.badge:hover {
         margin-top: 1rem !important;
         font-size: 2rem;
     }
+
+    #delivery-banner {
+        position: static;
+        width: 100vw; 
+      }
     
     .card-carousel {
         left: -5rem;
@@ -499,15 +491,25 @@ a.category-badge > span.badge:hover {
         object-fit: cover;
     }
 
-    /*.bottom-footer {
+    .bottom-footer {
         min-height: calc(100vh - 190px);
-    }*/
+    }
     }
 
-@media (max-width: 768px) {
-    /*.bottom-footer {
+@media (min-width: 576px), (max-width: 991px) {
+    .margin-md-scrn {
+        margin-top: 2rem !important;
+        }
+    
+    .bottom-footer {
         min-height: calc(100vh - 200px);
-    }*/
+    }
+}
+
+@media (max-width: 768px) {
+    .bottom-footer {
+        min-height: calc(100vh - 200px);
+    }
 
     .text-carousel {
         z-index: 10;
@@ -515,12 +517,6 @@ a.category-badge > span.badge:hover {
         margin-left: 75px;
         position: absolute;
         left: 0rem;
-    }
-}
-
-@media (min-width: 576px), (max-width: 991px) {
-    .margin-md-scrn {
-        margin-top: 4rem !important;
     }
 }
 
@@ -533,18 +529,16 @@ a.category-badge > span.badge:hover {
     body {
         height: calc(100vh - 116px);
     }
-
-    #delivery-banner {
-        position: relative;
-        width: 100vw; 
-        font-size: .9rem;
-     }
 }
 
 @media (max-width: 992px) {
-    /*.bottom-footer {
+    .bottom-footer {
         min-height: calc(100vh - 187px);
-    }*/
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -564,9 +558,9 @@ a.category-badge > span.badge:hover {
 
 
 @media (max-width: 1200px) {
-   /* .bottom-footer {
+    .bottom-footer {
         min-height: calc(100vh - 180px);
-    }*/
+    }
 }
 
 @media (min-width: 1200px) {
@@ -574,7 +568,7 @@ a.category-badge > span.badge:hover {
         max-width: 80%;
       }
 
-   /* .bottom-footer, .bottom-footer-lg {
+    .bottom-footer, .bottom-footer-lg {
         min-height: calc(100vh - 90px);
-    }*/
+    }
 }
