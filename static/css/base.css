@@ -446,6 +446,11 @@ a.category-badge > span.badge:hover {
 
 
 /* -------------------------------- Media Queries -------------- */
+@media (min-width: 315px) {
+.header-container {
+    padding-top: 90px;
+}
+}
 
 @media (max-width: 315px) {
 .text-carousel {
