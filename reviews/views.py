@@ -11,7 +11,7 @@ from profiles.models import UserProfile
 @login_required
 def add_review(request, product_id):
     """
-    Add a review to a product
+    Add a review to a product. Available only for those who are logged in.
     """
     product = get_object_or_404(Product, pk=product_id)
     user = get_object_or_404(UserProfile, user=request.user)
@@ -46,7 +46,7 @@ def add_review(request, product_id):
 @login_required
 def edit_review(request, review_id):
     """
-    Edit a review to a product
+    Edit a review to a product. Login required.
     """
     review = get_object_or_404(ProductReview, pk=review_id)
     if request.method == 'POST':

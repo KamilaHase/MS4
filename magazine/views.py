@@ -46,7 +46,8 @@ def post_detail(request, slug):
 
 @login_required
 def add_post(request):
-    """ Add a post to the magazine """
+    """ Add a post to the magazine available only for a superuser. \
+        If not successfull, user will see an error message"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only our admin \
             team can do this action.')
@@ -74,7 +75,9 @@ def add_post(request):
 
 @login_required
 def edit_post(request, slug):
-    """ Edit an existing Post """
+    """ Edit an existing Post. Available only for a superuser. \
+        If not successfull, user will see an error message. \
+            Superuser will see a toast message while editing. """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only our admin \
             team can do this action.')
@@ -105,7 +108,8 @@ def edit_post(request, slug):
 
 @login_required
 def delete_post(request, slug):
-    """ Delete a post from the magazine """
+    """ Delete a post from the magazine. Available only for a superuser. \
+        If not successfull, user will see an error message."""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only our admin \
             team can do this action.')

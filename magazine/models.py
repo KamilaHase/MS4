@@ -2,6 +2,9 @@ from django.db import models
 
 
 class Magazine(models.Model):
+    """
+    A model for the magazine
+    """
     title = models.CharField(max_length=100)
     slug = models.SlugField()
 
@@ -10,6 +13,9 @@ class Magazine(models.Model):
 
 
 class Post(models.Model):
+    """
+    A model for magazine posts-articles
+    """
     title = models.CharField(max_length=100)
     slug = models.SlugField()
     author = models.CharField(max_length=200)
@@ -23,7 +29,9 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-
+    """
+    A model for adding comments to posts
+    """
     class Meta:
         ordering = ['-date_created']
 

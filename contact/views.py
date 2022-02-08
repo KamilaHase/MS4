@@ -7,7 +7,7 @@ from .forms import ContactForm
 
 
 def contact(request):
-    """A view to render the contact page"""
+    """A view to render the contact page otherwise show an error message"""
 
     if request.method == 'POST':
 

@@ -626,33 +626,6 @@ Create an account with [AWS](www.aws.amazon.com), follow the steps and sign in.
 - On Stripe, add a new webhook endpoint, with the URL of your Heroku app, followed by 
 ```/checkout/wh/```. Select 'receive all events' and click 'add endpoint'.
 
-### GitHub Pages
-(credit: https://github.com/Code-Institute-Solutions/SampleREADME)
-The project was deployed to GitHub Pages using the following steps:
-1. Log in to GitHub and locate the GitHub Repository
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-4. Scroll down on the left list of options to find "Pages" section, alternatively scroll down the Settings page until you locate the "GitHub Pages" Section. 
-5. Under "Source", click the dropdown called "None" and select "Master Branch".
-6. The page will automatically refresh.
-7. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
-
-### Forking the GitHub Repository
-1. By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
-2. Log in to GitHub and locate the GitHub Repository
-3. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-4. You should now have a copy of the original repository in your GitHub account.
-
-### Making a Local Clone
-1. Log in to GitHub and locate the GitHub Repository
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type git clone, and then paste the URL you copied in Step 3.
-7. $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-8. Press Enter. Your local clone will be created.
-
-
 ## Credits
 #### Overall structure of the website: 
 Based on tutorial from Code Institute - Boutique Ado, https://github.com/Code-Institute-Solutions/boutique_ado_v1

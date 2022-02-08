@@ -95,7 +95,8 @@ def product_detail(request, product_id):
 
 @login_required
 def add_product(request):
-    """ Add a product to the store """
+    """ Add a product to the store. Available only for superuser. \
+        If unssuccessful, superuser will see an error message. """
     if not request.user.is_superuser:
         messages.error(
             request, 'Sorry, only our admin team can do this action.')
@@ -124,7 +125,8 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ Edit a product in the store """
+    """ Edit a product in the store Available only for superuser. \
+        If unssuccessful, superuser will see an error message. """
     if not request.user.is_superuser:
         messages.error(
             request, 'Sorry, only our admin team can do this action.')
@@ -156,7 +158,8 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """ Delete a product from the store """
+    """ Delete a product from the store. Available only for superuser. \
+        If unssuccessful, superuser will see an error message. """
     if not request.user.is_superuser:
         messages.error(
             request, 'Sorry, only our admin team can do this action.')
