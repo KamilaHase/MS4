@@ -492,6 +492,10 @@ a.category-badge > span.badge:hover {
     .bottom-footer {
         min-height: calc(100vh - 200px);
     }
+
+    .header-container {
+        padding-top: 144px;
+    }
 }
 
 @media (max-width: 991px) {   
@@ -508,17 +512,13 @@ a.category-badge > span.badge:hover {
         position: absolute;
         left: 0rem;
     }
-
-    .header-container {
-        padding-top: 144px;
-    }
-
 }
 
+
 /* pad the top a bit when navbar is collapsed on mobile */
-@media (max-width: 991px) {
+@media (min-width: 991px) {
     .header-container {
-        padding-top: 120px;
+        padding-top: 130px;
     }
 }
 
@@ -541,7 +541,7 @@ a.category-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 144px;
+        padding-top: 150px;
     }
 }
 
