@@ -177,6 +177,92 @@ Images on website are to be found under these links (all have been downloaded fr
 All images that have not been listed above were used from Microsoft Office icons library. Other images (such as product labels) I created in Microsoft Power Point.
 
 ### Wireframes
+<details>
+<summary>Home page 1</summary>
+
+![Home page 1](/documentation/images/wireframes/home1.png)
+</details>
+
+<details>
+<summary>Home page 2</summary>
+
+![Home page 2](/documentation/images/wireframes/home2.png)
+</details>
+
+<details>
+<summary>Products</summary>
+
+![Products](/documentation/images/wireframes/all_products.png)
+</details>
+
+<details>
+<summary>Product detail</summary>
+
+![Product detail](/documentation/images/wireframes/product_detail.png)
+</details>
+
+<details>
+<summary>Contact</summary>
+
+![Contact](/documentation/images/wireframes/contact.png)
+</details>
+
+<details>
+<summary>Magazine</summary>
+
+![Magazine](/documentation/images/wireframes/magazine.png)
+</details>
+
+<details>
+<summary>Magazine - post detail</summary>
+
+![Magazine - post detail](/documentation/images/wireframes/magazine_post_detail.png)
+</details>
+
+<details>
+<summary>Admin section</summary>
+
+![Admin section](/documentation/images/wireframes/admin_section.png)
+</details>
+
+<details>
+<summary>My profile</summary>
+
+![My profile](/documentation/images/wireframes/my_profile.png)
+</details>
+
+<details>
+<summary>Shopping bag</summary>
+
+![Shopping bag](/documentation/images/wireframes/shopping_bag.png)
+</details>
+
+<details>
+<summary>Checkout</summary>
+
+![Checkout](/documentation/images/wireframes/checkout.png)
+</details>
+
+<details>
+<summary>Checkout success</summary>
+
+![Checkout success](/documentation/images/wireframes/checkout_success.png)
+</details>
+
+
+<details>
+<summary>Sign in / Register</summary>
+
+![Sign in / Register](/documentation/images/wireframes/sign_in_register.png)
+</details>
+
+<details>
+<summary>Sign out</summary>
+
+![Sign out](/documentation/images/wireframes/sign_out.png)
+</details>
+
+
 ### Mockups
 <details>
 <summary>Mockup 1</summary>
@@ -369,6 +455,12 @@ The project was built with SQLite, which is Django built-in database for develop
 
 Database schema is following: 
 
+<details>
+<summary>Database scheme</summary>
+    
+![Database](/documentation/images/database_scheme.png)
+</details>
+
 ### Languages: 
 - HTML5 for markup
 - CSS3 for styles
@@ -393,7 +485,9 @@ Database schema is following:
 
 Tools used for wireframes and images:
 - **MS Office Power Point** - used for creating wireframes, adjusting all print screens. Used for creating product images.
+- **MS Excel** - used for planning data sctructure and data scheme
 - **techsini.com** for mockup
+
 
 ## Testing
 Testing can be found in a separate file [here](/documentation/TESTING.md)
