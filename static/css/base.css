@@ -509,18 +509,6 @@ a.category-badge > span.badge:hover {
     }
 }
 
-@media (max-width: 991px) {   
-    .bottom-footer {
-        min-height: calc(100vh - 200px);
-    } 
-
-    .logo-good-oils {
-        font-family: 'Style Script', cursive;
-        color: #7b621a!important;
-        margin-top: 1rem !important;
-        font-size: 2.4rem;
-    }
-}
 
 @media (max-width: 768px) {
     .text-carousel {
@@ -530,7 +518,29 @@ a.category-badge > span.badge:hover {
         position: absolute;
         left: 0rem;
     }
+
+    .logo-good-oils {
+        font-family: 'Style Script', cursive;
+        color: #7b621a!important;
+        margin-top: 1rem !important;
+        font-size: 2.3rem;
+    }
 }
+
+
+@media (max-width: 991px) {   
+    .bottom-footer {
+        min-height: calc(100vh - 200px);
+    } 
+
+    .logo-good-oils {
+        font-family: 'Style Script', cursive;
+        color: #7b621a!important;
+        margin-top: 1rem !important;
+        font-size: 2.5rem;
+    }
+}
+
 
 @media (max-width: 992px) {
     #delivery-banner {
