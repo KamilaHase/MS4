@@ -6,7 +6,6 @@
 Website has been manually tested and corrected by:
 
 - [Python validator](http://pep8online.com/) - for Python files, no errors found
-
     and
     <details>
     <summary>Flake8</summary>
