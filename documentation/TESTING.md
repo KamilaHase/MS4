@@ -14,11 +14,11 @@ Website has been manually tested and corrected by:
     ![Flake8](/documentation/images/flake8_result.png)
     </details>
 
-- [HTML validator](https://validator.w3.org/) - validating HTML content was showing errors because of Django expressions. When those are removed, the validation tests of all html pages are currently not showing any errors.
+- [HTML validator](https://validator.w3.org/) - validating HTML tests of all html pages are currently not showing errors.
 - [CSS validator](https://jigsaw.w3.org/css-validator/) - CSS validator, no errors found
 - [JavaScript validator](https://www.jshint.com/) - JavaScript validator, no errors found
 - [Link Checker](https://validator.w3.org/checklink) - To check that all links are working and not broken. The report did not have any issues in final testing.
-- [Responsinator](http://www.responsinator.com/ to check responsivity of the website, website is fully responsive.
+- [Responsinator](http://www.responsinator.com/) to check responsivity of the website, website is fully responsive.
 
 
 #### Test User Stories - Images
@@ -46,7 +46,7 @@ Website has been manually tested and corrected by:
 ![Admin](/documentation/images/user_stories/admin_testing.png)
 </details>
 
-#### Test of Featurs - Images
+#### Test of Features - Images
 <details>
 <summary>Home</summary>
 

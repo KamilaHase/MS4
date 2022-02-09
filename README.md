@@ -1,7 +1,8 @@
 ![Mockup](documentation/images/mockup2.png)
 
 # Good Oils
-Good Oils is an e-commerce website built for study purposes at Code Institute. It is a specialized website for the best quality of oils: virgin oils and oils used for cosmetic purposes. Customers can visit the website and order online the products of their choices as well as learn more about certain products in the Good Oils Magazine. The shop is oriented on organic and best quality oils that are on the market in order to target the market trend of healthy lifestile closer to the nature.
+Good Oils is an e-commerce website built for study purposes at Code Institute. It is a specialized website for the best quality of oils: virgin oils and oils used for cosmetic purposes. Customers can visit the website and order online the products of their choices as well as learn more about certain products in the Good Oils Magazine. The shop is oriented on organic and best quality oils that are on the market in order to target the market trend of healthy lifestyle closer to the nature.
+<br>
 The website was developed for study purposes only and all content is fictional. Currently the website would serve in real world as functional starter website where more development is recommended for better user experience. 
 
 [View live version of website can be seen via Heroku here.](https://good-oils.herokuapp.com/)
@@ -18,6 +19,9 @@ The website was developed for study purposes only and all content is fictional. 
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
 - [Technologies Used](#technologies-used)
+    - [Database](#database)
+    - [Languages](#languages)
+    - [Framewords, Libraries, Tools](#frameworks,-libraries-&tools-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -448,8 +452,6 @@ As already mentioned the website in the current state would serve as a good e-co
    - **Language corrections of content** - the actual content of the website such product information, detailed information and magazine articles were translated by Google Translate from Czech language websites (see Credits) and therefore there may be some language imperfections. It is advisable to correct the language thoroughouly. 
 
 ## Technologies Used
-### Frameworks, Libraries & Programs Used: 
-
 ### Database
 The project was built with SQLite, which is Django built-in database for development mode and Heroku Postgres for used for production mode. AWS (Amazon Web Services) are used to store all static files and folders for the website in the production mode.
 
@@ -513,6 +515,10 @@ Testing can be found in a separate file [here](/documentation/TESTING.md)
 
 - **Footer**
     - It was difficult for me to provide a footer that would always stick to the bottom while not covering some of the content. If there is not enough content on page that would push footer down, on some devices the footer may be floating on the page. To correct that I was adding a CSS class "bottom-footer" although I still see it as a bug as it is not sufficient for all types of devices. Also, a mistake can easily appear if the programmer wouldn't remember to add the CSS class in further development. 
+
+- **Delivery banner**
+    - Deliver banner has added JavaScript funtionality that enables hiding. However as JavaScript loads each page, the banner shows up when user enters a new page. This is considered as not user friendly and advised to be fixed in future development. 
+    
 
 ## Deployment
 Ensured deployed page on Heroku loads up correctly. Ensured Debug variable is set to False. There is no difference between the deployed version and the development version.
